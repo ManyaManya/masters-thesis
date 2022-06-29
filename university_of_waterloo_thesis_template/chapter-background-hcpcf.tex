@@ -1,119 +1,108 @@
 %======================================================================
 \chapter{Background}
 %======================================================================
-
 \section{Hollow-Core Photonic Crystal Fiber}
 \subsection{Conventional TIR Guidance}
 
-\subsection{Bragg Gratings}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth]{./Figures/HCPCF/DBR.png}
-	\caption{Schematic of quarter wavelength stack}
-\end{figure}
-\clearpage
-\begin{equation}
-	\begin{aligned}
-		E^1_n(z) &= A^1_n e^{-ik_{z1}(z-(n-1)a)} + B^1_n e^{ik_{z1}(z-(n-1)a)};  (n-1)a+b<z<na\\
-		E^2_n(z) &= A^2_n e^{-ik_{z2}(z-(n-1)a)} + B^2_n e^{ik_{z2}(z-(n-1)a)};  (n-1)a<z<(n-1)a+b\\
-	\end{aligned}
-\end{equation}
-Where $k _j= \frac{2\pi}{n_j}$
-The boundary conditions:\\
-continuous between the layers:
-\begin{equation}
-		E^1_n(z) = E^2_n(z+b)
-\end{equation}
-The second condition is that the electric field is smooth, which can be established in the perpendicular magnetic field. Assuming that the electric field is linearly polarized $E(z) = \boldsymbol{\hat{x}}E(z)$, then the magnetic field (via Faraday's law) $H(z) = \boldsymbol{\hat{y}}H(z)$.
-
-\begin{equation}
-	\begin{aligned}
-		H^1_n(z) &=\frac{1}{\eta_1}[A^1_n e^{-ik_{z1}(z-(n-1)a)} - B^1_n e^{ik_{z1}(z-(n-1)a)}]\\
-		H^2_n(z) &= \frac{1}{\eta_2}[A^2_n e^{-ik_{z2}(z-(n-1)a)} - B^2_n e^{ik_{z2}(z-(n-1)a)}]
-	\end{aligned}
-\end{equation}
-
-\begin{equation}
-	\begin{aligned}
-			A^2_n(z) = \frac{1}{2}[E^2_n(z) + \eta_2 H^2_n(z)]\\
-			B^2_n(z) = \frac{1}{2}[E^2_n(z) - \eta_2 H^2_n(z)]
-	\end{aligned}
-\end{equation}
-Where the impedance $\eta_2 = \frac{\eta_0}{n2}$ \\
-Putting these relations into a matrix form we can find a a solution for the transition boundary:
-\begin{equation*}
-	\begin{aligned}
-		\begin{bmatrix}E^1_{n-1}(z+a)\\H^1_{n-1}(z+a) \end{bmatrix} 
-		&= \begin{bmatrix}E^2_n(z)\\H^2_n(z) \end{bmatrix}\\
-		 \begin{bmatrix}1 & 1\\\eta_1^{-1} & -\eta_1^{-1}\end{bmatrix}\begin{bmatrix}A^1_{n-1}(z+a)\\B^1_{n-1}(z+a) \end{bmatrix}
-		 &=\begin{bmatrix}1 & 1\\\eta_2^{-1} & -\eta_2^{-1}\end{bmatrix}\begin{bmatrix}A^2_n(z)\\B^2_n(z) \end{bmatrix} \\
-		\begin{bmatrix}A^1_{n-1}(z+a)\\B^1_{n-1}(z+a) \end{bmatrix}
-		&= M_{1\rightarrow2}\begin{bmatrix}A^2_n(z)\\B^2_n(z) \end{bmatrix}\\
-	\end{aligned}
-\end{equation*}
-
-\begin{equation}
-	\begin{bmatrix}A^1_{n-1}(z+a)\\B^1_{n-1}(z+a) \end{bmatrix}
-	= M_{1\rightarrow2}\begin{bmatrix}A^2_n(z)\\B^2_n(z) \end{bmatrix}\\
-\end{equation}
-
-The transition matrix:
-\begin{equation}
-	M_{1\rightarrow2} = 
-	\frac{1}{2}\begin{bmatrix}1+\frac{k_2}{k_1} & 1-\frac{k_2}{k_1}\\1-\frac{k_2}{k_1} & 1+\frac{k_2}{k_1}\end{bmatrix}
-\end{equation}
-
-The plane wave propagating though the material will acquire a phase:  
-\begin{equation}
-	M_{n_2} = \begin{bmatrix}e^{ik_{z2}b} & 0\\0 & e^{-ik_{z2}b}\end{bmatrix}\\
-\end{equation}
-
-Thus the travel through the n2 material can be summarized by
-\begin{equation}
-	\begin{aligned}
-		\begin{bmatrix}A^1_{n-1}(z+a)\\B^1_{n-1}(z+a) \end{bmatrix}
-		M_{1\rightarrow2}M_{n2}
-		\begin{bmatrix}A^2_n(z+b)\\B^2_n(z+b) \end{bmatrix}
-	\end{aligned}
-\end{equation}
-
-For the electric field through the n1 region :
-\begin{equation}
-	M_{1\rightarrow2} = 
-	\frac{1}{2}\begin{bmatrix}
-		1+\frac{k_1}{k_2} & 1-\frac{k_1}{k_2}\\
-		1-\frac{k_1}{k_2} & 1+\frac{k_1}{k_2}
-	\end{bmatrix}
-	\begin{aligned}
-		&M_{n_1} =
-		\begin{bmatrix}
-			e^{ik_{z1}a} & 0\\
-			0 & e^{-ik_{z1}a}
-		\end{bmatrix}\\
-	\end{aligned}
-\end{equation}
-
-Becomes one periodic transition matrix:
-\begin{equation*}
-	M_p = M_{1\rightarrow2}M_{n2}M_{2\rightarrow1}M_{n1} = \begin{bmatrix}m_{11} & m_{12}\\m_{21} & m_{22}\end{bmatrix}\\ 	
-\end{equation*}
-
-For an N period block:
-\begin{equation*}
-	\begin{aligned}
-		\begin{bmatrix}A_0\\B_0 \end{bmatrix} 
-		&=\frac{1}{2}\begin{bmatrix}1 & \eta_1\\1 & -\eta_1\end{bmatrix} 
-		(M_p)^N 
-		\begin{bmatrix}1 & \eta_1\\1 & -\eta_1\end{bmatrix}\begin{bmatrix}A_{(N+1)}\\0\end{bmatrix}\\
-		\begin{bmatrix}1 \\\eta_1^{-1}\end{bmatrix}A_{(N+1)}
-		&= \begin{bmatrix}(-\frac{\eta_2}{\eta_1})^N+(-\frac{\eta_1}{\eta_2})^N \\ (-\frac{\eta_2}{\eta_1})^N-(-\frac{\eta_1}{\eta_2})^N\end{bmatrix}A_{(N+1)}\\
-		R &= \Bigg|\frac{(-\frac{\eta_2}{\eta_1})^N-(-\frac{\eta_1}{\eta_2})^N}{(-\frac{\eta_2}{\eta_1})^N+(-\frac{\eta_1}{\eta_2})^N}\Bigg|^2\\
-		&=\Bigg|\frac{1-(\frac{\eta_1}{\eta_2})^{2N}}{1+(\frac{\eta_1}{\eta_2})^{2N}}\Bigg|^2; \eta_i = \frac{\eta_0}{\eta_i}, i = 1, 2
-	\end{aligned}
-\end{equation*}
-
 \subsection{Photonic Crystal Bandgap}
-lecture 3
+The 1D and 2D views of the structure
+\begin{figure}
+	\centering
+	\begin{tabular}{cc}
+		\multirow{-3}[6]{*}{\subfloat[D]{\includegraphics[width=6cm,height=6cm]{./Figures/HCPCF/HCPCF_section.png}}}&
+		\subfloat[A]{\includegraphics[width=4cm,height=3cm]{./Figures/HCPCF/HCPCF_1D.png}} \\& 
+		\subfloat[H]{\includegraphics[width=4cm,height=3cm]{./Figures/HCPCF/HCPCF2D.png}}
+	\end{tabular}
+	\caption{Many figures}
+	\label{fig:manyD}
+\end{figure}
+
+A periodic non-magnetic medium will have repeating dielectric constant 
+\begin{equation}
+	\varepsilon(\boldsymbol{r}) = \varepsilon(\boldsymbol{r}+\boldsymbol{a})  
+\end{equation}
+Due to its discrete and invariant translation symmetry, the dielectric constant along the medium can be expanded as a Fourier series
+\begin{equation}
+	\varepsilon(\boldsymbol{r}) = \sum_{\boldsymbol{G}}\varepsilon_{\boldsymbol{G}}e^{i\boldsymbol{G}\cdot\boldsymbol{r}}  
+	\label{eqn:fourier_eps}
+\end{equation}
+Where $\boldsymbol{G}$ are the reciprocal lattice vectors such that $\boldsymbol{G}\cdot\boldsymbol{a} = 2\pi n$.Expressing the electric field also as a Fourier integral
+\begin{equation}
+	\boldsymbol{E}(\boldsymbol{r}) = \iiint d^3\boldsymbol{k}\boldsymbol{A}(\boldsymbol{k})e^{i\boldsymbol{k}\cdot\boldsymbol{r}}
+	\label{eqn:fourier_E}
+\end{equation}
+ Using the Maxwell equations defined in - the wave equation can be written in terms of the electric field 
+\begin{equation}
+	\boldsymbol{\nabla}\times(\boldsymbol{\nabla}\times\boldsymbol{E})-\omega^2\varepsilon(\boldsymbol{r})\mu_0\boldsymbol{E} = 0
+\end{equation}
+Substituting \eqref{eqn:fourier_eps} and \eqref{eqn:fourier_E} into the above results in the dispersion relation:
+\begin{equation}
+	\boldsymbol{k}\times(\boldsymbol{k}\times\boldsymbol{A}(\boldsymbol{k})) + \omega^2\mu_0\sum_{\boldsymbol{G}}\varepsilon_{\boldsymbol{G}}\boldsymbol{A}(\boldsymbol{k}-\boldsymbol{G}) = 0
+	\label{eqn:separation}
+\end{equation}
+in where for any vector $\boldsymbol{K}$ the solutions of \eqref{eqn:separation} for the coefficient $\boldsymbol{A}(\boldsymbol{K})$ are grouped with the coefficients $\boldsymbol{A}(\boldsymbol{K}-\boldsymbol{G})$, decoupling the coefficients of other vectors that cannot be expressed in the form $\boldsymbol{K}-\boldsymbol{G}$. Disregarding the decoupled vectors, the total electric field can be described as a superposition of normal modes with regard to a chosen vector $\boldsymbol{K}$ :
+\begin{equation}
+	\boldsymbol{E}_{\boldsymbol{k}}(\boldsymbol{r}) = \sum_{\boldsymbol{G}}\boldsymbol{A}(\boldsymbol{K}-\boldsymbol{G})e^{i(\boldsymbol{k}-\boldsymbol{G})\cdot \boldsymbol{r}}
+	\label{eqn:normalmodes}
+\end{equation}
+With a little algebra, we can pull out the Bloch theorem for the electric field from \eqref{eqn:normalmodes}
+\begin{equation}
+	\boldsymbol{E}_{\boldsymbol{k}}(\boldsymbol{r}+\boldsymbol{a}) = e^{i\boldsymbol{k}\cdot \boldsymbol{a}}\boldsymbol{E}_{\boldsymbol{k}}(\boldsymbol{r})
+\end{equation}
+(Expand)  Returning to \eqref{eqn:separation}, can fix $\omega$ to find the corresponding $\boldsymbol{K}$ and normal modes os the system. However, in the case of photonic crystals there are ranges of frequencies that  have no $\boldsymbol{K}$s with real solutions, which implies that waves of these frequencies cannot propagate through the photonic crystal. These non-propagating frequencies are referred to as the photonic band gap.
+
+\subsubsection{1D Photonic Bandgap}
+Returning to the 1D periodic stack pictured in \ref{1dstack} the periodicity of dielectric constant is described by $\varepsilon(z) = \varepsilon(z+p)$ where $p = b+a$, the length of one period. The reciprocal lattice vector will be $\boldsymbol{G}_n = n\frac{2\pi}{p}\hat{z}$ and plugging into the Fourier series expansion of $\varepsilon(z)$  from \eqref{eqn:fourier_eps} 
+\begin{equation}
+	\varepsilon(z)  =\sum_{n=-\infty}^\infty\varepsilon_ne^{in\frac{2\pi}{p}\hat{z}}  
+\end{equation}
+From the reduction to propagation in the z-direction with the electric field oriented in x-direction, \eqref{eqn:separation} simplifies
+\begin{equation}
+K^2A(K) + \omega^2\mu_0\sum_{n=-i\infty}^\infty\varepsilon_nA(K-n\frac{2\pi}{p}) = 0
+\end{equation}
+Expanding the Fourier coefficients to the 1st order and reducing the equations to the dominant coefficients of the form $A(K)$ and $A(K-\frac{2\pi}{p})$ . $|K - g| = K$ and $K = \frac{\pi}{p}$ gives a system of equations that can be solved to find the dispersion relation $\omega(K)$.
+\begin{equation}
+	\begin{cases}
+		\big(K^2-\omega^2\mu_0\varepsilon_{00}\big)A(K) = \omega^2\mu_0\varepsilon_1A(K - g)\\
+		\omega^2\mu_0\varepsilon_{-1}A(K) = \big((K-g)^2-\omega^2\mu_0\varepsilon_{00}\big)A(K-g) 
+	\end{cases}
+\end{equation}
+The equations relating these two modes has a solution at
+\begin{equation}
+		\big(K^2-\omega^2\mu_0\varepsilon_{00}\big)\big((K-g)^2-\omega^2\mu_0\varepsilon_{00}\big) -\big(\omega^2\mu_0\varepsilon_1\big)\big(\omega^2\mu_0\varepsilon_{-1}\big)  = 0 
+\end{equation}
+ noting $\varepsilon_1 = \varepsilon_{-1}^*$ and $K\approx2g$ simplifies the relationship 
+ \begin{equation}
+ 	\big(K^2-\omega^2\mu_0\varepsilon_{00}\big)^2 -\big(\omega^2\mu_0|\varepsilon_{1}|^2\big)^2  = 0 
+ \end{equation}
+\begin{equation}
+	\omega_{\pm}^2 = \frac{K^2}{\mu_0(\varepsilon_{00}\mp|\varepsilon_1|)}
+\end{equation}
+The dispersion relation has two possible solutions, which specify the top and bottom of the photonic bandgap edges, as illustrated in Fig.-  
+[fig of omega v. K]
+If the solving for the wavevector at a frequency between $\omega_{\pm}$, only complex solutions will exist. This means that only evanescent waves, not electromagnetic waves, propagate through the medium while the electromagnetic waves are reflected back; the medium acts as a mirror for the bandgap wavelengths.\\
+This is the the phenomena that allows for HCPCF to guide certain frequencies of light - wavelengths in the bandgap are reflected by surrounding Bragg Grating confining them to the core of the fiber, while the rest are allowed to propagate through the grating. 
+
+\subsubsection{2D Photonic Bandgap}
+To understand the full picture of  light propagation in hollow-core fiber, we need to expand to the 2D case pictured in  \ref{fig:manyD}.c
+primitive lattice vectors
+\begin{equation}
+	\boldsymbol{a}_1 = a\hat{x} \hspace{1cm} \boldsymbol{a}_2 = \frac{a}{2}\hat{x}+\frac{a\sqrt{3}}{2}\hat{y}
+\end{equation}
+primitive reciprocal lattice vectors $\boldsymbol{b}\cdot\boldsymbol{a} = 2\pi\delta_{ij}$
+\begin{equation}
+	\boldsymbol{b}_1 = \frac{2\pi}{a}\hat{x}-\frac{2\pi}{a\sqrt{3}}\hat{y} \hspace{1cm} \boldsymbol{b}_2 =\frac{4\pi}{a\sqrt{3}}\hat{y} 
+\end{equation}
+The reciprocal lattice vector will be $\boldsymbol{G} = n\boldsymbol{b}_1 + m\boldsymbol{b}_2$ where $n, m$ are scaling factors. 
+Taking propagation in the xy-plane ($K_z=0$ and $z=0$ for simplicity), $\boldsymbol{K}=K_x\hat{x}+K_y\hat{y}$ and $\boldsymbol{r}=x\hat{x}+y\hat{y}$. The 
+"In the previous two sections, we used the field patterns as our guide to understand
+which aspects of two-dimensional photonic crystals lead to TM and TE band gaps.
+By combining our observations, we can design a photonic crystal that has band
+gaps for both polarizations. Jovanopolous"
+
+"reciprocal lattice that is also hexagonal, but rotated relative to the original lattice by 30deg. The first Brillouin zone is defined by plotting perpendicular bisectors to the reciprocal lattice vectors. The irreducible Brillouin zone is 1/12 of the first Brillouin zone; because of the lattice symmetry, it is sufficient to only solve the Bloch modes inside this irreducible Brillouin zone. Moreover, in order to determine the photonic band gap, it is sufficient to solve the band diagram only along the edges of the green triangle. Lukin"
+
+This region is a simple triangle with side lengths $\Gamma X = \frac{2\pi}{a\sqrt{3}}$, $\Gamma J = \frac{4\pi}{3a}$, $\Gamma J = \frac{2\pi}{3a}$ 
 
 
 \subsection{Bandgap Shift}
@@ -128,8 +117,8 @@ $X=x\Lambda^{-1}$ $Y=y\Lambda^{-1}$
 where $\Lambda$ is a solution to the transverse scale. 
 \begin{equation}
 	n(X, Y) = \begin{cases}
-		&1, n_1 \text{   (high RI)}\\
-		&0, n_2 \text{   (low RI)}
+		1, &n_1 \text{   (high RI)}\\
+		0, & n_2 \text{   (low RI)}
 	\end{cases}
 \end{equation}
 normalized scaled wave equation:
@@ -193,7 +182,13 @@ Examples of taking this into account (with maybe slightly different conventions)
 \begin{equation}
 	OD_{fiber} = \int^L_0 \int^{r}_0 n(\rho, z) OD 2\pi \rho d\rho dL
 \end{equation}
-$r$ and $L$ represent the radius and length of the ensemble, which in the case of solution-filled HCPCF is the radius and length of the fiber. This assumes that the particulates outside of the core do not have a significant contribution. 
+$r$ and $L$ represent the radius and length of the ensemble, which in the case of solution-filled HCPCF is the radius and length of the fiber. This assumes that the particulates outside of the core do not have a significant contribution.  If the distribution of molecules is take to be uniform along the fiber length and radius of the core, then the number density will be: 
+\begin{equation}
+	n(\rho, z) = \begin{cases}
+		0, &|z| > L/2\\
+		(1/L) (1/\rho), &|z| < L/2
+	\end{cases}
+\end{equation}
 
 \begin{thebibliography}{hcpcf}
 	\bibitem{domokos} P. Domokos, P. Horak, and H. Ritsch, “Quantum description of light-pulse scattering on a single atom in waveguides,” Phys. Rev. A, vol. 65, no. 3, p. 033832, Mar. 2002, doi: 10.1103/PhysRevA.65.033832.
