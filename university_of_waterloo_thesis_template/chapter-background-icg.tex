@@ -1,30 +1,41 @@
 \section{Indocyanine Green}
-Add some intro and reason for using as fake cnt
+Due to the difficultly in isolating single-chirality solutions of CNTs, as outlined in in the previous chapter, indocyanine green (ICG) - a fluorescent dye often used in microscopy imaging\cite{farrakhova, spartalis} - was initially used in place of CNTs in the fiber.  This particular dye is an organic semiconductor with Homo-Lumo gap calculations estimating a $~2$eV energy gap, with variations depending on the solvent\cite{Fang}. The HOMO and LUMO energy levels in organic semiconductors are parallel to the maximum valence and minimum conduction, and the aforementioned energy gap falls within the range of energy bandgaps found in inorganic semiconductors. 
+\begin{figure}[h]
+	\centering
+	\foreach \x in {Homo_Lumo, chemical_formula}
+	{ 
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) Depiction of the Homo-Lumo gap in organic semiconductors and the transition occurring between ground and excited states. (b) The chemical structure of ICG provided by MP Biomedicals. }
+	\label{fig:homolumo}
+\end{figure}
+\clearpage
+The following section details the the optical properties of ICG and measurements of the optical properties when confined in HCPCF. 
 
-\section{Background}
-\subsection{ Absorption}
-In [3] the absorption cross-sections of H2O (data from [5]) and D2O are compared at varying concentrations. The behavior in H2O and D2O are quite similar. However, as shown in the lower figure, for low concentrations the absorption cross-section is slightly greater for D2O than H2O and then slightly greater for H2O than D2O for high concentrations.
-
-The absorption center wavelength also changes with concentration. From the top figure of ICG dissolved in D2O, the low concentrations show an absorption center peak at 778nm. The distribution slowly turns dimeric at concentrations near 38.75mg/L, with a second peak popping up around 695nm. Increasing concentrations will turn the distribution monomeric again, centered at the 695nm absorption peak, reaching a maximum at a concentration near 77.5mg/L and then dimming at increasing concentrations of the solution from here. 
-
-ICG is a "J-aggregate", which is a category of dyes that have a shift in absorption band to larger wavelengths in certain solvents. ICG when mixed into water and other solvents shifts to a center wavelength of 893nm over time and can be accelerated under high heat. 
-
-absorption cross-section model
+\subsubsection{ Absorption Cross-Section}
+Due to the chemical formation of ICG, the absorption of the molecule when dissolved in a solvent is highly concentration-dependent. ICG is made up of monomers, which are a type of molecule that can react with other monomers to form polymer chains. In the case of ICG, its monomers react with each other to form dimers, a chain of two join monomers. With higher concentrations, monomers are closer in proximity and the molecules are more likely shift from monomers to dimers which are less likely to be excited and shift the center absorption wavelength. The concentration of monomer $M$ to dimmers $D$ is governed by the equilibrium reaction
 \begin{equation}
-	\sigma = x_M \sigma_M + x_D \sigma_D = \sigma_M - x_D(\sigma_M - \sigma_D)
+	M+M\rightleftarrows D
 \end{equation}
-
-dimmerization constant
+and law of mass action relation concentration 
 \begin{equation}
-	K_D = \frac{x_D}{2(1-x_D)^2C}
+	[D] =  K_D[M]^2
 \end{equation}
-
-mole fraction
+Where $K_D$ is the dimmerization constant . Written in terms of concentration $C$ and mole fractions, $[M] = x_MC= (1-x_D)C $ and $[D]=\frac{x_D}{2}C$., the  mole fraction of dimmers can be written in terms of the dimmerization constant and concentration.
 \begin{equation}
 	x_D = 1 + \frac{1}{4K_DC} - \sqrt{\big( 1 + \frac{1}{4K_DC}\big)^2-1}
+	\label{xd}
 \end{equation}
-
-
+ The absorption cross-section model for ICG\cite{mauerer, philip} will be an average of the affects of the of monomers and dimmers, where d $\sigma_M$ and $\sigma_D$ are the monomer and dimer absorption cross-sections respectively.
+\begin{equation}
+	\sigma = x_M \sigma_M + x_D \sigma_D = \sigma_M - x_D(\sigma_M - \sigma_D)
+	\label{abc}
+\end{equation}
+Plugging (\ref{xd}) into (\ref{abc}), remaining parameters could be found by doing a linear regression fit to absorption cross-section vs. concentration data from literature and the expected absorption cross-section could be calculated for any concentration. For ICG dissolved in H2O, the existing literature has some variation and so the upper/lower bounds and average were taken, while little data was available for ICG dissolved in D2O. The behavior in H2O and D2O are quite similar and are plotted in Fig\ref{fig:icg abs plots}. At lower concentrations the absorption cross-section is slightly greater for D2O than H2O, with the reverse for high concentrations.
 \begin{figure}[h]
 	\centering
 	\foreach \x in {D2O_acs, H2O_acs}
@@ -38,100 +49,103 @@ mole fraction
    \caption{ Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D2O(a) and H2O(b) .  Data from (cite) was fitted using a linear regression model. }
 	\label{fig:icg abs plots}
 \end{figure}
+The absorption center wavelength also changes with concentration. From the top figure of ICG dissolved in D2O, the low concentrations show an absorption center peak at 778nm. The distribution slowly turns dimeric at concentrations near 38ppm, with a second peak popping up around 695nm. Increasing concentrations will turn the distribution monomeric again, centered at the 695nm absorption peak, reaching a maximum at a concentration near 77ppm and then dimming at increasing concentrations of the solution from here. 
 \clearpage
-
-\begin{tabularx}{0.8\textwidth} { 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X | }
-	\hline
-	$\lambda_{peak} = 780nm$ & $K_D$ & $\sigma_M$ & $\sigma_D$\\
-	\hline
-	\cite{holzer} & $6.01x10^5$ & $9.29x10^{-16}$ & $2.28x10^{-16}$\\
-	\hline
-	\cite{landsman} & $1.03x10^5$ & $6.74x10^{-16}$ & $1.54x10^{-16}$\\
-	\hline
-	\cite{mauerer} & $1.40x10^5$ & $6.72x10^{-16}$ & $1.11x10^{-16}$\\
-	\hline
-	Average & $3.06x10^6$ & $7.94x10^{-16}$ & $1.72x10^{-16}$\\
-	\hline
-\end{tabularx}
-\captionof{table}{Absorption Cross Section parameter fitting of ICG  dissolved in deionized water. Fitting done with linear regression on $\sigma$ vs. concentration data measured at $\lambda=780nm$ from  literature. \label{h2o780}}
-
-\begin{tabularx}{0.8\textwidth} { 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X | }
-	\hline
-	$\lambda_{peak} = 700nm$ & $K_D$ & $\sigma_M$ & $\sigma_D$\\
-	\hline
-	\cite{holzer} & $3.00x10^3$ & $2.29x10^{-16}$ & $25.68x10^{-16}$\\
-	\hline
-	\cite{mauerer} & $3.06x10^4$ & $8.89x10^{-16}$ & $3.93x10^{-16}$\\
-	\hline
-	Average & $9.31x10^3$ & $1.62x10^{-16}$ & $4.74x10^{-16}$\\
-	\hline
-\end{tabularx}
+\begin{table}
+	\centering
+	\begin{tabularx}{0.8\textwidth} { 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X | }
+		\hline
+		$\lambda_{peak} = 780nm$ & $K_D$ & $\sigma_M$ & $\sigma_D$\\
+		\hline
+		\cite{holzer} & $6.01x10^5$ & $9.29x10^{-16}$ & $2.28x10^{-16}$\\
+		\hline
+		\cite{landsman} & $1.03x10^5$ & $6.74x10^{-16}$ & $1.54x10^{-16}$\\
+		\hline
+		\cite{mauerer} & $1.40x10^5$ & $6.72x10^{-16}$ & $1.11x10^{-16}$\\
+		\hline
+		Average & $3.06x10^6$ & $7.94x10^{-16}$ & $1.72x10^{-16}$\\
+		\hline
+	\end{tabularx}
+	\captionof{table}{Absorption Cross Section parameter fitting of ICG  dissolved in deionized water. Fitting done with linear regression on $\sigma$ vs. concentration data measured at $\lambda=780nm$ from  literature. \label{h2o780}}
+\end{table}
+\begin{table}
+	\centering
+	\begin{tabularx}{0.8\textwidth} { 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X | }
+		\hline
+		$\lambda_{peak} = 700nm$ & $K_D$ & $\sigma_M$ & $\sigma_D$\\
+		\hline
+		\cite{holzer} & $3.00x10^3$ & $2.29x10^{-16}$ & $25.68x10^{-16}$\\
+		\hline
+		\cite{mauerer} & $3.06x10^4$ & $8.89x10^{-16}$ & $3.93x10^{-16}$\\
+		\hline
+		Average & $9.31x10^3$ & $1.62x10^{-16}$ & $4.74x10^{-16}$\\
+		\hline
+	\end{tabularx}
 	\captionof{table}{Absorption Cross Section parameter fitting of ICG  dissolved in deionized water. Fitting done with linear regression on $\sigma$ vs. concentration data at $\lambda=700nm$ from literature. \label{h2o700}}
-	
-\begin{tabularx}{0.8\textwidth} { 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X 
-	| >{\centering\arraybackslash}X | }
-	\hline
-	$\lambda_{peak}$ & $K_D$ & $\sigma_M$ & $\sigma_D$\\
-	\hline
-	$780nm$ & $3.22x10^4$ & $7.14x10^{-16}$ & $2.68x10^{-17}$\\
-	\hline
-	$700nm$ & $1.67x10^4$ & $2.833x10^{-16}$ & $6.28x10^{-16}$\\
-	\hline
-\end{tabularx}
-\captionof{table}{Absorption Cross Section parameter fitting of ICG  dissolved in heavy water. Fitting done with linear regression on $\sigma$ vs. concentration data at $\lambda=700nm$ from literature. \label{d20700780}}
+\end{table}	
+\begin{table}
+	\centering
+	\begin{tabularx}{0.8\textwidth} { 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X 
+		| >{\centering\arraybackslash}X | }
+		\hline
+		$\lambda_{peak}$ & $K_D$ & $\sigma_M$ & $\sigma_D$\\
+		\hline
+		$780nm$ & $3.22x10^4$ & $7.14x10^{-16}$ & $2.68x10^{-17}$\\
+		\hline
+		$700nm$ & $1.67x10^4$ & $2.833x10^{-16}$ & $6.28x10^{-16}$\\
+		\hline
+	\end{tabularx}
+	\captionof{table}{Absorption Cross Section parameter fitting of ICG  dissolved in heavy water. Fitting done with linear regression on $\sigma$ vs. concentration data at $\lambda=700nm$ from literature. \label{d20700780}}
+\end{table}
+\clearpage
+\subsubsection{ Photostability}
+The starting concentration and based on the data previously seen from \cite{hozer} and \cite{landsman} indicate that varying the concentration, ICG condition, and solvent will affect the storage life of the ICG solution. A table comparing these variables from\cite{landsman} is included below. 
+
+Data from \cite{saxena}(top right plot) compares two concentrations,  0.4mg/L and 1mg/L ICG in water. Measurements over time indicate that lower concentrations deteriorate at faster rates but will do so linearly based on the initial concentration of ICG. This is corroborated by \cite{hozer}(center right plot) in where the optical density of ICG in water is plotted against different dilutions made from a single stock solution. Initial measurements indicated by the circles. The stock solution was then left out for 4hrs in daylight and then prepared and measured at the same dilutions, indicated by the crosses in the plot. 
+
+Light exposure of the solution will also exasperate the degradation process, as seen in the lower right plot from \cite{saxena}.  Fresh ICG solution at a concentration of 1mg/L at room temperature (22C) kept in the dark and room light. The results indicate that light exposure increases the rate of which the \% remaining fluorescence reduces with time. 
 
 
-\subsection{ Fluorescence}
-Fluorescence of J-aggregate ICG
-The fluorescence  quantum distribution data from [5] shows that the distribution area decreases as the solution concentration increases. The absorption cross-section data from [5] is shown in the center figure for reference, though the fluorescence and absorption cross-sections were not recorded using the same sample concentrations. The fluorescence peak is around 805nm for concentrations with a 780nm absorption peak and around 810nm for concentrations with a 695nm and absorption peak. The fluorescence peak begins to shift at high concentrations when the absorption cross-section begins to turn dimeric after the shift to the 695nm absorption peak.  
+ICG is a "J-aggregate", which is a category of dyes that have a shift in absorption band to larger wavelengths in certain solvents. ICG when mixed into water and other solvents shifts to a center wavelength of 893nm over time and can be accelerated under high heat. 
+For high-concentration ICG solutions J-aggregate solutions are stable. Solutions are typically heat-treated, like done in \cite{rotermund}, and can be stored at room temperature for long periods. 
+
+
+\subsubsection{ Fluorescence}
+The fluorescence  quantum distribution data from \cite{philip} shows that the distribution area decreases as the solution concentration increases. The absorption cross-section data from \cite{philip} is shown in the center figure for reference, though the fluorescence and absorption cross-sections were not recorded using the same sample concentrations. The fluorescence peak is around 805nm for concentrations with a 780nm absorption peak and around 810nm for concentrations with a 695nm and absorption peak. The fluorescence peak begins to shift at high concentrations when the absorption cross-section begins to turn dimeric after the shift to the 695nm absorption peak.  
 
 The dimerization effects are attributed to:
 (1) The formation of weakly fluorescent ICG molecular aggregates at high concentrations
 (2) self-quenching
 (3) reabsorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra.
 
-The maximum fluorescence intensity in water is investigated in [6] and is achieved with a  ICG concentration of 2mg/L, as shown in the bottom plot. 
+The maximum fluorescence intensity in water is investigated in \cite{saxena} and is achieved with a  ICG concentration of 2mg/L, as shown in the bottom plot. 
 
-Preparation of J-aggregate ICG from [4]:
+Preparation of J-aggregate ICG from \cite{rotermund}:
 "The J-aggregates were formed by preparing a 1.5e-3M (1g/L)aqueous solution of ICG-NaI and heating it to 65 °C for a period of 32 h. The solution was then stored at room temperature. The J aggregates formed are very stable. They remain unchanged over several months. Before fluorescence measurements, the samples were diluted to a concentration of $3e-5mol/dm^-3 (27.12mg/L)$. At this concentration, the J aggregates formed remain stable over about 1 day before they detach to monomers, dimers and small oligomers.."
 
-From [4], plotted on the right is the absorption cross-section and fluorescence quantum distribution of J-aggregate ICG in water. There is no Stokes shift between the emission and absorption peak, but notably the excitation wavelength is at 834nm and the emission peak was measured to be 890nm. 
+From \cite{rotermund}, plotted on the right is the absorption cross-section and fluorescence quantum distribution of J-aggregate ICG in water. There is no Stokes shift between the emission and absorption peak, but notably the excitation wavelength is at 834nm and the emission peak was measured to be 890nm. 
 
 While it is possible to measure the fluorescence of the J-aggregate solution, the quantum yield is very low (roughly 3e-4) and strong light scattering does not lend to accurate measurements.
 
-\subsection{ Photostability}
-The starting concentration and based on the data previously seen from [1] and [2] indicate that varying the concentration, ICG condition, and solvent will affect the storage life of the ICG solution. A table comparing these variables from[2] is included below. 
-
-Data on the time it takes a certain concertation of freshly prepared ICG solution in water and heavy water to reach half of its initial fluorescence would be extremely valuable but does not exist.
-
-Data from [6](top right plot) compares two concentrations,  0.4mg/L and 1mg/L ICG in water. Measurements over time indicate that lower concentrations deteriorate at faster rates but will do so linearly based on the initial concentration of ICG. This is corroborated by [1](center right plot) in where the optical density of ICG in water is plotted against different dilutions made from a single stock solution. Initial measurements indicated by the circles. The stock solution was then left out for 4hrs in daylight and then prepared and measured at the same dilutions, indicated by the crosses in the plot. 
-
-Light exposure of the solution will also exasperate the degradation process, as seen in the lower right plot from [6].  Fresh ICG solution at a concentration of 1mg/L at room temperature (22C) kept in the dark and room light. The results indicate that light exposure increases the rate of which the \% remaining fluorescence reduces with time. 
-
-For high-concentration ICG solutions J-aggregate solutions are stable. Solutions are typically heat-treated, like done in [4], and can be stored at room temperature for long periods. 
-
-
 \begin{thebibliography}{icg}
+	\bibitem{Fang} One-step condensation synthesis and characterizations of indocyanine green
 	\bibitem{holzer}W. Holzer et al., "Photostability and thermal stability of indocyanine green," Journal of Photochemistry and Photobiology B: Biology,  vol. 47, no. 2-3, pp. 155-164, Dec. 1998.
-	
 	\bibitem{landsman}M. L. Landsman, G. Kwant, G. A. Mook, and W. G. Zijlstra, “Light-absorbing properties, stability, and spectral stabilization of indocyanine green,” Journal of Applied Physiology, vol. 40, no. 4, pp. 575–583, Apr. 1976.
-	
 	\bibitem{mauerer}M. Mauerer, A. Penzkofer, and J. Zweck, “Dimerization, J-aggregation and J-disaggregation dynamics of indocyanine green in heavy water,” Journal of Photochemistry and Photobiology B: Biology, vol. 47, no. 1, pp. 68–73, Nov. 1998.
-	
 	\bibitem{rotermund}F. Rotermund, R. Weigand, W. Holzer, M. Wittmann, and A. Penzkofer, “Fluorescence spectroscopic analysis of indocyanine green J aggregates in water,” Journal of Photochemistry and Photobiology A: Chemistry, vol. 110, no. 1, pp. 75–78, Oct. 1997.
-	
 	\bibitem{philip}R. Philip, A. Penzkofer, W. Bäumler, R. M. Szeimies, and C. Abels, “Absorption and fluorescence spectroscopic investigation of indocyanine green,” Journal of Photochemistry and Photobiology A: Chemistry, vol. 96, no. 1–3, pp. 137–148, May 1996.
-	
 	\bibitem{saxena}V. Saxena, M. Sadoqi, and J. Shao, “Degradation Kinetics of Indocyanine Green in Aqueous Solution,” Journal of Pharmaceutical Sciences, vol. 92, no. 10, pp. 2090–2097, Oct. 2003. 
+	\bibitem{farrakhova}D. Farrakhova et al., “Fluorescence imaging analysis of distribution of indocyanine green in molecular and nanoform in tumor model,” Photodiagnosis and Photodynamic Therapy, vol. 37, p. 102636, Mar. 2022, doi: 10.1016/j.pdpdt.2021.102636.
+	\bibitem{spartalis} E. Spartalis et al., “Intraoperative Indocyanine Green (ICG) Angiography for the Identification of the Parathyroid Glands: Current Evidence and Future Perspectives,” In Vivo, vol. 34, no. 1, pp. 23–32, 2020, doi: 10.21873/invivo.11741.
 \end{thebibliography}

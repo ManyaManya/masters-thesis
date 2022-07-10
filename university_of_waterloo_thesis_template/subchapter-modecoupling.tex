@@ -1,0 +1,49 @@
+\subsection{Mode Distribution}
+a) For a two-level atom, the coupling constant -- g -- [Eq. 2.6] scales inversely to this 'effective mode area'  [Eq. before 2.1]  (in the interaction energy term between atom and the field).  mode is like a Gaussian [given by the mode function f(x,y) ] the photon interacts more strongly if the atom is placed in the center of the mode.)\\
+effective mode area:
+\begin{equation}
+	A = \frac{\int dxdy|f_k(x, y)|^2}{|f_k(x_a, y_a)|^2}
+\end{equation}
+where $f_k(x,y)$ is the transverse mode function and $(x_a,y_a )$ is the position of the atom, is approximately constant in the range of the relevant longitudinal wave numbers\\
+coupling constant:
+\begin{equation}
+	g_\omega = \sqrt{\frac{\omega}{4\pi\epsilon\hbar c A}}d_{eg}
+\end{equation}
+(2.5) dipole interaction Hamiltonian 
+
+b) Apparently, this coupling constant term tells us parameters such as:\\
+i) how likely it is for an excitation in the emitter is released into the waveguide mode $\gamma_{1D}$, versus free-space $\gamma_0$. \cite{mazoni}
+\begin{equation}
+	\gamma_{1D} = 2\pi g^2_{\omega_A}  = \frac{\sigma_A}{2A}\gamma_0
+\end{equation}
+"where the second expression directly exhibits the scaling with the transverse extension of the waveguide. It is related to the atomic radiative cross section $\sigma_A = \frac{3\lambda^2}{2\pi}$. A natural lower bound on the transverse mode size is at about $A \sim (\frac{\lambda}{2})^2$. (lowest-order mode in hollow metallic wave- guide), implying a maximum achievable coupling ratio $\gamma_{1D}/\gamma_0 \sim 1$. In the range $\sigma_A \sim A$, one has a strong waveguide-atom coupling, which is manifested by the fact that the atom dissipates its energy equally into the waveguide and the free-space ‘‘lossy’’ modes."\cite{domokos}
+
+ii) optical depth (OD) for a single atom is (about) the ratio of $ (\gamma_{1D})/ (\gamma_{0})$ or the ratio of the cross-section area of the atom to that of the effective mode-area. 
+\begin{equation}
+	OD = \frac{\sigma_A}{\sigma_M} = \frac{\gamma_{1D}}{\gamma_0}
+\end{equation}
+
+c) OPTICAL DEPTH CALCULATIONS: Optical depth (OD) tells about how opaque the system is. Transmitted intensity goes by $T = exp(-OD)$. Normally, N emitters might scale linearly to give an optical depth ~$N*OD$. But now (due to its position) each emitter might have its own mode area.\\
+
+Examples of taking this into account (with maybe slightly different conventions) for atoms are mentioned in these two references\cite{bajcsy, hilton}: 
+\begin{equation}
+	OD_{fiber} = \int^L_0 \int^{r}_0 n(\rho, z) OD 2\pi \rho d\rho dL
+\end{equation}
+$r$ and $L$ represent the radius and length of the ensemble, which in the case of solution-filled HCPCF is the radius and length of the fiber. This assumes that the particulates outside of the core do not have a significant contribution.  If the distribution of molecules is take to be uniform along the fiber length and radius of the core, then the number density will be: 
+\begin{equation}
+	n(\rho, z) = \begin{cases}
+		0, &|z| > L/2\\
+		(1/L) (1/\rho), &|z| < L/2
+	\end{cases}
+\end{equation}
+
+\begin{thebibliography}{mode}
+	\bibitem{domokos} P. Domokos, P. Horak, and H. Ritsch, “Quantum description of light-pulse scattering on a single atom in waveguides,” Phys. Rev. A, vol. 65, no. 3, p. 033832, Mar. 2002, doi: 10.1103/PhysRevA.65.033832.
+	
+	\bibitem{solano} P. Solano et al., “Optical Nanofibers: a new platform for quantum optics,” vol. 66, 2017, pp. 439–505. doi: 10.1016/bs.aamop.2017.02.003.\\
+	
+	\bibitem{mazoni} M. T. Manzoni, “New Systems for Quantum Nonlinear Optics,”. 2017, Thesis, p. 39-40.
+	
+	\bibitem{bajcsy} M. Bajcsy et al., “Laser-cooled atoms inside a hollow-core photonic-crystal fiber,” Phys. Rev. A, vol. 83, no. 6, p. 063830, Jun. 2011, doi: 10.1103/PhysRevA.83.063830. \\
+	\bibitem{hilton} A. P. Hilton, C. Perrella, F. Benabid, B. M. Sparkes, A. N. Luiten, and P. S. Light, “High-efficiency cold-atom transport into a waveguide trap,” Phys. Rev. Applied, vol. 10, no. 4, p. 044034, Oct. 2018, doi: 10.1103/PhysRevApplied.10.044034. A
+\end{thebibliography}
