@@ -1,49 +1,24 @@
-\subsection{Mode Distribution}
-a) For a two-level atom, the coupling constant -- g -- [Eq. 2.6] scales inversely to this 'effective mode area'  [Eq. before 2.1]  (in the interaction energy term between atom and the field).  mode is like a Gaussian [given by the mode function f(x,y) ] the photon interacts more strongly if the atom is placed in the center of the mode.)\\
-effective mode area:
+\subsection{Particle-Mode Interaction and Optical Depth}
+Optical depth (OD) is a measurement of the opacity of a system, related to the transmitted intensity by $T = exp(-OD)$. With particles distributed throughout the fiber, the interaction between the beam and particles inside the fiber need to be taken into account. Similar considerations have been calculated for gas-filled HCPCF in cold-atom experiments \cite{bajcsy, hilton}.\\
+Beginning with a single particle interacting with the mode function of a waveguide, the strength of the particle interaction will depend on its position within the mode\cite{domokos, mazoni}. The effective mode area of the waveguide is then relevant only in relation to the position of the particle. 
 \begin{equation}
-	A = \frac{\int dxdy|f_k(x, y)|^2}{|f_k(x_a, y_a)|^2}
+	\sigma_M = \frac{\int dxdy|f_k(x, y)|^2}{|f_k(x_p, y_p)|^2}
 \end{equation}
-where $f_k(x,y)$ is the transverse mode function and $(x_a,y_a )$ is the position of the atom, is approximately constant in the range of the relevant longitudinal wave numbers\\
-coupling constant:
+where $f_k(x,y)$ is the transverse mode function and $f(x_p,y_p )$ is the position of the particle. In the case of a a Gaussian mode function (as would be in a HCPCF), the photon interaction with the particle will be stronger in the center of the mode and weak at the edges. The optical depth (OD) for a single particle the ratio of the scattering cross-section to that of the effective mode-area $OD =\frac{\sigma_0}{\sigma_M}$, so to find the optical depth over the entire ensemble the product of the number density of the sample and optical depth of each emitter is integrated over the volume :
 \begin{equation}
-	g_\omega = \sqrt{\frac{\omega}{4\pi\epsilon\hbar c A}}d_{eg}
+	\begin{aligned}
+		OD_{fiber} &= \int^{L'}_0 \int^{r'}_0 n(r, z)OD(2\pi r) dr dz 
+	\end{aligned}
 \end{equation}
-(2.5) dipole interaction Hamiltonian 
-
-b) Apparently, this coupling constant term tells us parameters such as:\\
-i) how likely it is for an excitation in the emitter is released into the waveguide mode $\gamma_{1D}$, versus free-space $\gamma_0$. \cite{mazoni}
+where $r'$ and $L'$ represent the radius and length of the ensemble.  While the fibers are fully liquid cladding and core, due to the low interaction and guidance of photons in the PC structure an approximation is made constricting the mode function strictly to the core . This simplifies the dimensions of the integration to just be the radius and length of the fiber. This assumes that the particulates outside of the core do not have a significant contribution.  If the distribution of molecules is take to be uniform along the fiber length and radius of the core, then the number density will be: 
 \begin{equation}
-	\gamma_{1D} = 2\pi g^2_{\omega_A}  = \frac{\sigma_A}{2A}\gamma_0
+	n(r, z) = \frac{N_{particle}}{V_{fiber}} = \frac{N_{particle}}{\pi r_{core}^2L_{fiber}} 
 \end{equation}
-"where the second expression directly exhibits the scaling with the transverse extension of the waveguide. It is related to the atomic radiative cross section $\sigma_A = \frac{3\lambda^2}{2\pi}$. A natural lower bound on the transverse mode size is at about $A \sim (\frac{\lambda}{2})^2$. (lowest-order mode in hollow metallic wave- guide), implying a maximum achievable coupling ratio $\gamma_{1D}/\gamma_0 \sim 1$. In the range $\sigma_A \sim A$, one has a strong waveguide-atom coupling, which is manifested by the fact that the atom dissipates its energy equally into the waveguide and the free-space ‘‘lossy’’ modes."\cite{domokos}
-
-ii) optical depth (OD) for a single atom is (about) the ratio of $ (\gamma_{1D})/ (\gamma_{0})$ or the ratio of the cross-section area of the atom to that of the effective mode-area. 
+The integral will simplify to
 \begin{equation}
-	OD = \frac{\sigma_A}{\sigma_M} = \frac{\gamma_{1D}}{\gamma_0}
+	\begin{aligned}
+		OD_{fiber} &= \int^{L_{fiber}}_0 \int^{r_{core}}_0  n(r_{core}, L_{fiber})\sigma_0 \frac{2}{\pi w_0^2}e^{-\frac{2r^2}{w_0^2}}(2\pi r) dr dz\\
+		&= N_{particle}\frac{\sigma_0}{\pi r^2_{core}}\big(1-e^{\frac{-2r_{core}^2}{w_0^2}}\big)
+	\label{OD}
+	\end{aligned}
 \end{equation}
-
-c) OPTICAL DEPTH CALCULATIONS: Optical depth (OD) tells about how opaque the system is. Transmitted intensity goes by $T = exp(-OD)$. Normally, N emitters might scale linearly to give an optical depth ~$N*OD$. But now (due to its position) each emitter might have its own mode area.\\
-
-Examples of taking this into account (with maybe slightly different conventions) for atoms are mentioned in these two references\cite{bajcsy, hilton}: 
-\begin{equation}
-	OD_{fiber} = \int^L_0 \int^{r}_0 n(\rho, z) OD 2\pi \rho d\rho dL
-\end{equation}
-$r$ and $L$ represent the radius and length of the ensemble, which in the case of solution-filled HCPCF is the radius and length of the fiber. This assumes that the particulates outside of the core do not have a significant contribution.  If the distribution of molecules is take to be uniform along the fiber length and radius of the core, then the number density will be: 
-\begin{equation}
-	n(\rho, z) = \begin{cases}
-		0, &|z| > L/2\\
-		(1/L) (1/\rho), &|z| < L/2
-	\end{cases}
-\end{equation}
-
-\begin{thebibliography}{mode}
-	\bibitem{domokos} P. Domokos, P. Horak, and H. Ritsch, “Quantum description of light-pulse scattering on a single atom in waveguides,” Phys. Rev. A, vol. 65, no. 3, p. 033832, Mar. 2002, doi: 10.1103/PhysRevA.65.033832.
-	
-	\bibitem{solano} P. Solano et al., “Optical Nanofibers: a new platform for quantum optics,” vol. 66, 2017, pp. 439–505. doi: 10.1016/bs.aamop.2017.02.003.\\
-	
-	\bibitem{mazoni} M. T. Manzoni, “New Systems for Quantum Nonlinear Optics,”. 2017, Thesis, p. 39-40.
-	
-	\bibitem{bajcsy} M. Bajcsy et al., “Laser-cooled atoms inside a hollow-core photonic-crystal fiber,” Phys. Rev. A, vol. 83, no. 6, p. 063830, Jun. 2011, doi: 10.1103/PhysRevA.83.063830. \\
-	\bibitem{hilton} A. P. Hilton, C. Perrella, F. Benabid, B. M. Sparkes, A. N. Luiten, and P. S. Light, “High-efficiency cold-atom transport into a waveguide trap,” Phys. Rev. Applied, vol. 10, no. 4, p. 044034, Oct. 2018, doi: 10.1103/PhysRevApplied.10.044034. A
-\end{thebibliography}

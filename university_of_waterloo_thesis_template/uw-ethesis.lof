@@ -5,22 +5,25 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces (a) primitive lattice vectors and (b) primitive reciprocal lattice vectors with first Brillouin zone (green) and irreducible Brillouin zone (red) depicted for a honeycomb lattice structure. \relax }}{7}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Band plot along the irreducible Brillouin zone for a honeycomb lattice with parameters -,-, . Solved for using Plane Wave Expansion(PWE) numerical method\cite {sukhoivanov}.\relax }}{9}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Side profile of collapsed cladding 1550HC fiber running the fiber splicer with varying current strength and duration. \relax }}{17}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Variation between fibers using splicer settings 70ms 25ms \relax }}{17}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Fiber transmission experimental set-up.\relax }}{18}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The transmission of heavy water(green) and regular water(blue) is shown for slabs of thickness ranging from 1cm to 8cm in increments of 1cm using absorption data recorded by \cite {kedenburg}. \relax }}{19}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Transmission of H${}_2$O and D${}_2$O in (a)selectively-filled 800nm hollow-core fiber.\relax }}{21}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Modeshape of 1550 hollow-core fiber filled with (a)air (b)heavy water (c)distilled water. Fiber filled with heavy water maintains a Gaussian profile while the fiber with regular distilled water shows some distortion.\relax }}{22}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Transmission of H${}_2$O and D${}_2$O in fully-filed 1550nm hollow-core fiber.\relax }}{22}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces REPLACE Chiralities of CNTs with red dots indicating metallic and open dots \cite {dresselhaus}. \relax }}{25}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces REPLACE Bands for (a)(c)Metallic and (b)(d)Semiconducting CNTs and their energy band gaps \cite {yamashita}\relax }}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Chiralities of CNTs with red dots indicating metallic and open dots Calculated gap energies between mirror-image spikes in density of states for $\gamma = 2.75$ eV. For (solid circles) metallic and (open circles) semiconducting, and (double circles) armchair CNTs. \cite {kataura}. \relax }}{28}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Group characteristics of CNTs colored by (a)chiral angle and (b)diameter \relax }}{32}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Side profile of collapsed cladding 1550HC fiber running the fiber splicer with varying current strength and duration. \relax }}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Variation between fibers using splicer settings 70ms 25ms \relax }}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fiber transmission experimental set-up.\relax }}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The transmission of heavy water(green) and regular water(blue) is shown for slabs of thickness ranging from 1cm to 8cm in increments of 1cm using absorption data recorded by \cite {kedenburg}. \relax }}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Transmission of H${}_2$O and D${}_2$O in (a)selectively-filled 800nm hollow-core fiber.\relax }}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Modeshape of 1550 hollow-core fiber filled with (a)air (b)heavy water (c)distilled water. Fiber filled with heavy water maintains a Gaussian profile while the fiber with regular distilled water shows some distortion.\relax }}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Transmission of H${}_2$O and D${}_2$O in fully-filed 1550nm hollow-core fiber.\relax }}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces REPLACE Chiralities of CNTs with red dots indicating metallic and open dots \cite {dresselhaus}. \relax }}{21}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces REPLACE Bands for (a)(c)Metallic and (b)(d)Semiconducting CNTs and their energy band gaps \cite {yamashita}\relax }}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Chiralities of CNTs with red dots indicating metallic and open dots Calculated gap energies between mirror-image spikes in density of states for $\gamma = 2.75$ eV. For (solid circles) metallic and (open circles) semiconducting, and (double circles) armchair CNTs. \cite {kataura}. \relax }}{24}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Group characteristics of CNTs colored by (a)chiral angle and (b)diameter \relax }}{28}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Hollow-core fiber bandgap overlayed on CNT emission vs. excitation wavelengths \relax }}{36}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 1550HC CNTs \relax }}{37}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Depiction of the Homo-Lumo gap in organic semiconductors and the transition occurring between ground and excited states. (b) The chemical structure of ICG provided by MP Biomedicals. \relax }}{38}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D2O(a) and H2O(b) . Data from (cite) was fitted using a linear regression model. \relax }}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Hollow-core fiber bandgap overlayed on CNT emission vs. excitation wavelengths \relax }}{30}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 1550HC CNTs \relax }}{31}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces (a) Depiction of the Homo-Lumo gap in organic semiconductors and the transition occurring between ground and excited states. (b) The chemical structure of ICG provided by MP Biomedicals. \relax }}{33}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D2O(a) and H2O(b) . Data from (cite) was fitted using a linear regression model. \relax }}{34}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Degradation of a 4.5ppm initial concentration sample after 4hrs of light exposure reduced to a 2ppm concentration.\relax }}{37}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Maximum fluorescence and maximum absorption spectrum of 4.5ppm initial concentration sample.\relax }}{38}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Absorption spectrum of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b) 4 ppm concentration in core and cladding of 1550nm HCPCF. \relax }}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces (a) The maximum fractional fluorescence is plotted against excitation wavelength for a 4ppm ICG sample in a 1cm piece of 1550nm HCPCF and 1cm cuvette. The maximum fractional fluorescence of the ICG in the cuvette is only 4\% of that measured in fiber. (b) The optical density at each excitation wavelength. The fractional fluorescence spectrum of the 4ppm ICG solution in (c) 1550nm HCPCF (d) a cuvette. \relax }}{42}{figure.caption.37}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Schematic of quarter wavelength stack\relax }}{49}{figure.caption.42}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Schematic of quarter wavelength stack\relax }}{49}{figure.caption.41}%

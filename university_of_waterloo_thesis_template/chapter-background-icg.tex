@@ -17,6 +17,20 @@ Due to the difficultly in isolating single-chirality solutions of CNTs, as outli
 The following section details the the optical properties of ICG and measurements of the optical properties when confined in HCPCF. 
 
 \subsubsection{ Absorption Cross-Section}
+The absorption is largely bimodal, with peak excitation at 780nm and 700nm, but transforms into a monomeric distribution at 780nm at low concentrations and 700nm at high concentrations. 
+\begin{figure}[h]
+	\centering
+	\foreach \x in {D2O_acs, H2O_acs}
+	{ 
+		\begin{subfigure}[b]{0.49\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{ Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D2O(a) and H2O(b) .  Data from (cite) was fitted using a linear regression model. }
+	\label{fig:icg abs plots}
+\end{figure}
 Due to the chemical formation of ICG, the absorption of the molecule when dissolved in a solvent is highly concentration-dependent. ICG is made up of monomers, which are a type of molecule that can react with other monomers to form polymer chains. In the case of ICG, its monomers react with each other to form dimers, a chain of two join monomers. With higher concentrations, monomers are closer in proximity and the molecules are more likely shift from monomers to dimers which are less likely to be excited and shift the center absorption wavelength. The concentration of monomer $M$ to dimmers $D$ is governed by the equilibrium reaction
 \begin{equation}
 	M+M\rightleftarrows D
@@ -35,21 +49,7 @@ Where $K_D$ is the dimmerization constant . Written in terms of concentration $C
 	\sigma = x_M \sigma_M + x_D \sigma_D = \sigma_M - x_D(\sigma_M - \sigma_D)
 	\label{abc}
 \end{equation}
-Plugging (\ref{xd}) into (\ref{abc}), remaining parameters could be found by doing a linear regression fit to absorption cross-section vs. concentration data from literature and the expected absorption cross-section could be calculated for any concentration. For ICG dissolved in H2O, the existing literature has some variation and so the upper/lower bounds and average were taken, while little data was available for ICG dissolved in D2O. The behavior in H2O and D2O are quite similar and are plotted in Fig\ref{fig:icg abs plots}. At lower concentrations the absorption cross-section is slightly greater for D2O than H2O, with the reverse for high concentrations.
-\begin{figure}[h]
-	\centering
-	\foreach \x in {D2O_acs, H2O_acs}
-	{ 
-	\begin{subfigure}[b]{0.49\textwidth}
-		\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
-		\caption{}
-	\end{subfigure}
-	\hfil
-   }
-   \caption{ Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D2O(a) and H2O(b) .  Data from (cite) was fitted using a linear regression model. }
-	\label{fig:icg abs plots}
-\end{figure}
-The absorption is largely bimodal, with peak excitation at 780nm and 700nm, but transforms into a monomeric distribution at 780nm at low concentrations and 700nm at high concentrations. 
+Plugging (\ref{xd}) into (\ref{abc}), remaining parameters could be found by doing a linear regression fit to absorption cross-section vs. concentration data from literature and the expected absorption cross-section could be calculated for any concentration. For ICG dissolved in H2O, the existing literature has some variation and so the upper/lower bounds and average were taken, while little data was available for ICG dissolved in D2O. The behavior in H2O and D2O are quite similar and are plotted in Fig\ref{fig:icg abs plots}. At lower concentrations the absorption cross-section is slightly greater for D2O than H2O, with the reverse for high concentrations. 
 \clearpage
 \begin{table}
 	\centering
@@ -109,43 +109,68 @@ The absorption is largely bimodal, with peak excitation at 780nm and 700nm, but 
 	\captionof{table}{Absorption Cross Section parameter fitting of ICG  dissolved in heavy water. Fitting done with linear regression on $\sigma$ vs. concentration data at $\lambda=700nm$ from literature. \label{d20700780}}
 \end{table}
 \clearpage
+
 \subsubsection{ Photostability}
-The starting concentration and based on the data previously seen from \cite{hozer} and \cite{landsman} indicate that varying the concentration, ICG condition, and solvent will affect the storage life of the ICG solution. A table comparing these variables from\cite{landsman} is included below. 
-
-Data from \cite{saxena}(top right plot) compares two concentrations,  0.4mg/L and 1mg/L ICG in water. Measurements over time indicate that lower concentrations deteriorate at faster rates but will do so linearly based on the initial concentration of ICG. This is corroborated by \cite{hozer}(center right plot) in where the optical density of ICG in water is plotted against different dilutions made from a single stock solution. Initial measurements indicated by the circles. The stock solution was then left out for 4hrs in daylight and then prepared and measured at the same dilutions, indicated by the crosses in the plot. 
-
-Light exposure of the solution will also exasperate the degradation process, as seen in the lower right plot from \cite{saxena}.  Fresh ICG solution at a concentration of 1mg/L at room temperature (22C) kept in the dark and room light. The results indicate that light exposure increases the rate of which the \% remaining fluorescence reduces with time. 
-
-
-ICG is a "J-aggregate", which is a category of dyes that have a shift in absorption band to larger wavelengths in certain solvents. ICG when mixed into water and other solvents shifts to a center wavelength of 893nm over time and can be accelerated under high heat. 
-For high-concentration ICG solutions J-aggregate solutions are stable. Solutions are typically heat-treated, like done in \cite{rotermund}, and can be stored at room temperature for long periods. 
+At high concentrations, ICG behaves as a  "J-aggregate", a category of dyes that have a shift in absorption band to larger wavelengths in certain solvents. When mixed into water and other solvents, ICG shifts over time to a center wavelength of 893nm. This process can be accelerated under high heat in high-concentration (in the range of 1000ppm solutions) forms \cite{rotermund},  J-aggregates can be stored at room temperature for several months. However, at such a state the dye will be too optically dense to observe any optical excitation and when diluted to perform such measurements, the J-aggregates will begin to detach into smaller molecules within 24hrs.  The effects of dye concentration of storage life in aqueous solutions becomes a tricky balance at single-digit ppm concentrations, where the fluorescence intensity of the dye is at its greatest but with degradation to undetectable levels occurring in a couple of hours at best if in optimal storage conditions\cite{landsman, saxena}. The rate of deterioration occurs so linearly based on the initial concentration of ICG\cite{holzer}, but the amount of light exposure of the solution will also exasperate the degradation rate\cite{saxena}. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{./Figures/ICG/abc_time.png}
+	\caption{Degradation of a 4.5ppm initial concentration sample after 4hrs of light exposure reduced to a 2ppm concentration.}
+	\label{fig:icgphoto}
+\end{figure}
+\clearpage
 
 
 \subsubsection{ Fluorescence}
-The fluorescence  quantum distribution data from \cite{philip} shows that the distribution area decreases as the solution concentration increases. The absorption cross-section data from \cite{philip} is shown in the center figure for reference, though the fluorescence and absorption cross-sections were not recorded using the same sample concentrations. The fluorescence peak is around 805nm for concentrations with a 780nm absorption peak and around 810nm for concentrations with a 695nm and absorption peak. The fluorescence peak begins to shift at high concentrations when the absorption cross-section begins to turn dimeric after the shift to the 695nm absorption peak.  
+The peak emission wavelength for ICG varies within 800nm-820nm\cite{philip, saxena} when excited at 780nm and decreases as solution concentration increases, The dimmerization effects are attributed to (a) The formation of weakly fluorescent ICG molecular aggregates at high concentrations (b) self-quenching and (c) re-absorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra. In the J-aggregate form  the excitation wavelength shifts to 834nm and the emission peak at 890nm, however, low quantum yield and strong light scattering does not lend to accurate measurements\cite{rotermund}.  
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.6\textwidth]{./Figures/ICG/wl_fluor_absp.png}
+	\caption{ Maximum fluorescence and maximum absorption spectrum of 4.5ppm initial concentration sample.}
+	\label{fig:i}
+\end{figure}
+\clearpage
+\subsection{Fiber Absorption Effects}
+For calculations of optical density within the HCPCF, the core radius will be  $r_{core} = 5\pm 0.05\mu m$ with beam waist $w_0 = 4.5 \pm 0.05\mu m$ for 1550nm HCPCF and $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$. For ICG dispersed in water, molecule aggregate radii have been measured between $2nm - 200nm$ \cite{dedora} with J-aggregates forming at radii $>50nm$\cite{weigand}. Due to the low concentration samples of dye used in out experiments, the lower range of molecule diameter is used, meeting the Raleigh scattering approximation condition $\frac{2\pi r}{\lambda} <<1$, the scattering cross-section is 
+\begin{equation}
+	\sigma_0 = \frac{2\pi^5 (2r_{particle})^6}{3\lambda^4}(\frac{N^2 -1}{N^2+2})^2
+	\label{raleigh}
+\end{equation}
+where $N=\frac{n_{particle}}{n_{solvent}}$. Applying the parameters above and  (\ref{raleigh}) to (\ref{OD}) the estimated concentration of ICG molecules for optically dense medium ($OD_{fiber}=1$) has a range of $N_{particle} = 1.5\times 10^8 \sim 2.0\times 10^{14}$ molecules and $N_{particle} = 8.2\times 10^7 \sim 1.1\times 10^{14}$ molecules for 1550nm and 800nm HCPCF respectively varying the ICG aggregate radii within the approximation condition. \\
 
-The dimerization effects are attributed to:
-(1) The formation of weakly fluorescent ICG molecular aggregates at high concentrations
-(2) self-quenching
-(3) reabsorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra.
+Low-concentration samples of dye were prepared and filled a 800nm HCPCF core and 1550nm HCPCF core and cladding. The absorption spectrum of the dye was detected, though muddled by additional losses from the fiber, as shown in Fig. \ref{fig:icg_absp}. Additionally, there is an observed 18nm shift in the peak absorption from 778nm to 796nm in the 1550nm bandgap-shifted liquid-filled fiber, while the 800mn liquid-core fiber has an insignificant 4nm shift in peak from 775nm to 771nm.  
+\begin{figure}[!htb]
+	\centering
+	\foreach \x in {absp_800hc, absp_1550hc}
+	{ 
+		\begin{subfigure}[b]{0.49\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{ Absorption spectrum of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b)  4 ppm concentration in core and cladding of 1550nm HCPCF. }
+	\label{fig:icg_absp}
+\end{figure}
+\clearpage
+Fluorescence was guided in the bandgap-shifted 1550nm HCPCF, but not in the 800nm core-filled HCPCF. It is suspected that the narrow bandgap of the 800nm HCPCF in combination with lower refractive index contrast cam into play; the absorption loss in the waveguide reduced excitation and the re-absorption effects of the overlapping excitation-emission spectra were greater than the number of emitted photons. \\
+For the 4ppm ICG sample the ratio of emitted photons to the input number of photons at the excitation wavelength are compared in Fig. \ref{fig:icg_fluor}, with the fraction of fluorescence in 1550nm HCPCF $\sim35$x greater than that measured in free-space.
+\begin{figure}[!htb]
+	\centering
+	\foreach \x in {diff_max_pl, OD, fluor_1550hc, fluor_cuvette}
+	{ 
+		\begin{subfigure}[b]{0.47\textwidth}
+			\includegraphics[width=7cm,height=5.5cm]{./Figures/ICG/\x.png}
+			\caption{}
+		\end{subfigure}
+	}
+	\caption{(a) The maximum fractional fluorescence is plotted against excitation wavelength for a 4ppm ICG sample in a 1cm piece of 1550nm HCPCF and 1cm cuvette. The maximum fractional fluorescence of the ICG in the cuvette is only 4\% of that measured in fiber. (b)  The optical density at each excitation wavelength. The fractional fluorescence spectrum of the 4ppm ICG solution in (c) 1550nm HCPCF (d) a cuvette. }
+	\label{fig:icg_fluor}
+\end{figure}
 
-The maximum fluorescence intensity in water is investigated in \cite{saxena} and is achieved with a  ICG concentration of 2mg/L, as shown in the bottom plot. 
-
-Preparation of J-aggregate ICG from \cite{rotermund}:
-"The J-aggregates were formed by preparing a 1.5e-3M (1g/L)aqueous solution of ICG-NaI and heating it to 65 °C for a period of 32 h. The solution was then stored at room temperature. The J aggregates formed are very stable. They remain unchanged over several months. Before fluorescence measurements, the samples were diluted to a concentration of $3e-5mol/dm^-3 (27.12mg/L)$. At this concentration, the J aggregates formed remain stable over about 1 day before they detach to monomers, dimers and small oligomers.."
-
-From \cite{rotermund}, plotted on the right is the absorption cross-section and fluorescence quantum distribution of J-aggregate ICG in water. There is no Stokes shift between the emission and absorption peak, but notably the excitation wavelength is at 834nm and the emission peak was measured to be 890nm. 
-
-While it is possible to measure the fluorescence of the J-aggregate solution, the quantum yield is very low (roughly 3e-4) and strong light scattering does not lend to accurate measurements.
-
-\begin{thebibliography}{icg}
-	\bibitem{Fang} One-step condensation synthesis and characterizations of indocyanine green
-	\bibitem{holzer}W. Holzer et al., "Photostability and thermal stability of indocyanine green," Journal of Photochemistry and Photobiology B: Biology,  vol. 47, no. 2-3, pp. 155-164, Dec. 1998.
-	\bibitem{landsman}M. L. Landsman, G. Kwant, G. A. Mook, and W. G. Zijlstra, “Light-absorbing properties, stability, and spectral stabilization of indocyanine green,” Journal of Applied Physiology, vol. 40, no. 4, pp. 575–583, Apr. 1976.
-	\bibitem{mauerer}M. Mauerer, A. Penzkofer, and J. Zweck, “Dimerization, J-aggregation and J-disaggregation dynamics of indocyanine green in heavy water,” Journal of Photochemistry and Photobiology B: Biology, vol. 47, no. 1, pp. 68–73, Nov. 1998.
-	\bibitem{rotermund}F. Rotermund, R. Weigand, W. Holzer, M. Wittmann, and A. Penzkofer, “Fluorescence spectroscopic analysis of indocyanine green J aggregates in water,” Journal of Photochemistry and Photobiology A: Chemistry, vol. 110, no. 1, pp. 75–78, Oct. 1997.
-	\bibitem{philip}R. Philip, A. Penzkofer, W. Bäumler, R. M. Szeimies, and C. Abels, “Absorption and fluorescence spectroscopic investigation of indocyanine green,” Journal of Photochemistry and Photobiology A: Chemistry, vol. 96, no. 1–3, pp. 137–148, May 1996.
-	\bibitem{saxena}V. Saxena, M. Sadoqi, and J. Shao, “Degradation Kinetics of Indocyanine Green in Aqueous Solution,” Journal of Pharmaceutical Sciences, vol. 92, no. 10, pp. 2090–2097, Oct. 2003. 
-	\bibitem{farrakhova}D. Farrakhova et al., “Fluorescence imaging analysis of distribution of indocyanine green in molecular and nanoform in tumor model,” Photodiagnosis and Photodynamic Therapy, vol. 37, p. 102636, Mar. 2022, doi: 10.1016/j.pdpdt.2021.102636.
-	\bibitem{spartalis} E. Spartalis et al., “Intraoperative Indocyanine Green (ICG) Angiography for the Identification of the Parathyroid Glands: Current Evidence and Future Perspectives,” In Vivo, vol. 34, no. 1, pp. 23–32, 2020, doi: 10.21873/invivo.11741.
-\end{thebibliography}
+For the $L_{fiber}=1cm$  piece of fiber, the number of molecules contained in a perfectly filled core will be
+\begin{equation}
+	N_{particle} = M_{ICG}*C*V_{fiber}=\frac{1 mol}{774.98g}*\frac{4mg}{1L}*\pi(5\mu m)^2(1cm) = 2.441\times10^9 molecules
+\end{equation} 
+Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2nm$.  
+\clearpage
