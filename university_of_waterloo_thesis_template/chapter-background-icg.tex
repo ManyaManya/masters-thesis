@@ -17,7 +17,7 @@ Due to the difficultly in isolating single-chirality solutions of CNTs, as outli
 The following section details the the optical properties of ICG and measurements of the optical properties when confined in HCPCF. 
 
 \subsubsection{ Absorption Cross-Section}
-The absorption is largely bimodal, with peak excitation at 780nm and 700nm, but transforms into a monomeric distribution at 780nm at low concentrations and 700nm at high concentrations. 
+ICG absorbs wavelengths between 600-900nm. The absorption is largely bimodal, with the greatest excitation occurring at 780nm and 700nm, but transforms into a monomeric distribution at 780nm at low concentrations and 700nm at high concentrations. 
 \begin{figure}[h]
 	\centering
 	\foreach \x in {D2O_acs, H2O_acs}
@@ -122,69 +122,18 @@ At high concentrations, ICG behaves as a  "J-aggregate", a category of dyes that
 
 
 \subsubsection{ Fluorescence}
-The peak emission wavelength for ICG varies within 800nm-820nm\cite{philip, saxena} when excited at 780nm and decreases as solution concentration increases, The dimmerization effects are attributed to (a) The formation of weakly fluorescent ICG molecular aggregates at high concentrations (b) self-quenching and (c) re-absorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra. In the J-aggregate form  the excitation wavelength shifts to 834nm and the emission peak at 890nm, however, low quantum yield and strong light scattering does not lend to accurate measurements\cite{rotermund}.  
+Photoluminescence in the dye is emitted in the range of 750-900nm. overlapping with the absorption spectrum. The peak emission wavelength for ICG varies within 800nm-820nm\cite{philip, saxena} when excited at 780nm and decreases as solution concentration increases, The dimmerization effects are attributed to (a) The formation of weakly fluorescent ICG molecular aggregates at high concentrations (b) self-quenching and (c) re-absorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra. In the J-aggregate form  the excitation wavelength shifts to 834nm and the emission peak at 890nm, however, low quantum yield and strong light scattering does not lend to accurate measurements\cite{rotermund}.  
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.6\textwidth]{./Figures/ICG/wl_fluor_absp.png}
-	\caption{ Maximum fluorescence and maximum absorption spectrum of 4.5ppm initial concentration sample.}
-	\label{fig:i}
-\end{figure}
-At the maximum absorption wavelength the power is increased to find the maximum faction of fluorescence and saturation point of the absorption. 
-\begin{figure}[!htb]
-	\centering
-	\foreach \x in {power_fl_absp, fl_absp}
+	\foreach \x in {wl_fluor, wl_fluor_absp}
 	{ 
 		\begin{subfigure}[b]{0.47\textwidth}
 			\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
 			\caption{}
 		\end{subfigure}
 	}
-	\caption{(a) QY=0.05\% (b) }
-	\label{fig:icg_power}
+	\caption{(a)Fluoresce spectrum of 4.5ppm sample (b) Maximum fluorescence and maximum absorption spectrum of 4.5ppm initial concentration sample}
+	\label{fig:icg_spec}
 \end{figure}
 \clearpage
-\subsection{Fiber Absorption Effects}
-For calculations of optical density within the HCPCF, the core radius will be  $r_{core} = 5\pm 0.05\mu m$ with beam waist $w_0 = 4.5 \pm 0.05\mu m$ for 1550nm HCPCF and $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$. For ICG dispersed in water, molecule aggregate radii have been measured between $2nm - 200nm$ \cite{dedora} with J-aggregates forming at radii $>50nm$\cite{weigand}. Due to the low concentration samples of dye used in out experiments, the lower range of molecule diameter is used, meeting the Raleigh scattering approximation condition $\frac{2\pi r}{\lambda} <<1$, the scattering cross-section is 
-\begin{equation}
-	\sigma_0 = \frac{2\pi^5 (2r_{particle})^6}{3\lambda^4}(\frac{N^2 -1}{N^2+2})^2
-	\label{raleigh}
-\end{equation}
-where $N=\frac{n_{particle}}{n_{solvent}}$. Applying the parameters above and  (\ref{raleigh}) to (\ref{OD}) the estimated concentration of ICG molecules for optically dense medium ($OD_{fiber}=1$) has a range of $N_{particle} = 1.5\times 10^8 \sim 2.0\times 10^{14}$ molecules and $N_{particle} = 8.2\times 10^7 \sim 1.1\times 10^{14}$ molecules for 1550nm and 800nm HCPCF respectively varying the ICG aggregate radii within the approximation condition. \\
 
-Low-concentration samples of dye were prepared and filled a 800nm HCPCF core and 1550nm HCPCF core and cladding. The absorption spectrum of the dye was detected, though muddled by additional losses from the fiber, as shown in Fig. \ref{fig:icg_absp}. Additionally, there is an observed 18nm shift in the peak absorption from 778nm to 796nm in the 1550nm bandgap-shifted liquid-filled fiber, while the 800mn liquid-core fiber has an insignificant 4nm shift in peak from 775nm to 771nm.  
-\begin{figure}[!htb]
-	\centering
-	\foreach \x in {absp_800hc, absp_1550hc}
-	{ 
-		\begin{subfigure}[b]{0.49\textwidth}
-			\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-		\hfil
-	}
-	\caption{ Absorption spectrum of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b)  4 ppm concentration in core and cladding of 1550nm HCPCF. }
-	\label{fig:icg_absp}
-\end{figure}
-\clearpage
-Fluorescence was guided in the bandgap-shifted 1550nm HCPCF, but not in the 800nm core-filled HCPCF. It is suspected that the narrow bandgap of the 800nm HCPCF in combination with lower refractive index contrast cam into play; the absorption loss in the waveguide reduced excitation and the re-absorption effects of the overlapping excitation-emission spectra were greater than the number of emitted photons. \\
-For the 4ppm ICG sample the ratio of emitted photons to the input number of photons at the excitation wavelength are compared in Fig. \ref{fig:icg_fluor}, with the fraction of fluorescence in 1550nm HCPCF $\sim35$x greater than that measured through the cuvette.
-\begin{figure}[!htb]
-	\centering
-	\foreach \x in {diff_max_pl, OD, fluor_1550hc, fluor_cuvette}
-	{ 
-		\begin{subfigure}[b]{0.47\textwidth}
-			\includegraphics[width=7cm,height=5.5cm]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-	}
-	\caption{(a) The maximum fractional fluorescence is plotted against excitation wavelength for a 4ppm ICG sample in a 1cm piece of 1550nm HCPCF and 1cm cuvette. The maximum fractional fluorescence of the ICG in the cuvette is only 4\% of that measured in fiber. (b)  The optical density at each excitation wavelength. The fractional fluorescence spectrum of the 4ppm ICG solution in (c) 1550nm HCPCF (d) a cuvette. }
-	\label{fig:icg_fluor}
-\end{figure}
-
-For the $L_{fiber}=1cm$  piece of fiber, the number of molecules contained in a perfectly filled core will be
-\begin{equation}
-	N_{particle} = M_{ICG}*C*V_{fiber}=\frac{1 mol}{774.98g}*\frac{4mg}{1L}*\pi(5\mu m)^2(1cm) = 2.441\times10^9 molecules
-\end{equation} 
-Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2nm$.  
-
-\clearpage
