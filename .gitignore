@@ -6,4 +6,4 @@
 !.gitignore
 !*.tex
 !**/*.tex
-**/Figures
+!**/Figures
