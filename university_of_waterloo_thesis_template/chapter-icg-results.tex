@@ -45,7 +45,7 @@ For 800nm core-filled HCPCF, ICG solutions were prepared with H${}_2$O and  D${}
 	\caption{(a) The maximum fraction of fluorescence is plotted against excitation wavelength for a 4ppm ICG sample in a 1cm piece of 1550nm HCPCF and 1cm cuvette. The maximum fraction of fluorescence of the ICG in the cuvette is only 4\% of that measured in fiber. (b)  The optical density at each excitation wavelength. The fraction of fluorescence spectrum of the 4ppm ICG solution in (c) 1550nm HCPCF (d) a cuvette. }
 	\label{fig:icg_fluor}
 \end{figure}
-
+\clearpage
 At the maximum absorption wavelength, the fraction of fluorescence and output power at the excitation wavelength are measured as a function of the input power, shown in \ref{fig:icg_fluor_800hc}c. The fraction of fluorescence peaks at an input power of$50\mu W$ and slowly decreases linearly with a rate of -- while the output power increases logarithmically and appears to approaching a limit on the transmission. Overall, the collection efficiency is of $5.1\times10^{-4}\%$ in the 800nm HCPCF  and based on its trend expect that the collection efficiency of the 1550nm HCPCF is not much greater than the $0.014\%$ measured at $\lambda_{ex}=740$nm, or, for milliwatts of pump power expect to get nanowatts at the emission frequency.
 \begin{figure}[!htb]
 	\centering
@@ -68,18 +68,22 @@ At the maximum absorption wavelength, the fraction of fluorescence and output po
 	\label{raleigh}
 \end{equation}
 where $N=\frac{n_{particle}}{n_{solvent}}$. Applying the parameters above and  (\ref{raleigh}) to (\ref{OD}) the estimated concentration of ICG molecules for optically dense medium ($OD_{fiber}=1$) has a range of $N_{particle} = 1.5\times 10^8 \sim 2.0\times 10^{14}$ molecules and $N_{particle} = 8.2\times 10^7 \sim 1.1\times 10^{14}$ molecules for 1550nm and 800nm HCPCF respectively varying the ICG aggregate radii within the approximation condition. \\
-
-For calculations of optical density with ICG molecules in the HCPCF, the core radius will be  $r_{core} = 5\pm 0.05\mu m$ with beam waist $w_0 = 4.5 \pm 0.05\mu m$ for 1550nm HCPCF and $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$.\\
-For the $L_{fiber}=1cm$  piece of fiber, the number of molecules contained in a perfectly filled core will be
+\begin{figure}[!htb]
+	\centering
+	\foreach \x \y \z in {ICG_OD/7/5.2, OD_rate/7/5}
+	{ 
+		\begin{subfigure}[b]{0.47\textwidth}
+			\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
+			\caption{}
+		\end{subfigure}
+	}
+	\caption{ (a) (b) $2.28cm$ $0.44(\frac{OD}{cm})$ $0.78cm$ $1.27(\frac{OD}{cm})$}
+	\label{fig:icg_od}
+\end{figure}
+For calculations of optical density with ICG molecules in the  1550nm HCPCF, the core radius is taken as $r_{core} = 5\pm 0.05\mu m$ with beam waist $w_0 = 4.5 \pm 0.05\mu m$. For this $L_{fiber}=1cm$  piece of fiber, the number of molecules contained in a perfectly filled core is expected to be
 \begin{equation}
 	N_{particle} = M_{ICG}*C*V_{fiber}=\frac{1 mol}{774.98g}*\frac{4mg}{1dm^3}*\pi(5\mu m)^2(1cm) = 2.441\times10^9 molecules
 \end{equation} 
-Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2nm$.  
-
-For the $L_{fiber}=2cm$  piece of fiber, the number of molecules contained in a perfectly filled core will be
-\begin{equation}
-	N_{particle} = M_{ICG}*C*V_{fiber}=\frac{1 mol}{774.98g}*\frac{3.7mg}{1dm^3}*\pi(3.75\mu m)^2(2cm) = 2.54×10^9 molecules
-\end{equation} 
-Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2nm$.  
+Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2$nm.  Carrying out the same calculations for the $L_{fiber}=2cm$  800nm HCPCF, the number of molecules contained in a perfectly filled core will be $N_{particle}=2.54\times10^9$.  The fiber has a core radius $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$ and using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor_800hc}a, the estimated radius of the aggregate ICG molecules is $r_{particle} = 11.5 \pm 0.26$nm. These molecule radii are well in agreement, but since the 800nm HCPCF ICG solution is a slightly lower concentration the average $r_{particle}$ is expected to form slightly smaller aggregates.
 
 \clearpage
