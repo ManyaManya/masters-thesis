@@ -72,22 +72,25 @@ The general relationship between the polarization and electric field of a materi
 \end{equation}
 
 where is the linear susceptibility and are the second and third order susceptibility. Due to the inversion symmetry of the CNT’s structure, the second-order susceptibility is zero. However, a large third-order nonlinearity in CNTs has been measured \cite{martinez} and is theorized to be a product of the one dimensional motion of the delocalized $\pi$-band electrons at a fixed lattice ion configuration \cite{margulis}.  The third-order nonlinearity is responsible for the saturable absorption of a material as well as the nonlinear Kerr effect.
-The refractive index as defined in Eq.(9) is composed of the real part of the third-order susceptibility with I defining the optical intensity and  as the optical angular frequency, and  is the nonlinear refractive index.
+The refractive index as defined (\ref{eq:refractive_index}) is composed of the real part of the third-order susceptibility with $I$ defining the optical intensity and  as the optical angular frequency, and  is the nonlinear refractive index.
 \begin{equation}
 	n = n_0 + n_2I = n_0 + \frac{3Re[\chi^{(3)}]}{4\epsilon_0cn_0^2}I
+	\label{eq:refractive_index}
 \end{equation}
-The absorption coefficient defined by Eq.() is composed of the imaginary part of the third-order susceptibility and  ,  and  are the linear absorption coefficient, the non saturable absorption coefficient, and refractive index respectively.
+The absorption coefficient defined by (\ref{eq:absorption_coefficient}) is composed of the imaginary part of the third-order susceptibility and  ,  and  are the linear absorption coefficient, the non saturable absorption coefficient, and refractive index respectively.
 \begin{equation}
 	\alpha = \frac{\alpha_0}{1+\frac{I}{I_S}} + \alpha_{int} \sim\alpha_0 + \alpha_{int} + \frac{3\omega Im[\chi^{3}]}{2\epsilon_0c^2n_0^2}I
+	\label{eq:absorption_coefficient}
 \end{equation}
 The saturation intensity, , is the power per unit area it takes in a steady state to reduce the absorption to 1/2 the unbleached (or completely saturated) value and can be written in terms of
 \begin{equation}
 	I_S = \frac{hf}{\sigma\tau} =\frac{E_S}{\tau}
+	\label{eq:saturation_intensity}
 \end{equation}
 
-where  $\sigma$ is the absorption cross section and $E_S$ is the saturation fluence, which is the fluence (i.e. energy per unit area) it takes to reduce the initial fluence value to $e^-1$ and  $\tau$ is the recovery time of the material.
+where  $\sigma$ is the absorption cross section and $E_S$ is the saturation fluence, which is the fluence (i.e. energy per unit area) it takes to reduce the initial fluence value to $e^{-1}$ and  $\tau$ is the recovery time of the material.
 
-The saturable absorption, as defined by Eq.(11), is a phenomenon where high intensity light will reduce the absorption of a material, but at weak intensity, the light will be absorbed and cause attenuation. This property of materials with strong third-order susceptibility like CNTs can be used to filter out weaker optical signals in noisy optical pulses, while simultaneously allowing strong pulses to pass through. Saturable absorption is observed in all materials with optical absorption resulting from electron transition between two energy levels \cite{thomsen}, but it is rare to find materials that have a recovery time that has a fast recovery time compared to the pulse duration, which in ultra-fast laser applications is in the few picosecond to femtosecond range. The ultra-fast response time of CNTs  is only true however for bundles of CNTs with variations in their diameter due to entanglement between semiconducting and metallic via electrons tunneling and coupling from semiconducting CNTs to metallic CNTs \cite{gambetta}.
+The saturable absorption, as defined by (\ref{eq:saturation_intensity}), is a phenomenon where high intensity light will reduce the absorption of a material, but at weak intensity, the light will be absorbed and cause attenuation. This property of materials with strong third-order susceptibility like CNTs can be used to filter out weaker optical signals in noisy optical pulses, while simultaneously allowing strong pulses to pass through. Saturable absorption is observed in all materials with optical absorption resulting from electron transition between two energy levels \cite{thomsen}, but it is rare to find materials that have a recovery time that has a fast recovery time compared to the pulse duration, which in ultra-fast laser applications is in the few picosecond to femtosecond range. The ultra-fast response time of CNTs  is only true however for bundles of CNTs with variations in their diameter due to entanglement between semiconducting and metallic via electrons tunneling and coupling from semiconducting CNTs to metallic CNTs \cite{gambetta}.
 
 \section{Fluorescence of CNTs}
 The first Van Hove optical transition (E11)

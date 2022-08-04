@@ -13,68 +13,78 @@
 	\label{fig:icg_setup}
 \end{figure}
 Preparation
-1. Stock
-1) Using the micropipette, measure 1ml of D2O or H2O into a vial 
-2) Using the scale, measure 1mg of ICG powder
-3) Pour the measured ICG into the 1ml of D2O/H2O
-4) Close the vial and shake for 15 seconds to dissolve
 
-2. Dilution
-1) Measure 5ml of D2O or H2O into a vial 
-2) Using the pipette, measure 10ul of the stock solution
-3) Output the 10ul of stock solutions into the 100ml of D2O/H2O
-4) Close the vial and shake for 15 seconds to dissolve
+\begin {enumerate}
+\item Stock
+\begin{enumerate}
+	\item Using the micropipette, measure 1ml of D${}_2$O or H${}_2$O into a vial
+	\item Using the scale, measure 1mg of ICG powder
+	\item Pour the measured ICG into the 1ml of D${}_2$O/H${}_2$O
+	\item Close the vial and shake for 15 seconds to dissolve
+\end{enumerate}
+
+\item Dilution
+\begin{enumerate}
+	\item Measure 5ml of D${}_2$O or H${}_2$O into a vial
+	\item Using the pipette, measure 10ul of the stock solution
+	\item Output the 10ul of stock solutions into the 100ml of D${}_2$O/H${}_2$O
+	\item Close the vial and shake for 15 seconds to dissolve
+\end{enumerate}
+\end{enumerate}
+
 Used within 12 hrs of creation
 
 \subsection{ICG in HCPCF}
-Low-concentration samples of dye were prepared and filled a 800nm HCPCF core and 1550nm HCPCF core and cladding. The absorption spectrum of the dye was detected, though muddled by additional losses from the fiber, as shown in Fig. \ref{fig:icg_absp}. Additionally, there is an observed 18nm shift in the peak absorption from 778nm to 796nm in the 1550nm bandgap-shifted liquid-filled fiber, while the 800mn liquid-core fiber has an insignificant 4nm shift in peak from 775nm to 771nm.\\ 
+We prepared low-concentration samples of dye, and subsequently we used it to fill a 800nm HCPCF core and 1550nm HCPCF core and cladding. We measured the absorption spectrum of the dye, though muddled by additional losses from the fiber, as shown in Fig. \ref{fig:icg_absp}. Additionally, there is an observed 18nm shift in the peak absorption from 778nm to 796nm in the 1550nm bandgap-shifted liquid-filled fiber, while the 800mn liquid-core fiber has an insignificant 4nm shift in peak from 775nm to 771nm.\\
 \begin{figure}[!htb]
 	\centering
 	\foreach \x in {absp_800hc, absp_1550hc}
-	{ 
-		\begin{subfigure}[b]{0.49\textwidth}
-			\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-		\hfil
-	}
-	\caption{ Absorption spectrum of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b)  4 ppm concentration in core an
+		{
+			\begin{subfigure}[b]{0.49\textwidth}
+				\includegraphics[width=\textwidth]{./Figures/ICG/\x.png}
+				\caption{}
+			\end{subfigure}
+			\hfil
+		}
+	\caption{ Absorption spectrum of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b) 4 ppm concentration in core an
 		d cladding of 1550nm HCPCF. }
 	\label{fig:icg_absp}
 \end{figure}
-For 800nm core-filled HCPCF, ICG solutions were prepared with H${}_2$O and  D${}_2$O solvents, but fluorescence was only guided in the   D${}_2$O . In the 800HC fiber there is already significant loss coming from the narrow bandgap in combination with lower refractive index contrast of using a liquid medium, as half of the absorption spectrum is outside the bandgap; it is suspected that the absorption of effects of H${}_2$O in the NIR (discussed in chapter 2) and re-absorption from the overlapping excitation-emission spectra was greater than the number of emitted photons. The fluorescence guided in the 800nm HCPCF is also influenced by the bandgap, shown in \ref{fig:icg_fluor_800hc}b,  the emission has a large shifts in peak for excitation between $745 - 775$nm - wavelengths at the edge of the bandgap and with high absorption effects- varying peak fluorescence between $800 - 820$nm while for excitation above 775nm the fluorescence stays centered at 805nm. \\
- Fluorescence was also detected in ICG-filled 1550nm HCPCF with  D${}_2$O as the solvent and had the best ratio of fluorescence intensity to emission intensity (``fraction of fluorescence''). For a 4ppm ICG sample the fraction of fluorescence are compared in Fig. \ref{fig:icg_fluor} for excitation wavelengths below the emission wavelength range. The peak fluorescence in the cuvette was at 820nm but is shifted down 10nm to 810nm in the fiber and the fraction of fluorescence in 1550nm HCPCF $\sim35$x greater than that measured through the cuvette. For the 3.7ppm sample in 800nm HCPCF measured similar fraction of fluorescence to the cuvette sample at the excitation wavelength of peak absorption(778nm), but the exact source of the large difference in fraction of fluorescence in the 1550nm and 800nm HCPCF/cuvette are not  clear. 
+For 800nm core-filled HCPCF, ICG solutions were prepared with H${}_2$O and  D${}_2$O solvents, but fluorescence was only guided in the D${}_2$O . In the 800HC fiber there was already significant loss coming from the narrow bandgap in combination with lower refractive index contrast of using a liquid medium, as half of the absorption spectrum is outside the bandgap; We suspect that the absorption of effects of H${}_2$O in the NIR (discussed in chapter 2) and re-absorption from the overlapping excitation-emission spectra was greater than the number of emitted photons. The fluorescence guided in the 800nm HCPCF was also influenced by the bandgap, shown in Fig. \ref{fig:icg_fluor_800hc}b. The emission had a large shifts in peak for excitation between $745 - 775$nm - wavelengths at the edge of the bandgap and with high absorption effects- varying peak fluorescence between $800 - 820$nm while for excitation above 775nm the fluorescence stayed centered at 805nm. \\
+We detected fluorescence also in ICG-filled 1550nm HCPCF with D${}_2$O as solvent, which had the best ratio of fluorescence intensity to emission intensity (``fraction of fluorescence''). For a 4ppm ICG sample the fraction of fluorescence are compared in Fig. \ref{fig:icg_fluor} for excitation wavelengths below the emission wavelength range.
+The peak fluorescence in the cuvette was at 820nm, but was shifted down 10nm to 810nm in the fiber and the fraction of fluorescence in 1550nm HCPCF was $\sim35$x greater than that measured through the cuvette.
+For the 3.7ppm sample in 800nm HCPCF we measured similar fraction of fluorescence to the cuvette sample at the excitation wavelength of peak absorption(778nm), although the exact source of the large difference in fraction of fluorescence in the 1550nm and 800nm HCPCF/cuvette are not clear.
 
 \begin{figure}[!htb]
-	\centering 
+	\centering
 	\foreach \x \y \z in {diff_max_pl/8/6, OD/7/5.5, fluor_1550hc/7/5.5, fluor_cuvette/7.5/5.5}
-	{ 
-		\begin{subfigure}[b]{0.47\textwidth}
-			\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-	}
+		{
+			\begin{subfigure}[b]{0.47\textwidth}
+				\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
+				\caption{}
+			\end{subfigure}
+		}
 	\caption{(a) The maximum fraction of fluorescence is plotted against excitation wavelength for a 4ppm ICG sample in a 1cm piece of 1550nm HCPCF and 1cm cuvette. The maximum fraction of fluorescence of the ICG in the cuvette is only 4\% of that measured in fiber. (b)  The optical density at each excitation wavelength. The fraction of fluorescence spectrum of the 4ppm ICG solution in (c) 1550nm HCPCF (d) a cuvette. }
 	\label{fig:icg_fluor}
 \end{figure}
 \clearpage
-At the maximum absorption wavelength, the fraction of fluorescence and output power at the excitation wavelength are measured as a function of the input power, shown in \ref{fig:icg_fluor_800hc}c. The fraction of fluorescence peaks at an input power of$50\mu W$ and slowly decreases linearly with a rate of -- while the output power increases logarithmically and appears to approaching a limit on the transmission. Overall, the collection efficiency is of $5.1\times10^{-4}\%$ in the 800nm HCPCF  and based on its trend expect that the collection efficiency of the 1550nm HCPCF is not much greater than the $0.014\%$ measured at $\lambda_{ex}=740$nm, or, for milliwatts of pump power expect to get nanowatts at the emission frequency.
+At the maximum absorption wavelength, the fraction of fluorescence and output power at the excitation wavelength are measured as a function of the input power, shown in Fig. \ref{fig:icg_fluor_800hc}c. The fraction of fluorescence peaks at an input power of $50\mu W$ and slowly decreases linearly with a rate of -- while the output power increases logarithmically and appears to approaching a limit on the transmission. Overall, the collection efficiency is of $5.1\times10^{-4}\%$ in the 800nm HCPCF  and based on its trend we expect the collection efficiency of the 1550nm HCPCF to not be much greater than the $0.014\%$ measured at $\lambda_{ex}=740$nm. In other words, for milliwatts of pump power we expect to get nanowatts at the emission frequency.
 \begin{figure}[!htb]
 	\centering
 	\foreach \x \y \z in {wl_fluor_od_800hc/5.5/5, fluor_800hc/5.5/5, power_fl_absp_800hc/5.5/5.2}
-	{ 
-		\begin{subfigure}[b]{0.32\textwidth}
-			\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-	}
+		{
+			\begin{subfigure}[b]{0.32\textwidth}
+				\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
+				\caption{}
+			\end{subfigure}
+		}
 	\caption{ Measurements of 3.7ppm ICG sample in a 2cm piece of core-filled 800nm HCPCF (a) The maximum fraction of fluorescence and optical density against excitation wavelength. (b) The fraction of fluorescence spectrum (c) Measured output peak power and fractional fluorescence as a function of input power. }
 	\label{fig:icg_fluor_800hc}
 \end{figure}
 
 \clearpage
 \subsubsection{Optical Density Calculations}
- For ICG dispersed in water, molecule aggregate radii have been measured between $2nm - 200nm$ \cite{dedora} with J-aggregates forming at radii $>50nm$\cite{weigand}. Due to the low concentration samples of dye used in out experiments, we expect the lower range of molecule diameter, meeting the Raleigh scattering approximation condition $\frac{2\pi r}{\lambda} <<1$, the scattering cross-section is 
+For ICG dispersed in water, molecule aggregate radii have been measured between $2nm - 200nm$ \cite{dedora} with J-aggregates forming at radii $>50nm$\cite{weigand}. Due to the low concentration samples of dye used in out experiments, we expect the lower range of molecule diameter, meeting the Raleigh scattering approximation condition $\frac{2\pi r}{\lambda} <<1$, the scattering cross-section is
 \begin{equation}
 	\sigma_0 = \frac{2\pi^5 (2r_{particle})^6}{3\lambda^4}(\frac{N^2 -1}{N^2+2})^2
 	\label{raleigh}
@@ -83,19 +93,21 @@ where $N=\frac{n_{particle}}{n_{solvent}}$. Applying the parameters above and  (
 \begin{figure}[!htb]
 	\centering
 	\foreach \x \y \z in {ICG_OD/7/5.2, OD_rate/7/5}
-	{ 
-		\begin{subfigure}[b]{0.47\textwidth}
-			\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-	}
+		{
+			\begin{subfigure}[b]{0.47\textwidth}
+				\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
+				\caption{}
+			\end{subfigure}
+		}
 	\caption{ (a) (b) $2.28cm$ $0.44(\frac{OD}{cm})$ $0.78cm$ $1.27(\frac{OD}{cm})$}
 	\label{fig:icg_od}
 \end{figure}
+
 For calculations of optical density with ICG molecules in the  1550nm HCPCF, the core radius is taken as $r_{core} = 5\pm 0.05\mu m$ with beam waist $w_0 = 4.5 \pm 0.05\mu m$. For this $L_{fiber}=1cm$  piece of fiber, the number of molecules contained in a perfectly filled core is expected to be
 \begin{equation}
 	N_{particle} = M_{ICG}*C*V_{fiber}=\frac{1 mol}{774.98g}*\frac{4mg}{1dm^3}*\pi(5\mu m)^2(1cm) = 2.441\times10^9 molecules
-\end{equation} 
-Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2$nm.  Carrying out the same calculations for the $L_{fiber}=2cm$  800nm HCPCF, the number of molecules contained in a perfectly filled core will be $N_{particle}=2.54\times10^9$.  The fiber has a core radius $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$ and using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor_800hc}a, the estimated radius of the aggregate ICG molecules is $r_{particle} = 11.5 \pm 0.26$nm. These molecule radii are well in agreement, but since the 800nm HCPCF ICG solution is a slightly lower concentration the average $r_{particle}$ is expected to form slightly smaller aggregates.
+\end{equation}
+Using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2$nm.
+Carrying out the same calculations for the $L_{fiber}=2cm$ 800nm HCPCF, the number of molecules contained in a perfectly filled core will be $N_{particle}=2.54\times10^9$.  The fiber has a core radius $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$ and using the measured optical density in the fiber, Fig. \ref{fig:icg_fluor_800hc}a, the estimated radius of the aggregate ICG molecules is $r_{particle} = 11.5 \pm 0.26$nm. These molecule radii are well in agreement, but since the 800nm HCPCF ICG solution is a slightly lower concentration the average $r_{particle}$ is expected to form slightly smaller aggregates.
 
 \clearpage
