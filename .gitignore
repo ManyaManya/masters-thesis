@@ -1,9 +1,0 @@
-# Ignore everything
-*
-**/*
-
-# Do not ignore these
-!.gitignore
-!*.tex
-!**/*.tex
-!**/Figures
