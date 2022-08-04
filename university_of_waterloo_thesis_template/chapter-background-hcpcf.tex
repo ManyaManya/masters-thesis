@@ -64,13 +64,13 @@ we can pull out the Bloch theorem for the electric field from \eqref{eqn:normalm
 	\boldsymbol{u_k}(\boldsymbol{r}) = \sum_{\boldsymbol{G}}\varepsilon_{\boldsymbol{G}}e^{i\boldsymbol{G}\cdot\boldsymbol{r}}
 \end{equation}
 \begin{equation}
-	\varepsilon_{\boldsymbol{G}} = \frac{1}{V}\int d^3\boldsymbol{r}e^{-i\boldsymbol{G}\cdot\boldsymbol{r}}\boldsymbol{u_k}(\boldmath{r})
+	\varepsilon_{\boldsymbol{G}} = \frac{1}{V}\int d^3\boldsymbol{r}e^{-i\boldsymbol{G}\cdot\boldsymbol{r}}\boldsymbol{u_k}(\boldsymbol{r})
 	\label{eqn:perm}
 \end{equation}
 (Expand)  Returning to \eqref{eqn:separation}, can fix $\omega$ to find the corresponding $\boldsymbol{K}$ and normal modes os the system. However, in the case of photonic crystals there are ranges of frequencies that  have no $\boldsymbol{K}$s with real solutions, which implies that waves of these frequencies cannot propagate through the photonic crystal. These non-propagating frequencies are referred to as the photonic band gap.
 
 \subsubsection{1D Photonic Bandgap}
-Returning to the 1D periodic stack pictured in Fig\ref{fig:manyD} the periodicity of dielectric constant is described by $\varepsilon(z) = \varepsilon(z+p)$ where $a = b+d$, the length of one period. The reciprocal lattice vector will be $\boldsymbol{G}_n = n\frac{2\pi}{a}\hat{z}$ and plugging into the Fourier series expansion of $\varepsilon(z)$  from \eqref{eqn:fourier_eps}
+Returning to the 1D periodic stack pictured in Fig. \ref{fig:manyD} the periodicity of dielectric constant is described by $\varepsilon(z) = \varepsilon(z+p)$ where $a = b+d$, the length of one period. The reciprocal lattice vector will be $\boldsymbol{G}_n = n\frac{2\pi}{a}\hat{z}$ and plugging into the Fourier series expansion of $\varepsilon(z)$  from \eqref{eqn:fourier_eps}
 \begin{equation}
 	\varepsilon(z)  =\sum_{n=-\infty}^\infty\varepsilon_ne^{in\frac{2\pi}{a}\hat{z}}
 \end{equation}
@@ -93,7 +93,7 @@ noting $\varepsilon_1 = \varepsilon_{-1}^*$ and $K\approx2g$ simplifies the rela
 \begin{equation}
 	\omega_{\pm}^2 = \frac{K^2}{\mu_0(\varepsilon_{00}\mp|\varepsilon_1|)}
 \end{equation}
-The dispersion relation has two possible solutions, which specify the top and bottom of the photonic bandgap edges, as illustrated in Fig\ref{fig:1dbp}
+The dispersion relation has two possible solutions, which specify the top and bottom of the photonic bandgap edges, as illustrated in Fig. \ref{fig:1dbp}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{./Figures/HCPCF/1D_BandGap.png}
@@ -101,11 +101,11 @@ The dispersion relation has two possible solutions, which specify the top and bo
 	\label{fig:1dbp}
 \end{figure}
 
-If solving for the wavevector at a frequency between the two roots of $\omega_{\pm}$, only complex solutions will exist. This means that only evanescent waves, not electromagnetic waves, propagate through the medium while the electromagnetic waves are reflected back; the medium acts as a mirror for the bandgap wavelengths.\\
+If solving for the wavevector at a frequency between the two roots $\omega_{\pm}$, only complex solutions will exist. This means that only evanescent waves, not electromagnetic waves, propagate through the medium while the electromagnetic waves are reflected back; the medium acts as a mirror for the bandgap wavelengths.\\
 This is the the phenomenon that allows for HCPCF to guide certain frequencies of light: wavelengths in the bandgap are reflected by surrounding Bragg Grating confining them to the core of the fiber, while the rest are allowed to propagate through the grating.
 
 \subsubsection{2D Photonic Bandgap}
-To understand the full picture of  light propagation in hollow-core fiber, we need to expand to the 2D case pictured in  \ref{fig:manyD}c. However, with the electromagnetic waves now propagating in two dimension there is an added layer of complexity with the TE TM wave polarizations and the bandgaps. In addition to controlling the refractive index of the material and the period of the lattice, the lattice structure and hole radius will affect the performance of the photonic crystal, the latter playing a large role in the completeness of the photonic bandgap.  In the 2D photonic crystal, the in-plane guided modes will have either magnetic fields in-plane and electric fields perpendicular to the lattice (TE modes)  or electric fields in-plane and magnetic fields perpendicular to the lattice ( TM modes) . As the TE and TM modes are perpendicular to each other they may exhibit wildly different dispersion relations, which means that an optical bandgap is not guaranteed to persist for all polarizations\cite{joannopoulos}. This is certainly the case for square lattice phonic crystals, but  other patterns such as the honeycomb (which is the structure in our HCPCF)  do have a bandgap persisting for all all polarizations\cite{villeneuve}. This all to say, it is important to consider all polarization effects when making decisions about photonic crystal patterns for two or more dimensions. \\
+To understand the full picture of light propagation in hollow-core fiber, we need to expand to the 2D case pictured in Fig. \ref{fig:manyD}c. However, with the electromagnetic waves now propagating in two dimension there is an added layer of complexity with the TE TM wave polarizations and the bandgaps. In addition to controlling the refractive index of the material and the period of the lattice, the lattice structure and hole radius will affect the performance of the photonic crystal, the latter playing a large role in the completeness of the photonic bandgap. In the 2D photonic crystal, the in-plane guided modes will have either magnetic fields in-plane and electric fields perpendicular to the lattice (TE modes), or electric fields in-plane and magnetic fields perpendicular to the lattice (TM modes). As the TE and TM modes are perpendicular to each other they may exhibit wildly different dispersion relations, which means that an optical bandgap is not guaranteed to persist for all polarizations\cite{joannopoulos}. This is certainly the case for square lattice phonic crystals, but  other patterns such as the honeycomb (which is the structure in our HCPCF) do have a bandgap persisting for all polarizations\cite{villeneuve}. This all to say, it is important to consider all polarization effects when making decisions about photonic crystal patterns for two or more dimensions. \\
 \begin{figure}[h]
 	\centering
 	\foreach \x in {HCPCF_2D_cartesian, HCPCF_2D_reciprocal}
@@ -120,11 +120,11 @@ To understand the full picture of  light propagation in hollow-core fiber, we ne
 	\label{fig:2d}
 \end{figure}
 \clearpage
-Considering the lattice structure in \ref{fig:2d}(a), and taking propagation in the xy-plane ($K_z=0$ and $z=0$ for simplicity), the wavevector and position vectors reduce to  $\boldsymbol{K_{||}}=k_x\hat{x}+k_y\hat{y}$ and $\boldsymbol{r_{||}}=x\hat{x}+y\hat{y}$.  The primitive lattice vectors of a honeycomb photonic crystal will be:
+Considering the lattice structure in Fig. \ref{fig:2d}(a), and taking propagation in the xy-plane ($K_z=0$ and $z=0$ for simplicity), the wavevector and position vectors reduce to  $\boldsymbol{K_{||}}=k_x\hat{x}+k_y\hat{y}$ and $\boldsymbol{r_{||}}=x\hat{x}+y\hat{y}$.  The primitive lattice vectors of a honeycomb photonic crystal will be:
 \begin{equation}
 	\boldsymbol{a}_1 = a\hat{x} \hspace{1cm} \boldsymbol{a}_2 = \frac{a}{2}\hat{x}+\frac{a\sqrt{3}}{2}\hat{y}
 \end{equation}
-and transforming to the momentum-space,  $\boldsymbol{b}\cdot\boldsymbol{a} = 2\pi\delta_{ij}$, as shown in \ref{fig:2d}(b) the primitive reciprocal lattice vectors are
+and transforming to the momentum-space,  $\boldsymbol{b}\cdot\boldsymbol{a} = 2\pi\delta_{ij}$, as shown in Fig. \ref{fig:2d}(b) the primitive reciprocal lattice vectors are
 \begin{equation}
 	\boldsymbol{b}_1 = \frac{2\pi}{a}\hat{x}-\frac{2\pi}{a\sqrt{3}}\hat{y} \hspace{1cm} \boldsymbol{b}_2 =\frac{4\pi}{a\sqrt{3}}\hat{y}
 \end{equation}
@@ -143,7 +143,7 @@ and the correlating Fourier expansion of dielectric function \eqref{eqn:perm}
 \end{equation}
 are substituted into \eqref{eqn:maxwell}.
 Utilizing the lattice symmetry and periodicity, the problem can be restricted to only solve for Bloch modes inside the of the irreducible Brillouin zone.
-The first Brillouin zone is defined by the perpendicular bisectors to the primitive reciprocal lattice vectors, depicted in green in \ref{fig:2d}(b) and can be further subdivided into the irreducible Brillouin zone shown in red.
+The first Brillouin zone is defined by the perpendicular bisectors to the primitive reciprocal lattice vectors, depicted in green in Fig. \ref{fig:2d}(b) and can be further subdivided into the irreducible Brillouin zone shown in red.
 In order to find the photonic bandgap, solving the dispersion equation just along the irreducible Brillouin zone is sufficient.
 For a honeycomb lattice, the $k$-path to follow would be
 \begin{equation}
@@ -153,7 +153,7 @@ For a honeycomb lattice, the $k$-path to follow would be
 		|\Gamma J| = \frac{4\pi}{3a},        & 0<k_x<\frac{2\pi}{3a}, k_y=\sqrt{3}k_x
 	\end{cases}
 \end{equation}
-Discretizing  (\ref{eqn:2d_emf}) and (\ref{eqn:2d_perm}) then picking a few points along the $k$-path, numerical methods can be used to solve for the optical bandgap. \ref{fig:2dbp} shows the resulting TE bandgap for a honeycomb lattice with parameters-,-, using Plane Wave Expansion(PWE)\cite{sukhoivanov}.
+Discretizing  (\ref{eqn:2d_emf}) and (\ref{eqn:2d_perm}) then picking a few points along the $k$-path, numerical methods can be used to solve for the optical bandgap. Fig. \ref{fig:2dbp} shows the resulting TE bandgap for a honeycomb lattice with parameters-,-, using Plane Wave Expansion(PWE)\cite{sukhoivanov}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{./Figures/HCPCF/2D_BandDiagram.png}
