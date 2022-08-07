@@ -1,0 +1,37 @@
+\subsection{Experiment Set-Up}
+\begin{figure}[htb!]
+	\foreach \x \y in {CNT\_Abs\_SetUp/0.6, pickoff/0.4,CNT\_Fluor\_SetUp/0.6}
+	{ 
+		\begin{subfigure}[b]{\y\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/CNT_Measured/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) (b)fwhm=6nm (c)}
+	\label{fig:cnt_setup}
+\end{figure}
+
+\subsubsection{Sample History}
+CNT samples were prepared by HeeBong Yang from the QuIN Lab at the University of Waterloo. SG65i powder was purchased from Sigma Aldrich and Dispersed in a surfactant at an initial powder concentration of  $1mg/1mL$. The sample then underwent a procedure of purification steps, sorting with polymers \& surfactants, and polymer exchange. The end condition of the sample was 65\% (7,5), (7,6) dominant SWCNTs in DI water with 0.04\% DOC, but at an unknown concentration.
+\subsubsection{Sample Characteristics}
+CNT solutions follow Beer-Lambert's Law \cite{schoppler, jeong}, $A = log(\frac{I_{in}}{I_{out}}) = \varepsilon CL$ so the concentration can be deduced from the measured absorbance Fig.\ref{fig:cnt_abs}(a) and the average previously reported extinction coefficient\cite{blanch, anson, jeong} $\varepsilon= 30.98 mL mg^{-1}cm^{-1}$  estimate a sample concentration around $0.0042\pm 0.0007 (mg/mL)$ 
+\begin{figure}[h]
+	\centering
+	\foreach \x in {OD, time}
+	{ 
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/CNT_Measured/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) Absorbance spectrum of CNT sorted CNT sample (b)Absorbance of CNT sorted sample over 60 minutes, very low photobleaching.}
+	\label{fig:cnt_abs}
+\end{figure}
+Unfortunately no PL was detected from the sample. There is 23.25\% pm 10\% decrease in PL intensity when using H${}_2$O instead of D${}_2$O for (7, 5) and 42.5\% pm 5\%   for (7,6) \%\cite{wei}. In combination with a 48$\mu$W source when currently QY are expected to be around (7, 5) 1.04 ± 0.10\% , (7, 6) 1.40 ± 0.09 could explain the lack of detection. Trying thinner cuvette, diluting the sample as self-quenching is also common, and preparation of a D${}_2$O sample. 
+\subsection{Expected Metrics}
+SWNT Fluorescence Action Cross Sections  (7, 5) 3.2 $(10^-19 (cm^2/mol C)$(7, 6)2.3$(10^-19 (cm^2/mol C)$ \cite{tsyboulski}
+-optical density
+-expected efficiency
+\clearpage

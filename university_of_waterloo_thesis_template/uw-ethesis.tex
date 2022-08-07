@@ -182,15 +182,16 @@
 
 \input{chapter-background-hcpcf.tex}
 \input{chapter-fiberfilling.tex}
-
-\input{chapter-background-cnts.tex}
-
-\input{chapter-bandgap-overlap.tex}
 \input{subchapter-modecoupling.tex}
-\input{chapter-background-icg.tex}
 
+\input{chapter-background-icg.tex}
 \input{chapter-icg-results.tex}
 
+\input{chapter-background-cnts.tex}
+\input{chapter-bandgap-overlap.tex}
+\input{chapter-cnt-results.tex}
+
+\input{conclusion.tex}
 \input{chapter-background-ecdl.tex}
 %----------------------------------------------------------------------
 % END MATERIAL
@@ -228,16 +229,10 @@
 % The \appendix statement indicates the beginning of the appendices.
 \appendix
 % Add an un-numbered title page before the appendices and a line in the Table of Contents
-\chapter*{APPENDICES}
-\addcontentsline{toc}{chapter}{APPENDICES}
+%\chapter*{APPENDICES}
+%\addcontentsline{toc}{chapter}{APPENDICES}
 % Appendices are just more chapters, with different labeling (letters instead of numbers).
-\input{appendix-matlab_plots.tex}
-
-% GLOSSARIES (Lists of definitions, abbreviations, symbols, etc. provided by the glossaries-extra package)
-% -----------------------------
-\printglossaries
-\cleardoublepage
-\phantomsection		% allows hyperref to link to the correct page
+%\input{appendix-matlab_plots.tex}
 
 %----------------------------------------------------------------------
 \end{document} % end of logical document
