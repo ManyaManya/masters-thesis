@@ -6,7 +6,7 @@ Carbon nanotubes possess extremely interesting optical properties that make them
 In this section we are going to describe the attributes that make them so attractive from an optical standpoint, characterizing them in relation to their chirality, nonlinear optical properties, and fluorescence.
 
 \section{Characterizing Carbon Nanotubes}
-The main descriptive properties of CNTs are the chiral vector, which is a scaled integer-valued combination of the unit vectors for the honeycomb structure of graphene, written in the form (n, m).
+The main descriptive property of CNTs is the chiral vector, which is a scaled integer-valued combination of the unit vectors for the honeycomb structure of graphene, written in the form (n, m).
 \begin{equation}
 	C_h = na_1 + ma_2 = (n, m)
 \end{equation}
@@ -15,7 +15,8 @@ The unit vectors in Cartesian coordinates are
 	a_1 = (\frac{\sqrt3}{2}, \frac{1}{2})\sqrt{3}a_{C-C}\\
 	a_2 = (\frac{\sqrt3}{2}, -\frac{1}{2})\sqrt{3}a_{C-C}
 \end{equation}
-and have equal length ,  where  is the length of the carbon bond, which for graphene is 1.421 (\AA) (where $1\AA = 10^{-10}$m), and often approximated as 1.44(\AA) for CNTs, though there is variation depending on the curvature of the nanotubes\cite{saito}.
+% TODO missing variable name
+and have equal length , where  is the length of the carbon bond, which for graphene is 1.421 (\AA) (where $1\AA = 10^{-10}$m), and often approximated as 1.44(\AA) for CNTs, though there is variation depending on the curvature of the nanotubes\cite{saito}.
 The chiral vector is of high value as it reveals a lot of information about the electronic and optical properties of individual CNTs. The chiral angle $\theta$, the angle between the unit vectors, gives the direction of the chiral vector and is defined as
 \begin{equation}
 	\theta = tan^{-1}\Bigg[\frac{m\sqrt{3}}{m + 2n}\Bigg]
@@ -24,13 +25,17 @@ and the diameter of a nanotube as
 \begin{equation}
 	d_t = \frac{a_{CC}\sqrt{3}}{\pi} \sqrt{n^2 + nm + m^2}
 \end{equation}
-Due to the geometry of graphene, CNTs have a six-fold rotational symmetry and the connection points of the lattice, i.e. the way that the graphene is rolled into a tube will produce equivalent CNTs between  as , thus the tube geometries are often constrained to the first range. Nanotubes with a chiral angle of  are called zigzag tubes and chiral angles of  are called armchair tubes due to the pattern made by their circumference as shown in the Figure 2, and are the two configurations in which CNTs are anti chiral, meaning that their structures are indistinguishable from their mirrored image, while all in between-angled nanotubes are chiral, i.e. distinguishable from their mirrored image. The diameter and angle actually vary the electronic band structure of the CNT significantly. CNTs have an additional electron confinement around their circumference\cite{yamashita}and as can be seen from the above definitions, the tube diameter of CNTs is quantized and varies depending on how the graphene honeycomb lattice is cut, will also follow the boundary condition
+% TODO: missing some words
+Due to the geometry of graphene, CNTs have a six-fold rotational symmetry and the connection points of the lattice, i.e. the way that the graphene is rolled into a tube, will produce equivalent CNTs between  as , thus the tube geometries are often constrained to the first range. Nanotubes with a chiral angle of  are called zigzag tubes and chiral angles of  are called armchair tubes due to the pattern made by their circumference as shown in the Figure 2, and are the two configurations in which CNTs are anti chiral, meaning that their structures are indistinguishable from their mirrored image, while all in between-angled nanotubes are chiral, i.e. distinguishable from their mirrored image. The diameter and angle actually vary the electronic band structure of the CNT significantly. CNTs have an additional electron confinement around their circumference\cite{yamashita} and, as can be seen from the above definitions, the tube diameter of CNTs is quantized, thus it varies depending on how the graphene honeycomb lattice is cut. It will also follow the boundary condition
 \begin{equation}
 	C_h\cdot\kappa = 2\pi q
 \end{equation}
-where  is the cutting line along graphene and q is an integer number.
-Depending on where graphene energy bands are along the cutting line, the corresponding CNT will become metallic or a semiconductor. In Figure 1, the metallic and semiconducting CNTs are mapped out, and a pattern emerges with CNTs with their chiralities |m-n| being a multiple of 3 emerging as metals.
-Single CNTs exhibit polarization dependence with the electric field in optical selection rules, i.e. the possible transitions from one quantum state to another \cite{thomsen}. The polarization dependence is only strong in zigzag type nanotubes however. The dipole operator in anti chiral tubes will have a parity of -1 in the horizontal plane dipole operator along the z-axis and a +1 parity for dipole vectors along the x, y plane. For z polarized light there is no electronic band transition, while for light polarized perpendicular to the z axis, the angular momentum quantum number can shift by 1. Thus, CNTs will absorb light with the optical polarization parallel to the axial direction of the tube, but in a bundle or grouping of random-oriented CNTs, there will be no polarization dependence.
+% TODO: check that kappa is correcting in the next sentence
+where $\kappa$ is the cutting line along graphene and $q$ is an integer number.
+Depending on where graphene energy bands are along the cutting line, the corresponding CNT will become metallic or a semiconductor.
+% TODO: what's figure 1
+In Figure 1, the metallic and semiconducting CNTs are mapped out, and a pattern emerges with CNTs with their chiralities |m-n| being a multiple of 3 emerging as metals.
+Single CNTs exhibit polarization dependence with the electric field in optical selection rules, i.e. the possible transitions from one quantum state to another \cite{thomsen}. The polarization dependence is only strong in zigzag type nanotubes. The dipole operator in anti chiral tubes will have a parity of -1 in the horizontal plane dipole operator along the z-axis and a +1 parity for dipole vectors along the x, y plane. For z polarized light there is no electronic band transition, while for light polarized perpendicular to the z axis, the angular momentum quantum number can shift by 1. Thus, CNTs will absorb light with the optical polarization parallel to the axial direction of the tube, but in a bundle or grouping of random-oriented CNTs, there will be no polarization dependence.
 
 \begin{figure}[h]
 	\centering
@@ -46,8 +51,8 @@ Single CNTs exhibit polarization dependence with the electric field in optical s
 	\label{fig:cnt dos}
 \end{figure}
 \clearpage
-
-In the same year as the emergence of CNTs as a unique material, H. Kataura measured the optical absorption spectra of CNTs of various diameter CNTs performing photothermal deflection spectroscopy, which measures heat produced during relaxation of the electron hole pair generated by the absorbed light \cite{kataura}, an example of the optical absorption spectra  are shown in Figure 4. While the absorption spectra across various CNT samples were consistent, the peak positions varied. Using the energy dispersion relations for pi-bands of the graphite \cite{kataura}
+% TODO: Figure 4 is not indicated correctly here
+In the same year as the emergence of CNTs as a unique material, H. Kataura measured the optical absorption spectra of CNTs of various diameter CNTs performing photothermal deflection spectroscopy, which measures heat produced during relaxation of the electron hole pair generated by the absorbed light \cite{kataura}; Examples of the optical absorption spectra are shown in Figure 4. While the absorption spectra across various CNT samples were consistent, the peak positions varied. Using the energy dispersion relations for pi-bands of the graphite \cite{kataura}
 \begin{equation}
 	E_{2D} = \pm\gamma\sqrt{1+4cos(\frac{\sqrt{3}k_x a}{2})cos(\frac{k_y}{2}) + 4cos^2(\frac{k_y}{2}) }
 \end{equation}
