@@ -1,38 +1,39 @@
 \contentsline {chapter}{List of Figures}{viii}{section*.2}%
 \contentsline {chapter}{List of Tables}{xi}{section*.4}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Background}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Hollow-Core Photonic Crystal Fiber}{2}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Conventional TIR Guidance}{2}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Photonic Crystal Bandgap}{2}{subsection.2.1.2}%
-\contentsline {subsubsection}{1D Photonic Bandgap}{4}{section*.8}%
-\contentsline {subsubsection}{2D Photonic Bandgap}{5}{section*.10}%
-\contentsline {subsection}{\numberline {2.1.3}Bandgap Shift}{10}{subsection.2.1.3}%
-\contentsline {chapter}{\numberline {3}Liquid-Filled HCPCF}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Filling Methods}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Experimental Set-Up}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}H${}_2$O and D${}_2$O Transmission}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Results}{16}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Selective Filling}{16}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Full-Fiber Filling}{18}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Particle-Mode Interaction and Optical Depth}{19}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Indocyanine Green}{20}{section.3.5}%
-\contentsline {subsubsection}{ Absorption Cross-Section}{21}{section*.21}%
-\contentsline {subsubsection}{ Photostability}{24}{section*.26}%
-\contentsline {subsubsection}{ Fluorescence}{25}{section*.28}%
-\contentsline {subsection}{\numberline {3.5.1}Experiment Set-Up}{26}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}ICG in HCPCF}{27}{subsection.3.5.2}%
-\contentsline {subsubsection}{Optical Density Calculations}{31}{section*.34}%
-\contentsline {chapter}{\numberline {4}Carbon Nanotubes}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Characterizing Carbon Nanotubes}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Nonlinear Optical Properties of CNTs}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Fluorescence of CNTs}{39}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Optical Excitation of Semiconductor Nanoparticles in Hollow-Core Fiber}{42}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Bandgap Overlap}{42}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Experiment Set-Up}{44}{subsection.5.1.1}%
-\contentsline {subsubsection}{Sample History}{45}{section*.43}%
-\contentsline {subsubsection}{Sample Characteristics}{45}{section*.44}%
-\contentsline {subsection}{\numberline {5.1.2}Expected Metrics}{46}{subsection.5.1.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Future Work}{48}{subsection.6.0.1}%
-\contentsline {chapter}{\textbf {References}}{49}{section*.46}%
+\contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hollow-Core Photonic Crystal Fiber}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Conventional TIR Guidance}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Photonic Crystal Bandgap}{3}{subsection.2.1.2}%
+\contentsline {subsubsection}{1D Photonic Bandgap}{5}{section*.8}%
+\contentsline {subsubsection}{2D Photonic Bandgap}{6}{section*.10}%
+\contentsline {subsection}{\numberline {2.1.3}Bandgap Shift}{11}{subsection.2.1.3}%
+\contentsline {chapter}{\numberline {3}Liquid-Filled HCPCF}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Filling Methods}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Experimental Set-Up}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}H${}_2$O and D${}_2$O Transmission}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Results}{17}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Selective Filling}{17}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Full-Fiber Filling}{19}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Particle-Mode Interaction and Optical Depth}{20}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Indocyanine Green}{21}{section.3.5}%
+\contentsline {subsubsection}{ Absorption Cross-Section}{22}{section*.21}%
+\contentsline {subsubsection}{ Photostability}{25}{section*.26}%
+\contentsline {subsubsection}{ Fluorescence}{26}{section*.28}%
+\contentsline {subsection}{\numberline {3.5.1}Experiment Set-Up}{27}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}ICG in HCPCF}{28}{subsection.3.5.2}%
+\contentsline {subsubsection}{Optical Density Calculations}{32}{section*.34}%
+\contentsline {chapter}{\numberline {4}Carbon Nanotubes}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Characterizing Carbon Nanotubes}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Nonlinear Optical Properties of CNTs}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fluorescence of CNTs}{40}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Group 1 v. Group 2}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Excitation/Emission wavelengths}{41}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Bandgap Overlap}{43}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Experiment Set-Up}{45}{subsection.4.4.1}%
+\contentsline {subsubsection}{Sample History}{46}{section*.43}%
+\contentsline {subsubsection}{Sample Characteristics}{46}{section*.44}%
+\contentsline {subsection}{\numberline {4.4.2}Expected Metrics}{47}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
+\contentsline {subsection}{\numberline {5.0.1}Future Work}{49}{subsection.5.0.1}%
+\contentsline {chapter}{\textbf {References}}{50}{section*.46}%
