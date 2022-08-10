@@ -1,10 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Absorption Cross Section parameter fitting of ICG dissolved in deionized water. Fitting done with linear regression on $\sigma $ vs. concentration data measured at $\lambda =780nm$ from literature. \relax }}{26}{table.caption.27}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Absorption Cross Section parameter fitting of ICG dissolved in deionized water. Fitting done with linear regression on $\sigma $ vs. concentration data at $\lambda =700nm$ from literature. \relax }}{26}{table.caption.28}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Absorption Cross Section parameter fitting of ICG dissolved in heavy water. Fitting done with linear regression on $\sigma $ vs. concentration data at $\lambda =700nm$ from literature. \relax }}{26}{table.caption.29}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Absorption Cross Section parameter fitting of ICG dissolved in DI water. Fitting done with linear regression on $\sigma $ vs. concentration data measured at $\lambda =780nm$ from literature. \relax }}{25}{table.caption.27}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Absorption Cross Section parameter fitting of ICG dissolved in DI water. Fitting done with linear regression on $\sigma $ vs. concentration data at $\lambda =700nm$ from literature. \relax }}{25}{table.caption.28}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Absorption Cross Section parameter fitting of ICG dissolved in heavy water. Fitting done with linear regression on $\sigma $ vs. concentration data at $\lambda =700nm$ and $\lambda =780nm$ from \cite {holzer}. \relax }}{25}{table.caption.29}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Thorlabs fiber bandgap shift. The ranges for HC1550 and HC800B are approximated from spectrum measurements and HC2000 and HC1060 are taken from NKT datasheets\cite {HC2000,HC1060}. \relax }}{44}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces CNTs with emission and excitation transmittable through HC1550 filled with D${}_2$O. \relax }}{45}{figure.caption.45}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Thorlabs fiber bandgap shift. The ranges for HC1550 and HC800B are approximated from spectrum measurements and HC2000 and HC1060 are taken from NKT datasheets\cite {HC2000,HC1060}. \relax }}{45}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces CNTs with emission and excitation transmittable through HC1550 filled with D${}_2$O. \relax }}{46}{figure.caption.46}%
 \addvspace {10\p@ }
