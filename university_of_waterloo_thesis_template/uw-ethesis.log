@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.17)  7 AUG 2022 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.17)  9 AUG 2022 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,7 +764,11 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box71
 )
-(./uw-ethesis.aux)
+(./uw-ethesis.aux
+
+LaTeX Warning: Label `saito' multiply defined.
+
+)
 \openout1 = `uw-ethesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
@@ -875,29 +879,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout8 = `uw-ethesis.toc'.
 
  [7] (./uw-ethesis.lof
-Overfull \hbox (16.77664pt too wide) in paragraph at lines 13--13
- [][] [][][]\OT1/cmr/m/n/12 Modeshape of 1550 hollow-core fiber filled with (a)
-air (b)heavy wa-ter (c)distilled 
- []
-
 [8
 
 
 
 
 ]
-Overfull \hbox (3.59067pt too wide) in paragraph at lines 16--16
+Overfull \hbox (3.59067pt too wide) in paragraph at lines 18--18
  [][] [][][]\OT1/cmr/m/n/12 Absorption cross-section at peak wave-lengths 700nm
 (blue) and 780nm(green) 
  []
 
 
-Overfull \hbox (4.10744pt too wide) in paragraph at lines 22--22
+Overfull \hbox (4.10744pt too wide) in paragraph at lines 24--24
  \OT1/cmr/m/n/12 HCPCF (a) The max-i-mum frac-tion of flu-o-res-cence and op-ti
 -cal den-sity against 
  []
 
-[9])
+[9]
+Overfull \hbox (15.42111pt too wide) in paragraph at lines 29--29
+ [][] [][][]\OT1/cmr/m/n/12 Group char-ac-ter-is-tics of CNTs col-ored by us-in
+g vari-a-tional pa-ram-e-ters from[[]], 
+ []
+
+
+Overfull \hbox (21.15314pt too wide) in paragraph at lines 31--31
+ [][] [][][]\OT1/cmr/m/n/12 Excitation/Emssion spec-trum of CNTs falling within
+ the D$[][]$O-filled 1550HCPCF 
+ []
+
+)
 \tf@lof=\write9
 \openout9 = `uw-ethesis.lof'.
 
@@ -912,6 +923,11 @@ Overfull \hbox (4.10744pt too wide) in paragraph at lines 22--22
 
 ]) (./chapter-introduction.tex
 Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+
+ []
+
 ) [1
 
 
@@ -919,305 +935,311 @@ Chapter 1.
 
 ] (./chapter-background-hcpcf.tex [2]
 Chapter 2.
-<./Figures/HCPCF/HCPCF_section.png, id=364, 252.945pt x 252.945pt>
-File: ./Figures/HCPCF/HCPCF_section.png Graphic file (type png)
-<use ./Figures/HCPCF/HCPCF_section.png>
-Package pdftex.def Info: ./Figures/HCPCF/HCPCF_section.png  used on input line 
-11.
-(pdftex.def)             Requested size: 199.17207pt x 199.17207pt.
-
-Overfull \vbox (130.27211pt too high) detected at line 11
- []
-
-<./Figures/HCPCF/HCPCF_1D.png, id=366, 264.99pt x 201.00093pt>
-File: ./Figures/HCPCF/HCPCF_1D.png Graphic file (type png)
-<use ./Figures/HCPCF/HCPCF_1D.png>
-Package pdftex.def Info: ./Figures/HCPCF/HCPCF_1D.png  used on input line 12.
-(pdftex.def)             Requested size: 128.03882pt x 99.58316pt.
-<./Figures/HCPCF/HCPCF2D.png, id=367, 258.21469pt x 199.49532pt>
-File: ./Figures/HCPCF/HCPCF2D.png Graphic file (type png)
-<use ./Figures/HCPCF/HCPCF2D.png>
-Package pdftex.def Info: ./Figures/HCPCF/HCPCF2D.png  used on input line 13.
-(pdftex.def)             Requested size: 128.03926pt x 99.58302pt.
+<./Figures/HCPCF/tir.png, id=359, 866.48718pt x 365.11406pt>
+File: ./Figures/HCPCF/tir.png Graphic file (type png)
+<use ./Figures/HCPCF/tir.png>
+Package pdftex.def Info: ./Figures/HCPCF/tir.png  used on input line 8.
+(pdftex.def)             Requested size: 276.43555pt x 116.48232pt.
 [3
 
 
-] [4 <./Figures/HCPCF/HCPCF_section.png> <./Figures/HCPCF/HCPCF_1D.png> <./Figu
-res/HCPCF/HCPCF2D.png>] [5]
-<./Figures/HCPCF/1D_BandGap.png, id=416, 344.9688pt x 294.8616pt>
+ <./Figures/HCPCF/tir.png>] [4]
+<./Figures/HCPCF/HCPCF_section.png, id=372, 252.945pt x 252.945pt>
+File: ./Figures/HCPCF/HCPCF_section.png Graphic file (type png)
+<use ./Figures/HCPCF/HCPCF_section.png>
+Package pdftex.def Info: ./Figures/HCPCF/HCPCF_section.png  used on input line 
+29.
+(pdftex.def)             Requested size: 199.17207pt x 199.17207pt.
+
+Overfull \vbox (130.27211pt too high) detected at line 29
+ []
+
+<./Figures/HCPCF/HCPCF_1D.png, id=373, 264.99pt x 201.00093pt>
+File: ./Figures/HCPCF/HCPCF_1D.png Graphic file (type png)
+<use ./Figures/HCPCF/HCPCF_1D.png>
+Package pdftex.def Info: ./Figures/HCPCF/HCPCF_1D.png  used on input line 30.
+(pdftex.def)             Requested size: 128.03882pt x 99.58316pt.
+<./Figures/HCPCF/HCPCF2D.png, id=374, 258.21469pt x 199.49532pt>
+File: ./Figures/HCPCF/HCPCF2D.png Graphic file (type png)
+<use ./Figures/HCPCF/HCPCF2D.png>
+Package pdftex.def Info: ./Figures/HCPCF/HCPCF2D.png  used on input line 31.
+(pdftex.def)             Requested size: 128.03926pt x 99.58302pt.
+[5
+
+ <./Figures/HCPCF/HCPCF_section.png> <./Figures/HCPCF/HCPCF_1D.png> <./Figures/
+HCPCF/HCPCF2D.png>] [6
+
+]
+<./Figures/HCPCF/1D_BandGap.png, id=414, 344.9688pt x 294.8616pt>
 File: ./Figures/HCPCF/1D_BandGap.png Graphic file (type png)
 <use ./Figures/HCPCF/1D_BandGap.png>
-Package pdftex.def Info: ./Figures/HCPCF/1D_BandGap.png  used on input line 97.
-
+Package pdftex.def Info: ./Figures/HCPCF/1D_BandGap.png  used on input line 115
+.
 (pdftex.def)             Requested size: 276.43555pt x 236.30351pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Figures/HCPCF/HCPCF_2D_cartesian.png, id=422, 598.48593pt x 670.00313pt>
+ [7]
+<./Figures/HCPCF/HCPCF_2D_cartesian.png, id=433, 598.48593pt x 670.00313pt>
 File: ./Figures/HCPCF/HCPCF_2D_cartesian.png Graphic file (type png)
 <use ./Figures/HCPCF/HCPCF_2D_cartesian.png>
 Package pdftex.def Info: ./Figures/HCPCF/HCPCF_2D_cartesian.png  used on input 
-line 116.
+line 133.
 (pdftex.def)             Requested size: 207.32315pt x 232.09187pt.
-<./Figures/HCPCF/HCPCF_2D_reciprocal.png, id=423, 549.55313pt x 618.05907pt>
+<./Figures/HCPCF/HCPCF_2D_reciprocal.png, id=434, 549.55313pt x 618.05907pt>
 File: ./Figures/HCPCF/HCPCF_2D_reciprocal.png Graphic file (type png)
 <use ./Figures/HCPCF/HCPCF_2D_reciprocal.png>
 Package pdftex.def Info: ./Figures/HCPCF/HCPCF_2D_reciprocal.png  used on input
- line 116.
+ line 133.
 (pdftex.def)             Requested size: 207.32315pt x 233.16734pt.
-[6]
+ [8 <./Figures/HCPCF/1D_BandGap.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./Figures/HCPCF/1D_BandGap.png (PNG copy)>] [8 <./Figures/HCPCF/HCPCF_2D_ca
-rtesian.png> <./Figures/HCPCF/HCPCF_2D_reciprocal.png>]
-<./Figures/HCPCF/2D_BandDiagram.png, id=455, 413.8662pt x 310.761pt>
+[9] [10 <./Figures/HCPCF/HCPCF_2D_cartesian.png> <./Figures/HCPCF/HCPCF_2D_reci
+procal.png>]
+<./Figures/HCPCF/2D_BandDiagram.png, id=462, 413.8662pt x 310.761pt>
 File: ./Figures/HCPCF/2D_BandDiagram.png Graphic file (type png)
 <use ./Figures/HCPCF/2D_BandDiagram.png>
 Package pdftex.def Info: ./Figures/HCPCF/2D_BandDiagram.png  used on input line
- 157.
+ 174.
 (pdftex.def)             Requested size: 368.57838pt x 276.76608pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9
+[11
 
-] [10 <./Figures/HCPCF/2D_BandDiagram.png (PNG copy)>] [11
+] [12 <./Figures/HCPCF/2D_BandDiagram.png (PNG copy)>])
+(./chapter-fiberfilling.tex [13
 
-])
-(./chapter-fiberfilling.tex [12]
+]
 Chapter 3.
-<./Figures/fiberfilling/arc_power/50ms 15mA.png, id=494, 674.52pt x 514.92375pt
->
-File: ./Figures/fiberfilling/arc_power/50ms 15mA.png Graphic file (type png)
-<use ./Figures/fiberfilling/arc_power/50ms 15mA.png>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_power/50ms 15mA.png  used o
-n input line 19.
-(pdftex.def)             Requested size: 138.21777pt x 105.51291pt.
-<./Figures/fiberfilling/arc_power/70ms 20mA.png, id=495, 899.36pt x 686.565pt>
-File: ./Figures/fiberfilling/arc_power/70ms 20mA.png Graphic file (type png)
-<use ./Figures/fiberfilling/arc_power/70ms 20mA.png>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_power/70ms 20mA.png  used o
-n input line 19.
-(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
-<./Figures/fiberfilling/arc_power/70ms 25mA.png, id=496, 899.36pt x 686.565pt>
-File: ./Figures/fiberfilling/arc_power/70ms 25mA.png Graphic file (type png)
-<use ./Figures/fiberfilling/arc_power/70ms 25mA.png>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_power/70ms 25mA.png  used o
-n input line 19.
-(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
-<./Figures/fiberfilling/arc_power/80ms 25mA.png, id=497, 899.36pt x 686.565pt>
-File: ./Figures/fiberfilling/arc_power/80ms 25mA.png Graphic file (type png)
-<use ./Figures/fiberfilling/arc_power/80ms 25mA.png>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_power/80ms 25mA.png  used o
-n input line 19.
-(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
-<./Figures/fiberfilling/arc_power/90ms 25mA.png, id=498, 899.36pt x 686.565pt>
-File: ./Figures/fiberfilling/arc_power/90ms 25mA.png Graphic file (type png)
-<use ./Figures/fiberfilling/arc_power/90ms 25mA.png>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_power/90ms 25mA.png  used o
-n input line 19.
-(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
-<./Figures/fiberfilling/arc_power/100ms 25mA.png, id=499, 899.36pt x 686.565pt>
-
-File: ./Figures/fiberfilling/arc_power/100ms 25mA.png Graphic file (type png)
-<use ./Figures/fiberfilling/arc_power/100ms 25mA.png>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_power/100ms 25mA.png  used 
-on input line 19.
-(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
-<./Figures/fiberfilling/arc_err/collapsed.jpg, id=500, 899.36pt x 686.565pt>
-File: ./Figures/fiberfilling/arc_err/collapsed.jpg Graphic file (type jpg)
-<use ./Figures/fiberfilling/arc_err/collapsed.jpg>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_err/collapsed.jpg  used on 
-input line 31.
-(pdftex.def)             Requested size: 184.28568pt x 140.68387pt.
-<./Figures/fiberfilling/arc_err/fiberend.jpg, id=501, 899.36pt x 686.565pt>
-File: ./Figures/fiberfilling/arc_err/fiberend.jpg Graphic file (type jpg)
-<use ./Figures/fiberfilling/arc_err/fiberend.jpg>
-Package pdftex.def Info: ./Figures/fiberfilling/arc_err/fiberend.jpg  used on i
-nput line 31.
-(pdftex.def)             Requested size: 184.28568pt x 140.68387pt.
-[13
-
-
-] [14 <./Figures/fiberfilling/arc_power/50ms 15mA.png (PNG copy)> <./Figures/fi
-berfilling/arc_power/70ms 20mA.png> <./Figures/fiberfilling/arc_power/70ms 25mA
-.png> <./Figures/fiberfilling/arc_power/80ms 25mA.png> <./Figures/fiberfilling/
-arc_power/90ms 25mA.png> <./Figures/fiberfilling/arc_power/100ms 25mA.png> <./F
-igures/fiberfilling/arc_err/collapsed.jpg> <./Figures/fiberfilling/arc_err/fibe
-rend.jpg>]
-<./Figures/fiberfilling/Transmission_SetUp.png, id=518, 1266.23062pt x 807.015p
+<./Figures/fiberfilling/Transmission_SetUp.png, id=492, 1266.23062pt x 807.015p
 t>
 File: ./Figures/fiberfilling/Transmission_SetUp.png Graphic file (type png)
 <use ./Figures/fiberfilling/Transmission_SetUp.png>
 Package pdftex.def Info: ./Figures/fiberfilling/Transmission_SetUp.png  used on
- input line 40.
+ input line 8.
 (pdftex.def)             Requested size: 345.54092pt x 220.22432pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 46.
-
-<./Figures/fiberfilling/water_transmission/water_transmission.png, id=520, 462.
+<./Figures/fiberfilling/water_transmission/water_transmission.png, id=495, 462.
 528pt x 346.896pt>
 File: ./Figures/fiberfilling/water_transmission/water_transmission.png Graphic 
 file (type png)
 <use ./Figures/fiberfilling/water_transmission/water_transmission.png>
 Package pdftex.def Info: ./Figures/fiberfilling/water_transmission/water_transm
-ission.png  used on input line 52.
+ission.png  used on input line 16.
 (pdftex.def)             Requested size: 322.50345pt x 241.88864pt.
-[15
+[14
 
- <./Figures/fiberfilling/Transmission_SetUp.png>] [16 <./Figures/fiberfilling/w
-ater_transmission/water_transmission.png>]
-<./Figures/fiberfilling/HC800/transmission.png, id=534, 462.528pt x 346.896pt>
+
+] [15 <./Figures/fiberfilling/Transmission_SetUp.png>] [16 <./Figures/fiberfill
+ing/water_transmission/water_transmission.png>]
+<./Figures/fiberfilling/arc_power/50ms 15mA.png, id=516, 674.52pt x 514.92375pt
+>
+File: ./Figures/fiberfilling/arc_power/50ms 15mA.png Graphic file (type png)
+<use ./Figures/fiberfilling/arc_power/50ms 15mA.png>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_power/50ms 15mA.png  used o
+n input line 34.
+(pdftex.def)             Requested size: 138.21777pt x 105.51291pt.
+<./Figures/fiberfilling/arc_power/70ms 20mA.png, id=517, 899.36pt x 686.565pt>
+File: ./Figures/fiberfilling/arc_power/70ms 20mA.png Graphic file (type png)
+<use ./Figures/fiberfilling/arc_power/70ms 20mA.png>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_power/70ms 20mA.png  used o
+n input line 34.
+(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
+<./Figures/fiberfilling/arc_power/70ms 25mA.png, id=518, 899.36pt x 686.565pt>
+File: ./Figures/fiberfilling/arc_power/70ms 25mA.png Graphic file (type png)
+<use ./Figures/fiberfilling/arc_power/70ms 25mA.png>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_power/70ms 25mA.png  used o
+n input line 34.
+(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
+<./Figures/fiberfilling/arc_power/80ms 25mA.png, id=519, 899.36pt x 686.565pt>
+File: ./Figures/fiberfilling/arc_power/80ms 25mA.png Graphic file (type png)
+<use ./Figures/fiberfilling/arc_power/80ms 25mA.png>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_power/80ms 25mA.png  used o
+n input line 34.
+(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
+<./Figures/fiberfilling/arc_power/90ms 25mA.png, id=520, 899.36pt x 686.565pt>
+File: ./Figures/fiberfilling/arc_power/90ms 25mA.png Graphic file (type png)
+<use ./Figures/fiberfilling/arc_power/90ms 25mA.png>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_power/90ms 25mA.png  used o
+n input line 34.
+(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
+<./Figures/fiberfilling/arc_power/100ms 25mA.png, id=521, 899.36pt x 686.565pt>
+
+File: ./Figures/fiberfilling/arc_power/100ms 25mA.png Graphic file (type png)
+<use ./Figures/fiberfilling/arc_power/100ms 25mA.png>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_power/100ms 25mA.png  used 
+on input line 34.
+(pdftex.def)             Requested size: 138.21777pt x 105.51552pt.
+<./Figures/fiberfilling/arc_err/collapsed.jpg, id=524, 899.36pt x 686.565pt>
+File: ./Figures/fiberfilling/arc_err/collapsed.jpg Graphic file (type jpg)
+<use ./Figures/fiberfilling/arc_err/collapsed.jpg>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_err/collapsed.jpg  used on 
+input line 47.
+(pdftex.def)             Requested size: 184.28568pt x 140.68387pt.
+<./Figures/fiberfilling/arc_err/fiberend.jpg, id=525, 899.36pt x 686.565pt>
+File: ./Figures/fiberfilling/arc_err/fiberend.jpg Graphic file (type jpg)
+<use ./Figures/fiberfilling/arc_err/fiberend.jpg>
+Package pdftex.def Info: ./Figures/fiberfilling/arc_err/fiberend.jpg  used on i
+nput line 47.
+(pdftex.def)             Requested size: 184.28568pt x 140.68387pt.
+<./Figures/fiberfilling/HC800/ModeShape/HC800_empty.png, id=526, 462.528pt x 34
+6.896pt>
+File: ./Figures/fiberfilling/HC800/ModeShape/HC800_empty.png Graphic file (type
+ png)
+<use ./Figures/fiberfilling/HC800/ModeShape/HC800_empty.png>
+Package pdftex.def Info: ./Figures/fiberfilling/HC800/ModeShape/HC800_empty.png
+  used on input line 61.
+(pdftex.def)             Requested size: 147.43416pt x 110.57494pt.
+<./Figures/fiberfilling/HC800/ModeShape/HC800_D2O.png, id=527, 462.528pt x 346.
+896pt>
+File: ./Figures/fiberfilling/HC800/ModeShape/HC800_D2O.png Graphic file (type p
+ng)
+<use ./Figures/fiberfilling/HC800/ModeShape/HC800_D2O.png>
+Package pdftex.def Info: ./Figures/fiberfilling/HC800/ModeShape/HC800_D2O.png  
+used on input line 61.
+(pdftex.def)             Requested size: 147.43416pt x 110.57494pt.
+<./Figures/fiberfilling/HC800/ModeShape/HC800_H2O.png, id=528, 462.528pt x 346.
+896pt>
+File: ./Figures/fiberfilling/HC800/ModeShape/HC800_H2O.png Graphic file (type p
+ng)
+<use ./Figures/fiberfilling/HC800/ModeShape/HC800_H2O.png>
+Package pdftex.def Info: ./Figures/fiberfilling/HC800/ModeShape/HC800_H2O.png  
+used on input line 61.
+(pdftex.def)             Requested size: 147.43416pt x 110.57494pt.
+<./Figures/fiberfilling/HC800/transmission.png, id=529, 462.528pt x 346.896pt>
 File: ./Figures/fiberfilling/HC800/transmission.png Graphic file (type png)
 <use ./Figures/fiberfilling/HC800/transmission.png>
 Package pdftex.def Info: ./Figures/fiberfilling/HC800/transmission.png  used on
- input line 65.
+ input line 67.
 (pdftex.def)             Requested size: 345.54092pt x 259.16563pt.
  [17
 
-] [18 <./Figures/fiberfilling/HC800/Transmission.png>]
-<./Figures/fiberfilling/HC1550/ModeShape/HC1550_empty.png, id=544, 372.1905pt x
+ <./Figures/fiberfilling/arc_power/50ms 15mA.png (PNG copy)> <./Figures/fiberfi
+lling/arc_power/70ms 20mA.png> <./Figures/fiberfilling/arc_power/70ms 25mA.png>
+ <./Figures/fiberfilling/arc_power/80ms 25mA.png> <./Figures/fiberfilling/arc_p
+ower/90ms 25mA.png> <./Figures/fiberfilling/arc_power/100ms 25mA.png>] [18 <./F
+igures/fiberfilling/arc_err/collapsed.jpg> <./Figures/fiberfilling/arc_err/fibe
+rend.jpg> <./Figures/fiberfilling/HC800/ModeShape/HC800_Empty.png> <./Figures/f
+iberfilling/HC800/ModeShape/HC800_D2O.png> <./Figures/fiberfilling/HC800/ModeSh
+ape/HC800_H2O.png>]
+[19 <./Figures/fiberfilling/HC800/Transmission.png>]
+<./Figures/fiberfilling/HC1550/ModeShape/HC1550_empty.png, id=555, 372.1905pt x
  245.718pt>
 File: ./Figures/fiberfilling/HC1550/ModeShape/HC1550_empty.png Graphic file (ty
 pe png)
 <use ./Figures/fiberfilling/HC1550/ModeShape/HC1550_empty.png>
 Package pdftex.def Info: ./Figures/fiberfilling/HC1550/ModeShape/HC1550_empty.p
-ng  used on input line 81.
+ng  used on input line 86.
 (pdftex.def)             Requested size: 147.43416pt x 97.33311pt.
-<./Figures/fiberfilling/HC1550/ModeShape/HC1550_full_D2O.png, id=545, 372.1905p
+<./Figures/fiberfilling/HC1550/ModeShape/HC1550_full_D2O.png, id=556, 372.1905p
 t x 245.718pt>
 File: ./Figures/fiberfilling/HC1550/ModeShape/HC1550_full_D2O.png Graphic file 
 (type png)
 <use ./Figures/fiberfilling/HC1550/ModeShape/HC1550_full_D2O.png>
 Package pdftex.def Info: ./Figures/fiberfilling/HC1550/ModeShape/HC1550_full_D2
-O.png  used on input line 81.
+O.png  used on input line 86.
 (pdftex.def)             Requested size: 147.43416pt x 97.33311pt.
-<./Figures/fiberfilling/HC1550/ModeShape/HC1550_H2O.png, id=546, 372.1905pt x 2
+<./Figures/fiberfilling/HC1550/ModeShape/HC1550_H2O.png, id=557, 372.1905pt x 2
 45.718pt>
 File: ./Figures/fiberfilling/HC1550/ModeShape/HC1550_H2O.png Graphic file (type
  png)
 <use ./Figures/fiberfilling/HC1550/ModeShape/HC1550_H2O.png>
 Package pdftex.def Info: ./Figures/fiberfilling/HC1550/ModeShape/HC1550_H2O.png
-  used on input line 81.
+  used on input line 86.
 (pdftex.def)             Requested size: 147.43416pt x 97.33311pt.
-<./Figures/fiberfilling/HC1550/transmission.png, id=547, 462.528pt x 346.896pt>
+<./Figures/fiberfilling/HC1550/transmission.png, id=558, 462.528pt x 346.896pt>
 
 File: ./Figures/fiberfilling/HC1550/transmission.png Graphic file (type png)
 <use ./Figures/fiberfilling/HC1550/transmission.png>
 Package pdftex.def Info: ./Figures/fiberfilling/HC1550/transmission.png  used o
-n input line 88.
+n input line 93.
 (pdftex.def)             Requested size: 345.54092pt x 259.16563pt.
- [19
+ [20
 
  <./Figures/fiberfilling/HC1550/ModeShape/HC1550_empty.png> <./Figures/fiberfil
 ling/HC1550/ModeShape/HC1550_full_D2O.png> <./Figures/fiberfilling/HC1550/ModeS
-hape/HC1550_H2O.png> <./Figures/fiberfilling/HC1550/transmission.png>]) (./subc
-hapter-modecoupling.tex)
-(./chapter-background-icg.tex
-<./Figures/ICG/Homo_Lumo.png, id=561, 549.55313pt x 387.69844pt>
+hape/HC1550_H2O.png>]
+[21 <./Figures/fiberfilling/HC1550/transmission.png>])
+(./subchapter-modecoupling.tex) (./chapter-background-icg.tex
+<./Figures/ICG/Homo_Lumo.png, id=579, 549.55313pt x 387.69844pt>
 File: ./Figures/ICG/Homo_Lumo.png Graphic file (type png)
 <use ./Figures/ICG/Homo_Lumo.png>
 Package pdftex.def Info: ./Figures/ICG/Homo_Lumo.png  used on input line 12.
 (pdftex.def)             Requested size: 207.32315pt x 146.26208pt.
-<./Figures/ICG/chemical_formula.png, id=562, 518.6878pt x 254.45062pt>
+<./Figures/ICG/chemical_formula.png, id=580, 518.6878pt x 254.45062pt>
 File: ./Figures/ICG/chemical_formula.png Graphic file (type png)
 <use ./Figures/ICG/chemical_formula.png>
 Package pdftex.def Info: ./Figures/ICG/chemical_formula.png  used on input line
  12.
 (pdftex.def)             Requested size: 207.32315pt x 101.70856pt.
- [20
+ [22
 
-] [21 <./Figures/ICG/Homo_Lumo.png> <./Figures/ICG/chemical_formula.png (PNG co
+] [23 <./Figures/ICG/Homo_Lumo.png> <./Figures/ICG/chemical_formula.png (PNG co
 py)>]
-<./Figures/ICG/D2O_acs.png, id=583, 462.528pt x 346.896pt>
+<./Figures/ICG/D2O_acs.png, id=600, 462.528pt x 346.896pt>
 File: ./Figures/ICG/D2O_acs.png Graphic file (type png)
 <use ./Figures/ICG/D2O_acs.png>
 Package pdftex.def Info: ./Figures/ICG/D2O_acs.png  used on input line 30.
 (pdftex.def)             Requested size: 225.75594pt x 169.31886pt.
-<./Figures/ICG/H2O_acs.png, id=584, 462.528pt x 346.896pt>
+<./Figures/ICG/H2O_acs.png, id=601, 462.528pt x 346.896pt>
 File: ./Figures/ICG/H2O_acs.png Graphic file (type png)
 <use ./Figures/ICG/H2O_acs.png>
 Package pdftex.def Info: ./Figures/ICG/H2O_acs.png  used on input line 30.
 (pdftex.def)             Requested size: 225.75594pt x 169.31886pt.
- [22
+ [24
 
- <./Figures/ICG/D2O_acs.png> <./Figures/ICG/H2O_acs.png>] [23] [24]
-<./Figures/ICG/abc_time.png, id=635, 462.528pt x 346.896pt>
+ <./Figures/ICG/D2O_acs.png> <./Figures/ICG/H2O_acs.png>] [25] [26]
+<./Figures/ICG/abc_time.png, id=653, 462.528pt x 346.896pt>
 File: ./Figures/ICG/abc_time.png Graphic file (type png)
 <use ./Figures/ICG/abc_time.png>
 Package pdftex.def Info: ./Figures/ICG/abc_time.png  used on input line 119.
 (pdftex.def)             Requested size: 276.43555pt x 207.33463pt.
- [25
+ [27
 
 
  <./Figures/ICG/abc_time.png>]
-<./Figures/ICG/wl_fluor.png, id=647, 462.528pt x 346.896pt>
+<./Figures/ICG/wl_fluor.png, id=665, 462.528pt x 346.896pt>
 File: ./Figures/ICG/wl_fluor.png Graphic file (type png)
 <use ./Figures/ICG/wl_fluor.png>
 Package pdftex.def Info: ./Figures/ICG/wl_fluor.png  used on input line 136.
 (pdftex.def)             Requested size: 216.53954pt x 162.40594pt.
-<./Figures/ICG/wl_fluor_absp.png, id=648, 524.6802pt x 346.896pt>
+<./Figures/ICG/wl_fluor_absp.png, id=666, 524.6802pt x 346.896pt>
 File: ./Figures/ICG/wl_fluor_absp.png Graphic file (type png)
 <use ./Figures/ICG/wl_fluor_absp.png>
 Package pdftex.def Info: ./Figures/ICG/wl_fluor_absp.png  used on input line 13
 6.
 (pdftex.def)             Requested size: 216.53954pt x 143.16516pt.
- [26
+ [28
 
- <./Figures/ICG/wl_fluor.png> <./Figures/ICG/wl_fluor_absp.png>])
-(./chapter-icg-results.tex
-<./Figures/ICG/ICG_Spec_SetUp.png, id=657, 1279.02844pt x 868.74562pt>
+ <./Figures/ICG/wl_fluor.png> <./Figures/ICG/wl_fluor_absp.png>]) (./chapter-ic
+g-results.tex
+<./Figures/ICG/ICG_Spec_SetUp.png, id=674, 1279.02844pt x 868.74562pt>
 File: ./Figures/ICG/ICG_Spec_SetUp.png Graphic file (type png)
 <use ./Figures/ICG/ICG_Spec_SetUp.png>
 Package pdftex.def Info: ./Figures/ICG/ICG_Spec_SetUp.png  used on input line 1
 1.
 (pdftex.def)             Requested size: 225.75594pt x 153.33185pt.
-<./Figures/ICG/ICG_Cuvette_SetUp.png, id=658, 1197.72469pt x 584.1825pt>
+<./Figures/ICG/ICG_Cuvette_SetUp.png, id=675, 1197.72469pt x 584.1825pt>
 File: ./Figures/ICG/ICG_Cuvette_SetUp.png Graphic file (type png)
 <use ./Figures/ICG/ICG_Cuvette_SetUp.png>
 Package pdftex.def Info: ./Figures/ICG/ICG_Cuvette_SetUp.png  used on input lin
 e 11.
 (pdftex.def)             Requested size: 225.75594pt x 110.10443pt.
-<./Figures/ICG/absp_800hc.png, id=660, 462.528pt x 346.896pt>
+<./Figures/ICG/absp_800hc.png, id=677, 462.528pt x 346.896pt>
 File: ./Figures/ICG/absp_800hc.png Graphic file (type png)
 <use ./Figures/ICG/absp_800hc.png>
 Package pdftex.def Info: ./Figures/ICG/absp_800hc.png  used on input line 48.
 (pdftex.def)             Requested size: 225.75594pt x 169.31886pt.
-<./Figures/ICG/absp_1550hc.png, id=661, 531.9072pt x 395.3169pt>
+<./Figures/ICG/absp_1550hc.png, id=678, 531.9072pt x 395.3169pt>
 File: ./Figures/ICG/absp_1550hc.png Graphic file (type png)
 <use ./Figures/ICG/absp_1550hc.png>
 Package pdftex.def Info: ./Figures/ICG/absp_1550hc.png  used on input line 48.
 (pdftex.def)             Requested size: 225.75594pt x 167.78728pt.
- [27
+ [29
 
- <./Figures/ICG/ICG_Spec_SetUp.png> <./Figures/ICG/ICG_Cuvette_SetUp.png>] [28 
+ <./Figures/ICG/ICG_Spec_SetUp.png> <./Figures/ICG/ICG_Cuvette_SetUp.png>] [30 
 <./Figures/ICG/absp_800hc.png> <./Figures/ICG/absp_1550hc.png>]
-<./Figures/ICG/diff_max_pl.png, id=686, 462.528pt x 346.896pt>
+<./Figures/ICG/diff_max_pl.png, id=703, 462.528pt x 346.896pt>
 File: ./Figures/ICG/diff_max_pl.png Graphic file (type png)
 <use ./Figures/ICG/diff_max_pl.png>
 Package pdftex.def Info: ./Figures/ICG/diff_max_pl.png  used on input line 66.
@@ -1227,26 +1249,26 @@ Overfull \hbox (11.08217pt too wide) in paragraph at lines 66--66
 [][] 
  []
 
-<./Figures/ICG/OD.png, id=687, 443.0151pt x 315.8199pt>
+<./Figures/ICG/OD.png, id=704, 443.0151pt x 315.8199pt>
 File: ./Figures/ICG/OD.png Graphic file (type png)
 <use ./Figures/ICG/OD.png>
 Package pdftex.def Info: ./Figures/ICG/OD.png  used on input line 66.
 (pdftex.def)             Requested size: 199.17244pt x 156.49277pt.
-<./Figures/ICG/fluor_1550hc.png, id=688, 523.9575pt x 364.2408pt>
+<./Figures/ICG/fluor_1550hc.png, id=705, 523.9575pt x 364.2408pt>
 File: ./Figures/ICG/fluor_1550hc.png Graphic file (type png)
 <use ./Figures/ICG/fluor_1550hc.png>
 Package pdftex.def Info: ./Figures/ICG/fluor_1550hc.png  used on input line 66.
 
 (pdftex.def)             Requested size: 199.16988pt x 156.4871pt.
-<./Figures/ICG/fluor_cuvette.png, id=689, 462.528pt x 346.896pt>
+<./Figures/ICG/fluor_cuvette.png, id=706, 462.528pt x 346.896pt>
 File: ./Figures/ICG/fluor_cuvette.png Graphic file (type png)
 <use ./Figures/ICG/fluor_cuvette.png>
 Package pdftex.def Info: ./Figures/ICG/fluor_cuvette.png  used on input line 66
 .
 (pdftex.def)             Requested size: 213.40063pt x 156.48814pt.
-[29] [30 <./Figures/ICG/diff_max_pl.png> <./Figures/ICG/OD.png> <./Figures/ICG/
+[31] [32 <./Figures/ICG/diff_max_pl.png> <./Figures/ICG/OD.png> <./Figures/ICG/
 fluor_1550hc.png> <./Figures/ICG/fluor_cuvette.png>]
-<./Figures/ICG/wl_fluor_od_800hc.png, id=704, 462.528pt x 346.896pt>
+<./Figures/ICG/wl_fluor_od_800hc.png, id=722, 462.528pt x 346.896pt>
 File: ./Figures/ICG/wl_fluor_od_800hc.png Graphic file (type png)
 <use ./Figures/ICG/wl_fluor_od_800hc.png>
 Package pdftex.def Info: ./Figures/ICG/wl_fluor_od_800hc.png  used on input lin
@@ -1257,7 +1279,7 @@ Overfull \hbox (9.05399pt too wide) in paragraph at lines 80--80
 [][] 
  []
 
-<./Figures/ICG/fluor_800hc.png, id=705, 522.5121pt x 422.0568pt>
+<./Figures/ICG/fluor_800hc.png, id=723, 522.5121pt x 422.0568pt>
 File: ./Figures/ICG/fluor_800hc.png Graphic file (type png)
 <use ./Figures/ICG/fluor_800hc.png>
 Package pdftex.def Info: ./Figures/ICG/fluor_800hc.png  used on input line 80.
@@ -1267,7 +1289,7 @@ Overfull \hbox (9.05757pt too wide) in paragraph at lines 80--80
 [][] 
  []
 
-<./Figures/ICG/power_fl_absp_800hc.png, id=706, 462.528pt x 346.896pt>
+<./Figures/ICG/power_fl_absp_800hc.png, id=724, 462.528pt x 346.896pt>
 File: ./Figures/ICG/power_fl_absp_800hc.png Graphic file (type png)
 <use ./Figures/ICG/power_fl_absp_800hc.png>
 Package pdftex.def Info: ./Figures/ICG/power_fl_absp_800hc.png  used on input l
@@ -1278,164 +1300,155 @@ Overfull \hbox (9.05399pt too wide) in paragraph at lines 80--80
 [][] 
  []
 
-[31
+[33
 
  <./Figures/ICG/wl_fluor_od_800hc.png> <./Figures/ICG/fluor_800hc.png> <./Figur
 es/ICG/power_fl_absp_800hc.png>]
-<./Figures/ICG/ICG_OD.png, id=718, 557.9244pt x 411.2163pt>
+<./Figures/ICG/ICG_OD.png, id=736, 557.9244pt x 411.2163pt>
 File: ./Figures/ICG/ICG_OD.png Graphic file (type png)
 <use ./Figures/ICG/ICG_OD.png>
 Package pdftex.def Info: ./Figures/ICG/ICG_OD.png  used on input line 101.
 (pdftex.def)             Requested size: 199.167pt x 147.95618pt.
-<./Figures/ICG/OD_rate.png, id=719, 462.528pt x 346.896pt>
+<./Figures/ICG/OD_rate.png, id=737, 462.528pt x 346.896pt>
 File: ./Figures/ICG/OD_rate.png Graphic file (type png)
 <use ./Figures/ICG/OD_rate.png>
 Package pdftex.def Info: ./Figures/ICG/OD_rate.png  used on input line 101.
 (pdftex.def)             Requested size: 199.17252pt x 142.26532pt.
- [32
+ [34
 
- <./Figures/ICG/ICG_OD.png> <./Figures/ICG/OD_rate.png>] [33]) (./chapter-backg
+ <./Figures/ICG/ICG_OD.png> <./Figures/ICG/OD_rate.png>] [35]) (./chapter-backg
 round-cnts.tex
 Chapter 4.
-
-LaTeX Warning: Command \r invalid in math mode on input line 18.
-
-[34
-
-
-
-]
-<./Figures/CNTs/chiral.png, id=748, 322.20375pt x 252.945pt>
+<./Figures/CNTs/chiral.png, id=756, 2207.99907pt x 1206.75844pt>
 File: ./Figures/CNTs/chiral.png Graphic file (type png)
 <use ./Figures/CNTs/chiral.png>
-Package pdftex.def Info: ./Figures/CNTs/chiral.png  used on input line 37.
-(pdftex.def)             Requested size: 230.36061pt x 180.85043pt.
+Package pdftex.def Info: ./Figures/CNTs/chiral.png  used on input line 7.
+(pdftex.def)             Requested size: 368.57838pt x 201.42667pt.
+[36
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Figures/CNTs/DOS.png, id=751, 540.51938pt x 235.63031pt>
-File: ./Figures/CNTs/DOS.png Graphic file (type png)
-<use ./Figures/CNTs/DOS.png>
-Package pdftex.def Info: ./Figures/CNTs/DOS.png  used on input line 44.
-(pdftex.def)             Requested size: 230.36061pt x 100.4202pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[35] [36 <./Figures/CNTs/chiral.png (PNG copy)> <./Figures/CNTs/DOS.png (PNG co
-py)>]
-<./Figures/CNTs/kautura.png, id=769, 313.17pt x 348.55219pt>
+] [37 <./Figures/CNTs/chiral.png>]
+<./Figures/CNTs/kautura.png, id=781, 462.528pt x 346.896pt>
 File: ./Figures/CNTs/kautura.png Graphic file (type png)
 <use ./Figures/CNTs/kautura.png>
-Package pdftex.def Info: ./Figures/CNTs/kautura.png  used on input line 61.
-(pdftex.def)             Requested size: 230.36061pt x 256.39284pt.
+Package pdftex.def Info: ./Figures/CNTs/kautura.png  used on input line 48.
+(pdftex.def)             Requested size: 322.50345pt x 241.88864pt.
+<./Figures/CNTs/dos_66.png, id=782, 462.528pt x 346.896pt>
+File: ./Figures/CNTs/dos_66.png Graphic file (type png)
+<use ./Figures/CNTs/dos_66.png>
+Package pdftex.def Info: ./Figures/CNTs/dos_66.png  used on input line 48.
+(pdftex.def)             Requested size: 216.53954pt x 162.40594pt.
+<./Figures/CNTs/dos_76.png, id=783, 462.22687pt x 347.04657pt>
+File: ./Figures/CNTs/dos_76.png Graphic file (type png)
+<use ./Figures/CNTs/dos_76.png>
+Package pdftex.def Info: ./Figures/CNTs/dos_76.png  used on input line 48.
+(pdftex.def)             Requested size: 216.53954pt x 162.58235pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37
+[38] [39 <./Figures/CNTs/kautura.png> <./Figures/CNTs/dos_66.png> <./Figures/CN
+Ts/dos_76.png>] [40
 
-] [38 <./Figures/CNTs/kautura.png (PNG copy)>] [39
-
-] [40]
-<./Figures/CNTs/degrees.png, id=814, 560.8152pt x 424.2249pt>
+] [41]
+<./Figures/CNTs/degrees.png, id=841, 560.8152pt x 424.2249pt>
 File: ./Figures/CNTs/degrees.png Graphic file (type png)
 <use ./Figures/CNTs/degrees.png>
-Package pdftex.def Info: ./Figures/CNTs/degrees.png  used on input line 160.
-(pdftex.def)             Requested size: 225.75594pt x 170.76796pt.
-<./Figures/CNTs/diameter.png, id=815, 560.8152pt x 424.2249pt>
+Package pdftex.def Info: ./Figures/CNTs/degrees.png  used on input line 105.
+(pdftex.def)             Requested size: 256.06982pt x 227.62157pt.
+
+Overfull \hbox (30.31389pt too wide) in paragraph at lines 105--105
+[][] 
+ []
+
+<./Figures/CNTs/diameter.png, id=842, 560.8152pt x 424.2249pt>
 File: ./Figures/CNTs/diameter.png Graphic file (type png)
 <use ./Figures/CNTs/diameter.png>
-Package pdftex.def Info: ./Figures/CNTs/diameter.png  used on input line 160.
-(pdftex.def)             Requested size: 225.75594pt x 170.76796pt.
+Package pdftex.def Info: ./Figures/CNTs/diameter.png  used on input line 105.
+(pdftex.def)             Requested size: 256.06982pt x 227.62157pt.
+
+Overfull \hbox (30.31389pt too wide) in paragraph at lines 105--105
+[][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] [42 <./Figures/CNTs/degrees.png> <./Figures/CNTs/diameter.png>])
+[42] [43 <./Figures/CNTs/degrees.png> <./Figures/CNTs/diameter.png>])
 (./chapter-bandgap-overlap.tex
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 26.
+(caption)                outside box or environment on input line 20.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 26.
+(caption)                particular \caption on input line 20.
 See the caption package documentation for explanation.
 
-<./Figures/CNTs/fibers_cnt.png, id=831, 1387.584pt x 687.2877pt>
+<./Figures/CNTs/fibers_cnt.png, id=866, 1387.584pt x 687.2877pt>
 File: ./Figures/CNTs/fibers_cnt.png Graphic file (type png)
 <use ./Figures/CNTs/fibers_cnt.png>
-Package pdftex.def Info: ./Figures/CNTs/fibers_cnt.png  used on input line 30.
+Package pdftex.def Info: ./Figures/CNTs/fibers_cnt.png  used on input line 24.
 (pdftex.def)             Requested size: 460.72124pt x 228.20042pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./Figures/CNTs/HC1550_range.png, id=832, 856.3995pt x 495.7722pt>
+<./Figures/CNTs/HC1550_range.png, id=867, 856.3995pt x 495.7722pt>
 File: ./Figures/CNTs/HC1550_range.png Graphic file (type png)
 <use ./Figures/CNTs/HC1550_range.png>
-Package pdftex.def Info: ./Figures/CNTs/HC1550_range.png  used on input line 74
+Package pdftex.def Info: ./Figures/CNTs/HC1550_range.png  used on input line 68
 .
 (pdftex.def)             Requested size: 256.07243pt x 199.16776pt.
 
-Overfull \hbox (53.35397pt too wide) in paragraph at lines 74--75
+Overfull \hbox (53.35397pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
+[44
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[43
-
-] [44 <./Figures/CNTs/fibers_cnt.png> <./Figures/CNTs/HC1550_range.png>])
+] [45 <./Figures/CNTs/fibers_cnt.png> <./Figures/CNTs/HC1550_range.png>])
 (./chapter-cnt-results.tex
-<./Figures/CNT_Measured/CNT_Abs_SetUp.png, id=844, 1203.7472pt x 858.95906pt>
+<./Figures/CNT_Measured/CNT_Abs_SetUp.png, id=880, 1203.7472pt x 858.95906pt>
 File: ./Figures/CNT_Measured/CNT_Abs_SetUp.png Graphic file (type png)
 <use ./Figures/CNT_Measured/CNT_Abs_SetUp.png>
 Package pdftex.def Info: ./Figures/CNT_Measured/CNT_Abs_SetUp.png  used on inpu
-t line 10.
+t line 11.
 (pdftex.def)             Requested size: 276.43555pt x 197.25497pt.
-<./Figures/CNT_Measured/pickoff.png, id=845, 462.528pt x 346.896pt>
+<./Figures/CNT_Measured/pickoff.png, id=881, 462.528pt x 346.896pt>
 File: ./Figures/CNT_Measured/pickoff.png Graphic file (type png)
 <use ./Figures/CNT_Measured/pickoff.png>
 Package pdftex.def Info: ./Figures/CNT_Measured/pickoff.png  used on input line
- 10.
+ 11.
 (pdftex.def)             Requested size: 184.28568pt x 138.21602pt.
-<./Figures/CNT_Measured/CNT_Fluor_SetUp.png, id=846, 1198.4775pt x 861.9703pt>
+<./Figures/CNT_Measured/CNT_Fluor_SetUp.png, id=882, 1198.4775pt x 861.9703pt>
 File: ./Figures/CNT_Measured/CNT_Fluor_SetUp.png Graphic file (type png)
 <use ./Figures/CNT_Measured/CNT_Fluor_SetUp.png>
 Package pdftex.def Info: ./Figures/CNT_Measured/CNT_Fluor_SetUp.png  used on in
-put line 10.
+put line 11.
 (pdftex.def)             Requested size: 276.43555pt x 198.81456pt.
 
-Overfull \hbox (5.22215pt too wide) in paragraph at lines 10--11
+Overfull \hbox (5.22215pt too wide) in paragraph at lines 11--12
 [][]   []
  []
 
-[45
-
- <./Figures/CNT_Measured/CNT_Abs_SetUp.png> <./Figures/CNT_Measured/pickoff.png
-> <./Figures/CNT_Measured/CNT_Fluor_SetUp.png>]
-<./Figures/CNT_Measured/OD.png, id=860, 462.528pt x 346.896pt>
+<./Figures/CNT_Measured/OD.png, id=889, 462.528pt x 346.896pt>
 File: ./Figures/CNT_Measured/OD.png Graphic file (type png)
 <use ./Figures/CNT_Measured/OD.png>
-Package pdftex.def Info: ./Figures/CNT_Measured/OD.png  used on input line 29.
+Package pdftex.def Info: ./Figures/CNT_Measured/OD.png  used on input line 30.
 (pdftex.def)             Requested size: 207.32315pt x 155.49303pt.
-<./Figures/CNT_Measured/time.png, id=861, 462.528pt x 346.896pt>
+<./Figures/CNT_Measured/time.png, id=890, 462.528pt x 346.896pt>
 File: ./Figures/CNT_Measured/time.png Graphic file (type png)
 <use ./Figures/CNT_Measured/time.png>
-Package pdftex.def Info: ./Figures/CNT_Measured/time.png  used on input line 29
+Package pdftex.def Info: ./Figures/CNT_Measured/time.png  used on input line 30
 .
 (pdftex.def)             Requested size: 207.32315pt x 155.49303pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--39
-\OT1/cmr/m/n/12 SWNT Flu-o-res-cence Ac-tion Cross Sec-tions (7, 5) 3.2 $(10[](
-\OML/cmm/m/it/12 cm[]=molC\OT1/cmr/m/n/12 )$(7,
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[46 <./Figures/CNT_Measured/OD.png> <./Figures/CNT_Measured/time.png>] [47])
-(./conclusion.tex
+[46
+
+] [47 <./Figures/CNT_Measured/CNT_Abs_SetUp.png> <./Figures/CNT_Measured/pickof
+f.png> <./Figures/CNT_Measured/CNT_Fluor_SetUp.png>] [48 <./Figures/CNT_Measure
+d/OD.png> <./Figures/CNT_Measured/time.png>]) (./conclusion.tex
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -1452,7 +1465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--1
 
  []
 
-[48
+[49
 
 
 
@@ -1461,24 +1474,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--1
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 1.
 
-) [49] (./Bibliography.tex [50
+<./Figures/FutureWork/litrow.png, id=922, 2325.4378pt x 1591.44562pt>
+File: ./Figures/FutureWork/litrow.png Graphic file (type png)
+<use ./Figures/FutureWork/litrow.png>
+Package pdftex.def Info: ./Figures/FutureWork/litrow.png  used on input line 11
+.
+(pdftex.def)             Requested size: 216.53954pt x 148.17775pt.
+<./Figures/FutureWork/fbg.png, id=923, 1873.7503pt x 650.43pt>
+File: ./Figures/FutureWork/fbg.png Graphic file (type png)
+<use ./Figures/FutureWork/fbg.png>
+Package pdftex.def Info: ./Figures/FutureWork/fbg.png  used on input line 11.
+(pdftex.def)             Requested size: 216.53954pt x 75.16013pt.
+) [50 <./Figures/FutureWork/litrow.png> <./Figures/FutureWork/fbg.png>]
+(./Bibliography.tex [51
 
 
 
 
-] [51]
-Underfull \hbox (badness 1635) in paragraph at lines 46--47
+]
+Underfull \hbox (badness 7740) in paragraph at lines 33--34
+[]\OT1/cmr/m/n/12 S. Maruyama, Fullerene and Car-bon Nan-otube Site [On-line]. 
+Avail-able:
+ []
+
+[52
+pdfTeX warning (ext4): destination with the same identifier (name{cite.saito}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.37 \bibitem{bachilo}
+                       S. M. Bachilo, M. S. Strano, C. Kittrell, R. H. Hauge...
+] [53]
+Underfull \hbox (badness 1635) in paragraph at lines 54--55
 \OT1/cmr/m/n/12 do-cya-nine green," Re-sults in Chem-istry, vol. 3, p. 100092, 
 Jan. 2021, doi:
  []
 
-[52] [53])
+[54]
+Underfull \hbox (badness 2213) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/12 NKT Pho-ton-ics, \Hol-low Core Pho-tonic Bandgap Fiber for 10
+60nm Range
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/12 A. Hendler-Neumark and G. Bisker, \Flu-o-res-cent Single-Wall
+ed Car-bon Nan-
+ []
+
+[55])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[54
+[56
 runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg -o uw-ethesis.gls uw-et
 hesis.glo)...executed safely (allowed).
 
@@ -1486,17 +1536,20 @@ runsystem(makeindex -s uw-ethesis.ist -t uw-ethesis.glg-abr -o uw-ethesis.gls-a
 br uw-ethesis.glo-abr)...executed safely (allowed).
 
 ] (./uw-ethesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
-(rerunfilecheck)             Checksum: C20166C6ADBC9BFF4CDB669B50A11E36;2039.
+(rerunfilecheck)             Checksum: 9802F18A058D0B906812EABA2BB7D903;1737.
  ) 
 Here is how much of TeX's memory you used:
- 28832 strings out of 478238
- 541313 string characters out of 5850456
- 896506 words of memory out of 5000000
- 46243 multiletter control sequences out of 15000+600000
- 480782 words of font info for 70 fonts, out of 8000000 for 9000
+ 28893 strings out of 478238
+ 543264 string characters out of 5850456
+ 898965 words of memory out of 5000000
+ 46285 multiletter control sequences out of 15000+600000
+ 479127 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,16n,105p,1677b,686s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,17n,105p,1471b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/share/texmf-dist/fonts/type1
@@ -1516,10 +1569,10 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
 super/sfrm1200.pfb>
-Output written on uw-ethesis.pdf (65 pages, 4977154 bytes).
+Output written on uw-ethesis.pdf (67 pages, 5681788 bytes).
 PDF statistics:
- 1065 PDF objects out of 1200 (max. 8388607)
- 832 compressed objects within 9 object streams
- 253 named destinations out of 1000 (max. 500000)
- 531 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1112 PDF objects out of 1200 (max. 8388607)
+ 860 compressed objects within 9 object streams
+ 263 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 

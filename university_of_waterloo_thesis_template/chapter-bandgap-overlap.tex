@@ -1,18 +1,12 @@
-%======================================================================
-In this chapter we describe our experimental setup and procedures, as well as the results we obtained when studing the absorbance of semiconducting CNTs.
-\section{Bandgap Overlap}
-Table shows all hollow-core fiber types available from ThorLabs and the central operating wavelengths for air-filled and D${}_2$O-filled fibers.
-The “air” range can be used for fibers that are selectively core-filled with D${}_2$O.
-The ranges for HC1550 and HC800B are approximated from spectrum measurements and HC2000 and HC1060 are taken from ThorLabs datasheets.
-The D${}_2$O central wavelengths are calculated using the band-gap shift equation.
-
+\section{HCPCF Bandgap Overlap with CNT Excitation and Emission}
+To successfully collect the CNT fluorescence when suspended within a HCPCF, the particle emission and excitation must be within the bandgap of the fiber. Taking the most commonly available HCPCFs, Table 4.1 shows  and the central operating wavelengths for core-filled and fully D${}_2$O-filled fibers. In Fig.\ref{fig:cntoverlap}, the liquid-filled HCPCF bandgaps are overplayed with the excitation and emission spectrums of CNTs calculated in the previous section. From this overlay, it appears that 10 chiralities of CNTs fall within the bandgap of a fully-filled 1550nm HCPCF and one within the bandgap of  fully-filled 1060nm HCPCF. The potential CNT candidates and their characteristics are listed in Table 4.2 along and their spectrum plotted within the 1550nm fully-filled bandgap in Fig.\ref{fig:cnt1550}.
 \begin{tabularx}{0.8\textwidth} { 
 		| >{\centering\arraybackslash}X 
 		| >{\centering\arraybackslash}X 
 		| >{\centering\arraybackslash}X 
 		| >{\centering\arraybackslash}X | }
 	\hline
-	HCPCF & $\lambda_{AIR}$ (nm) & $\lambda_{D_2O}$(nm) & Range (nm)\\
+	HCPCF & $\lambda_{Core}$ (nm) & $\lambda_{D_2O_Shifted}$(nm) & Range (nm)\\
 	\hline
 	HC2000 & 2000 & 1144 & 250\\
 	\hline
@@ -23,16 +17,16 @@ The D${}_2$O central wavelengths are calculated using the band-gap shift equatio
 	HC800B & 800 & 457 & 200\\
 	\hline	
 \end{tabularx}
-\captionof{table}{ Thorlabs fiber bandgap shift. \label{bgoverlap}}
+\captionof{table}{ Thorlabs fiber bandgap shift. The ranges for HC1550 and HC800B are approximated from spectrum measurements and HC2000 and HC1060 are taken from NKT datasheets\cite{HC2000,HC1060}. \label{bgoverlap}}
 
-\begin{figure}[h]
+\begin{figure}[htb!]
 	\centering
 	\includegraphics[width=\textwidth]{./Figures/CNTs/fibers_cnt.png}
 	\caption{ Hollow-core fiber bandgap overlayed on CNT emission vs. excitation wavelengths }
 	\label{fig:cntoverlap}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[htb!]
 	
 	\begin{minipage}{0.55\linewidth}
 		\begin{tabularx}{\linewidth} { 
@@ -72,8 +66,9 @@ The D${}_2$O central wavelengths are calculated using the band-gap shift equatio
 	\begin{minipage}{0.44\linewidth}
 		\centering
 		\includegraphics[width=9cm,height=7cm]{./Figures/CNTs/HC1550_range.png}
-		\caption{ 1550HC CNTs }
+		\caption{ Excitation/Emssion spectrum of  CNTs falling within the D${}_2$O-filled 1550HCPCF bandgap.}
 		\label{fig:cnt1550}
 	\end{minipage}
 \end{figure}
+QuIN Lab at the University of Waterloo has developed a CNT isolation process using the surfactant  sodium deoxycholate (DOC) in DI water, and are able to produce samples with (7, 6) and (7, 5) dominant samples. Thus far an experiential set-up for characterizing the CNT samples was completed, but use of the sample in HCPCF has not yet been completed. The sample information that has so far been collected is included.
 \clearpage

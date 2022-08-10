@@ -1,15 +1,29 @@
 %======================================================================
-\chapter{Background}
+\chapter{Hollow-Core Photonic Crystal Fiber}
 %======================================================================
-\section{Hollow-Core Photonic Crystal Fiber}
-
-% TODO: introduce section
-
-\subsection{Conventional TIR Guidance}
-% TODO: write subsection
-
-\subsection{Photonic Crystal Bandgap}
-\begin{figure}
+\section{Conventional TIR Fibers}
+Conventional optical fibers (and optical waveguides in general) are guided by TIR. Structurally, this is composed of a high refractive-index core $n_2$ surrounded by a lower refractive-index cladding $n_1$, depicted in Fig.\ref{fig:tir}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{./Figures/HCPCF/tir.png}
+	\caption {Light propagation through optical fiber. The incident $\theta_i$, reflected $\theta_r$, and transmitted $\theta_t$ rays at the core-cladding boundary}
+	\label{fig:tir}
+\end{figure}
+As light propagates through the the core, some light will be transmitted through the cladding while some is reflected back into the core with the relationship between the angles of incident and transmitted light is governed by Snell's Law.
+\begin{equation}
+	n_1cos(\theta_i) = n_2cos(\theta_t)
+	\label{snell}
+\end{equation}
+If the refraction angle is at a minimum, then light at a below a critical incident angle, $\theta_{c}$, will not propagate into the cladding and will only be reflected back into the core, hence "total internal reflection". From Snell's law we can see that the critical angle is dependent on the refractive-index contrast between the core and cladding, 
+\begin{equation}
+	\theta_c =arccos(n_2/n_1)
+	\label{snell_crit}
+\end{equation}
+and that for TIR-guided fibers the core refractive index must be higher than that of the cladding otherwise light will just be transmitted through the cladding, putting limitations on the minimum refractive-index of the core. Due to this limiting factor, TIR-guided fiber has limitations on the power transmission and loss due to propagation through the core material. 
+\clearpage
+\section{Photonic Crystal Bandgap}
+The refractive-index contrast constraints of traditional fibers are overcome by HCPCFs which are able to mitigate the propagation losses in the core by having a core of air, $n_{air}=1$, the lowest possible refractive index. Light is instead trapped in the core by a photonic bandgap created by a surrounding photonic crystal cladding. 
+\begin{figure}[htb!]
 	\centering
 	\begin{tabular}{cc}
 		\multirow{-3}[15]{*}{\subfloat[]{\includegraphics[width=7cm,height=7cm]{./Figures/HCPCF/HCPCF_section.png}}} &
@@ -17,11 +31,11 @@
 		\subfloat[]{\includegraphics[width=4.5cm,height=3.5cm]{./Figures/HCPCF/HCPCF2D.png}}
 	\end{tabular}
 	\hfill
-	\caption{(a)cross-section of HCPCF highlighting the PC pattern (b)reduced to 1-dimension (2)in 2-dimensions}
+	\caption{(a)Cross-section a honey-comb HCPCF highlighting the PC pattern (b) Reduction of PC to 1-dimension (c)The 2-dimensional PC.}
 	\label{fig:manyD}
 \end{figure}
-
-A periodic non-magnetic medium will have repeating dielectric constant \cite{yariv}
+\clearpage
+Photonic crystals consist of alternating refractive index in periodic structure, such a the 1D stack depicted in Fig.\ref{fig:manyD}(b) or 2D periodic array of air-holes seen in the HCPCF cross-section in Fig.\ref{fig:manyD}(c) . A periodic non-magnetic medium will have repeating dielectric constant \cite{yariv}
 \begin{equation}
 	\varepsilon(\boldsymbol{r}) = \varepsilon(\boldsymbol{r}+\boldsymbol{a})
 \end{equation}
@@ -69,10 +83,10 @@ we can pull out the Bloch theorem for the electric field from \eqref{eqn:normalm
 	\varepsilon_{\boldsymbol{G}} = \frac{1}{V}\int d^3\boldsymbol{r}e^{-i\boldsymbol{G}\cdot\boldsymbol{r}}\boldsymbol{u_k}(\boldsymbol{r})
 	\label{eqn:perm}
 \end{equation}
-(Expand)  Returning to \eqref{eqn:separation}, can fix $\omega$ to find the corresponding $\boldsymbol{K}$ and normal modes os the system. However, in the case of photonic crystals there are ranges of frequencies that  have no $\boldsymbol{K}$s with real solutions, which implies that waves of these frequencies cannot propagate through the photonic crystal. These non-propagating frequencies are referred to as the photonic band gap.
+Returning to \eqref{eqn:separation}, can fix $\omega$ to find the corresponding $\boldsymbol{K}$ and normal modes os the system. However, in the case of photonic crystals there are ranges of frequencies that  have no $\boldsymbol{K}$s with real solutions, which implies that waves of these frequencies cannot propagate through the photonic crystal. These non-propagating frequencies are referred to as the photonic band gap.
 
-\subsubsection{1D Photonic Bandgap}
-Returning to the 1D periodic stack pictured in Fig. \ref{fig:manyD} the periodicity of dielectric constant is described by $\varepsilon(z) = \varepsilon(z+p)$ where $a = b+d$, the length of one period. The reciprocal lattice vector will be $\boldsymbol{G}_n = n\frac{2\pi}{a}\hat{z}$ and plugging into the Fourier series expansion of $\varepsilon(z)$  from \eqref{eqn:fourier_eps}
+\subsection{1D Photonic Bandgap}
+1D photonic bandgap structure models for hollow-core optical fibers \cite{chourasia} demonstrate the core idea of bandgap fibers. In one dimension, the periodicity of dielectric constant is described by $\varepsilon(z) = \varepsilon(z+p)$ where $a = b+d$, the length of one period. The reciprocal lattice vector will be $\boldsymbol{G}_n = n\frac{2\pi}{a}\hat{z}$ and plugging into the Fourier series expansion of $\varepsilon(z)$  from \eqref{eqn:fourier_eps}
 \begin{equation}
 	\varepsilon(z)  =\sum_{n=-\infty}^\infty\varepsilon_ne^{in\frac{2\pi}{a}\hat{z}}
 \end{equation}
@@ -102,11 +116,10 @@ The dispersion relation has two possible solutions, which specify the top and bo
 	\caption {Band plot for a 1D photonic crystal with parameters-,-, solved using Finite Difference Time Domain(FDTD) method\cite{sukhoivanov}.}
 	\label{fig:1dbp}
 \end{figure}
-
 If solving for the wavevector at a frequency between the two roots $\omega_{\pm}$, only complex solutions will exist. This means that only evanescent waves, not electromagnetic waves, propagate through the medium while the electromagnetic waves are reflected back; the medium acts as a mirror for the bandgap wavelengths.\\
-This is the the phenomenon that allows for HCPCF to guide certain frequencies of light: wavelengths in the bandgap are reflected by surrounding Bragg Grating confining them to the core of the fiber, while the rest are allowed to propagate through the grating.
+This is the the phenomenon that allows for HCPCF to guide certain frequencies of light: wavelengths in the bandgap are reflected by surrounding Bragg Grating confining them to the core of the fiber, while the rest are allowed to propagate through the grating. 
 
-\subsubsection{2D Photonic Bandgap}
+\subsection{2D Photonic Bandgap}
 To understand the full picture of light propagation in hollow-core fiber, we need to expand to the 2D case pictured in Fig. \ref{fig:manyD}c. However, with the electromagnetic waves now propagating in two dimension there is an added layer of complexity with the TE TM wave polarizations and the bandgaps. In addition to controlling the refractive index of the material and the period of the lattice, the lattice structure and hole radius will affect the performance of the photonic crystal, the latter playing a large role in the completeness of the photonic bandgap. In the 2D photonic crystal, the in-plane guided modes will have either magnetic fields in-plane and electric fields perpendicular to the lattice (TE modes), or electric fields in-plane and magnetic fields perpendicular to the lattice (TM modes). As the TE and TM modes are perpendicular to each other they may exhibit wildly different dispersion relations, which means that an optical bandgap is not guaranteed to persist for all polarizations\cite{joannopoulos}. This is certainly the case for square lattice phonic crystals, but  other patterns such as the honeycomb (which is the structure in our HCPCF) do have a bandgap persisting for all polarizations\cite{villeneuve}. This all to say, it is important to consider all polarization effects when making decisions about photonic crystal patterns for two or more dimensions. \\
 \begin{figure}[h]
 	\centering
@@ -122,7 +135,7 @@ To understand the full picture of light propagation in hollow-core fiber, we nee
 	\label{fig:2d}
 \end{figure}
 \clearpage
-Considering the lattice structure in Fig. \ref{fig:2d}(a), and taking propagation in the xy-plane ($K_z=0$ and $z=0$ for simplicity), the wavevector and position vectors reduce to  $\boldsymbol{K_{||}}=k_x\hat{x}+k_y\hat{y}$ and $\boldsymbol{r_{||}}=x\hat{x}+y\hat{y}$.  The primitive lattice vectors of a honeycomb photonic crystal will be:
+Considering the lattice structure in Fig.\ref{fig:2d}(a) and taking propagation in the xy-plane ($K_z=0$ and $z=0$ for simplicity), the wavevector and position vectors reduce to  $\boldsymbol{K_{||}}=k_x\hat{x}+k_y\hat{y}$ and $\boldsymbol{r_{||}}=x\hat{x}+y\hat{y}$.  The primitive lattice vectors of a honeycomb photonic crystal will be:
 \begin{equation}
 	\boldsymbol{a}_1 = a\hat{x} \hspace{1cm} \boldsymbol{a}_2 = \frac{a}{2}\hat{x}+\frac{a\sqrt{3}}{2}\hat{y}
 \end{equation}
@@ -155,25 +168,16 @@ For a honeycomb lattice, the $k$-path to follow would be
 		|\Gamma J| = \frac{4\pi}{3a},        & 0<k_x<\frac{2\pi}{3a}, k_y=\sqrt{3}k_x
 	\end{cases}
 \end{equation}
-Discretizing  (\ref{eqn:2d_emf}) and (\ref{eqn:2d_perm}) then picking a few points along the $k$-path, numerical methods can be used to solve for the optical bandgap. Fig. \ref{fig:2dbp} shows the resulting TE bandgap for a honeycomb lattice with parameters-,-, using Plane Wave Expansion(PWE)\cite{sukhoivanov}.
+Discretizing  (\ref{eqn:2d_emf}) and (\ref{eqn:2d_perm}) then picking a few points along the $k$-path, numerical methods can be used to solve for the optical bandgap. Fig. \ref{fig:2dbp} shows the resulting TE bandgap for a honeycomb lattice with parameters $\varepsilon=11$,$\frac{r}{a}=0.34$, $a=3.8\mu$m using Plane Wave Expansion(PWE)\cite{sukhoivanov}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{./Figures/HCPCF/2D_BandDiagram.png}
-	\caption {Band plot along the irreducible Brillouin zone for a honeycomb lattice with parameters -,-, . Solved for using Plane Wave Expansion(PWE) numerical method\cite{sukhoivanov}.}
+	\caption {Band plot along the irreducible Brillouin zone for a honeycomb lattice with parameters$\varepsilon=11$,$\frac{r}{a}=0.34$, $a=3.8\mu$m. Solved for using Plane Wave Expansion(PWE) numerical method.}
 	\label{fig:2dbp}
 \end{figure}
-
 \clearpage
 \subsection{Bandgap Shift}
-The modal magnetic field distributions satisfy:
-\begin{equation}
-	(\nabla^2_t + k^2n(\boldsymbol{r})^2 - \beta)\boldsymbol{H(r)} = (\nabla_t\times\boldsymbol{H(r)})\times(\nabla_t ln(n(\boldsymbol{r})^2))
-\end{equation}
-This equation gives a scaling law for absolute refractive index at fixed contrast:
-``a solution for a transverse scale represented by $\Lambda$is replicated in an identical structure with a different $\Lambda$ if the wavelength is scaled proportionately, to keep $k\Lambda$ constant''\\
-``We emphasise that the scalar wave equation (and therefore the scaling laws derived from it) is accurate for the smallest index contrasts only. However, for step-index structures the vector term in Eq. (2) only exists at boundaries, so the scalar wave equation accurately represents wave propagation elsewhere. Since bandgaps arise from interference and resonance effects among such generic waves, the scaling laws of Eq. (5) should be at least approximately valid'' ~1.45 RI contrast\cite{birks}
-
-Scaling law for the wave equation for the transverse coordinates
+The position of the HCPCF bandgap is dependent on the periodicity refractive-index and changing the material within the photonic crystal will cause a change in the bandgap. Though a small index contrast in the a periodic medium is assumed in the derivation, the bandgap shift has been experimentally confirmed to still hold under high contrasts\cite{antonopoulos}. The scalar wave equation for a given periodic medium will maintain the same bandgap structure but scaling the wavelength proportionately in compensation\cite{birks}. The scaling law for the wave equation for the transverse coordinates
 $X=x\Lambda^{-1}$ $Y=y\Lambda^{-1}$
 where $\Lambda$ is a solution to the transverse scale.
 \begin{equation}
@@ -182,7 +186,7 @@ where $\Lambda$ is a solution to the transverse scale.
 		0, & n_2 \text{   (low RI)}
 	\end{cases}
 \end{equation}
-normalized scaled wave equation:
+and factors into the normalized scaled wave equation:
 \begin{equation}
 	\nabla_\perp^2\Psi + (v^2n(X, Y) - w^2)\Psi = 0
 \end{equation}
@@ -194,23 +198,19 @@ solving for the frequency parameter $v^2$ and eigenvalue $w^2$:
 		w^2 & = \Lambda^2(\beta^2 - k^2n_2^2)
 	\end{aligned}
 \end{equation}
-from the equation above we see that the $w^2$ is determined by the frequency parameter $v^2$ and the index distribution function $n(X, Y)$.
-This implies that $w^2$ and $v^2$ are invariant with changes to the parameters $k, \Lambda, n_1, n_2$.
-$k = \omega/c$ $\beta = kcos\theta$ longitudinal component of the wavevector. Because the light propagates along the fiber, much of its wavevector is taken up by the longitudinal component.
-
-In the HCPCF case where the glass refractive index is held constant and the air in the fiber is replaced by a new material the equations can be rewritten with $n_1 = n_{glass}$ and $n_2 = n_{air}=1$:
+from the equation above we see that the eigenvalue is determined by the frequency parameter and the index distribution function $n(X, Y)$. This implies that $w^2$ and $v^2$ are invariant with changes to the parameters $k = \omega/c, \Lambda, n_1, n_2$.
+In the HCPCF case where the glass refractive index is held constant and the air in the fiber is replaced by a new material. The equations can be rewritten with $n_1 = n_{glass}$ and $n_2 = n_{air}=1$:
 \begin{equation}
 	\begin{aligned}
 		v^2 - w^2 & = \Lambda^2(k^2n_{glass} - \beta^2)                          \\
 		v         & = k\Lambda n_{glass}\sqrt{n_{air} - \frac{n_{air}}{n_{new}}}
 	\end{aligned}
 \end{equation}
-The initial index contrast $N_0 = \frac{n_{air}}{n_{glass}}$ moves to$ N = \frac{n_{new}}{n_{glass}}$ with the change in RI $n_{air} <  n_{new} < n_{glass}$
-This leads to the new center bandgap to be governed by the equation:
+The initial index contrast $N_0 = \frac{n_{air}}{n_{glass}}$ moves to $ N = \frac{n_{new}}{n_{glass}}$ with the change in RI $n_{air} <  n_{new} < n_{glass}$. This leads to the new center bandgap to be governed by the equation:
 \begin{equation}
 	\lambda = \lambda_0\sqrt{\frac{1-N^{-2}}{1-N_0^{-2}}}
 \end{equation}
-This has been experimentally confirmed to hold for HCPCF \cite{antonopoulos}.
+
 
 
 
