@@ -1,7 +1,7 @@
 %----------------------------------------------------------------------------%
 \chapter{Carbon Nanotubes}
 %----------------------------------------------------------------------------%
-First discovered by S.Iijima and T. Ichihashi in 1993, carbon nanotubes (CNTs) are single layers of graphene rolled up into a hollow cylinder near 1nm in diameter and average near 1$\mu$m in length. Due to the extreme diameter to length ratio, their geometry allows them to be treated as a 1D material. CNTs possess unique optical properties that have found a wide range of applications\cite{yamashita}, the most of importance to us is the lack of photobleaching and the fact that they do not degrade in water, the main permanence issues with using fluorescent dyes like ICG. In this section follows a description of the attributes that make them attractive from an optical standpoint, first going over their characterizing properties then nonlinear optical properties and fluorescence.
+First discovered by S.Iijima and T. Ichihashi in 1993, carbon nanotubes (CNTs) are single layers of graphene rolled up into a hollow cylinder near 1nm in diameter and average near 1$\mu$m in length. Due to the extreme diameter to length ratio, their geometry allows them to be treated as a 1D material. CNTs possess unique optical properties that have found a wide range of applications\cite{yamashita}. Their most important application to us is the lack of photobleaching and the fact that they do not degrade in water, solving the main permanence issues with using fluorescent dyes like ICG. In this section follows a description of the attributes that make them attractive from an optical standpoint, going over their characterizing properties, nonlinear optical properties, and fluorescence.
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=0.8\textwidth]{./Figures/CNTs/chiral.png}
@@ -9,7 +9,7 @@ First discovered by S.Iijima and T. Ichihashi in 1993, carbon nanotubes (CNTs) a
 	\label{fig:chiralities}
 \end{figure}
 \section{Characterizing Carbon Nanotubes}
-The main descriptive property of CNTs is the chiral vector, the  inter-valued scaling of the unit vectors for the honeycomb structure of graphene, written in the form (n, m).
+The main descriptive property of CNTs is the chiral vector, the inter-valued scaling of the unit vectors for the honeycomb structure of graphene, written in the form (n, m).
 \begin{equation}
 	C_h = na_1 + ma_2 = (n, m)
 \end{equation}
@@ -19,14 +19,14 @@ The unit vectors describing the lattice are of equal length and in Cartesian coo
 	a_2 = (\frac{\sqrt3}{2}, -\frac{1}{2})\sqrt{3}a_{C-C}
 	\label{unit_vecs}
 \end{equation}
- where $a_{C-C}$ is the length of the carbon bond. For graphene,  $a_{C-C}$=1.421 (\AA) but for CNTs is approximately 1.44(\AA) with variation coming from the tube curvature\cite{saito}. From the chiral vector, much about the electronic and optical properties of individual CNTs can be inferred. The angle between the unit vectors, known as the chiral angle $\theta$, gives the direction of the chiral vector and the diameter,$d_t$, of the CNT are related to the chiral numbers:
+ where $a_{C-C}$ is the length of the carbon bond. For graphene, $a_{C-C}$=1.421 (\AA) but for CNTs is approximately 1.44(\AA) with variation coming from the tube curvature\cite{saito}. From the chiral vector, much about the electronic and optical properties of individual CNTs can be inferred. The angle between the unit vectors, known as the chiral angle $\theta$, gives the direction of the chiral vector and the diameter,$d_t$, of the CNT are related to the chiral numbers:
 \begin{equation}
 	\theta = tan^{-1}\Bigg[\frac{m\sqrt{3}}{m + 2n}\Bigg]
 \end{equation}
 \begin{equation}
 	d_t = \frac{a_{CC}\sqrt{3}}{\pi} \sqrt{n^2 + nm + m^2}
 \end{equation}
-The chiral angle is typically defined between 0${}^o$(a "zigzag" configuration) and 30${}^o$(an "armchair" configuration), labeled in Fig.\ref{fig:chiralities} due to the six-fold rotational symmetry lattice, as CNTs of mirrored chiral angles will have the sample opto-electrical properties. \\
+The chiral angle is typically defined between 0${}^\circ$(a "zigzag" configuration) and 30${}^\circ$(an "armchair" configuration), labeled in Fig.\ref{fig:chiralities} due to the six-fold rotational symmetry lattice, as CNTs of mirrored chiral angles will have the sample opto-electrical properties. \\
 As can be seen from the above definition, the tube diameter of CNTs is quantized. This quantization stems from the additional electron confinement around their circumference
 \begin{equation}
 	C_h\cdot\kappa = 2\pi q
@@ -72,11 +72,11 @@ Saturable absorption is a phenomenon where high intensity light will reduce the 
 	\end{aligned}
 	\label{eq:absorption_coefficient}
 \end{equation}
-the saturation intensity$I_s$ is the power per unit area it takes in a steady state to reduce the absorption to half of completely saturated value, referred to as the unbleached state. Saturable absorption is observed in all materials with optical absorption resulting from electron transition between two energy levels \cite{thomsen}, but it is rare to find materials that have a recovery time that has a fast recovery time compared to the pulse duration. In bundles of  CNTs  with a variety of diameter sizes, entanglement between semiconducting and metallic via electrons tunneling and coupling from semiconducting CNTs to metallic CNTs \cite{gambetta} can result in picosecond to femtosecond range recovery time. Bundled CNTs have found application in  in ultra-fast laser applications where this sort of recovery time is needed, having been successful implemented in mode-locking femtosecond fiber-lasers\cite{fl1, fl2, fl3, fl4}. 
+the saturation intensity $I_s$ is the power per unit area it takes in a steady state to reduce the absorption to half of completely saturated value, referred to as the unbleached state. Saturable absorption is observed in all materials with optical absorption resulting from electron transition between two energy levels \cite{thomsen}, but it is rare to find materials that have a recovery time that has a fast recovery time compared to the pulse duration. In bundles of  CNTs  with a variety of diameter sizes, entanglement between semiconducting and metallic via electrons tunneling and coupling from semiconducting CNTs to metallic CNTs \cite{gambetta} can result in picosecond to femtosecond range recovery time. Bundled CNTs have found application in  in ultra-fast laser applications where this sort of recovery time is needed, having been successful implemented in mode-locking femtosecond fiber-lasers\cite{fl1, fl2, fl3, fl4}. 
 
 \section{Fluorescence of CNTs}
 Arriving at the interest in CNTs for this thesis, semiconducting CNTs can be optically excited and emit fluorescence\cite{hendler} when well-dispersed. Bundled CNTs or placed on a substrate have little to no fluorescence at all, as interactions between CNTs cause increased quenching effects, the highest fluorescence quantum yields are seen in CNTs suspended in aqueous solutions. Though certain solvents mix better with certain chiralities CNTs to increase fluorescence, isolation to single chiralities one of the largest factors in increasing fluorescence. Desired type of CNTs can be targeted and isolated in a single step using modified aqueous two-phase extraction(ATPS)\cite{turek}.In this process, hydration modulating agents are mixed in to solutions to tune the arrangement of surfactants on their surface. Depending on the mixture, selected CNTs turn highly hydrophobic or hydrophilic, separating them from the rest of the mixture.\\
-Fluorescence in carbon nanotubes is the product of absorption at the excitation frequency, corresponding to the second Van Hove optical transition (E22) , labeled in Fig.\ref{fig:kataura}(c), from the valence to conduction bands, followed by relaxation to the first Van Hove optical transition (E11) from the conduction to valence band. The corresponding excitation and emission  wavelengths can be as a function of diameter in nanometers and chiral angle are degrees derived in \cite{bachilo}. The parameters fitted differ along CNT groups, having to do with chiral number differences:  (n-m) mod 3 = 1 is group 1, (n-m) mod 3 = 2 is group 2,  (n-m) mod 3 = 0 are metallic CNTs and do not fluoresce and so are excluded. \\
+Fluorescence in carbon nanotubes is the product of absorption at the excitation frequency, corresponding to the second Van Hove optical transition (E22), labeled in Fig.\ref{fig:kataura}(c), from the valence to conduction bands, followed by relaxation to the first Van Hove optical transition (E11) from the conduction to valence band. The corresponding excitation and emission  wavelengths can be as a function of diameter in nanometers and chiral angle are degrees derived in \cite{bachilo}. The parameters fitted differ along CNT groups, having to do with chiral number differences:  (n-m) mod 3 = 1 is group 1, (n-m) mod 3 = 2 is group 2,  (n-m) mod 3 = 0 are metallic CNTs and do not fluoresce and so are excluded. \\
 For group 1:
 \begin{equation}
 	(Emission)\lambda_{11} = \Bigg[\frac{10^7(cm^{-1})}{157.5+1066.9d_t} - A_{1m1}(cm^{-1})\frac{cos(3\theta)^{1.374}}{d_t^{2.272}} \Bigg]^{-1}
@@ -91,8 +91,9 @@ For group 2:
 \begin{equation}
 	(Excitation)\lambda_{22} = \Bigg[\frac{10^7(cm^{-1})}{145.6+575.7d_t} - A_{2m2}(cm^{-1})\frac{cos(3\theta)^{1.110}}{d_t^{2.497}} \Bigg]^{-1}
 \end{equation}
-Additional parameters $A_{1m1}, A_{1m2}, A_{2m1}, A_{2m2}$, account for variations of spectrum in same diameter CNTs. Not all variation differences are yet explained but comparison of aqueous solutions\cite{turek}\cite{weisman} found spectral shifts of ~2\%. \\
-Plots of the excitation-emission spectrum are using variational parameters from fitting to data of samples of individual SWNT in aqueous sodium dodecyl sulfate (SDS)\cite{weisman} are shown in Fig.\ref{fig:cnt fluorescence}. Group 1 CNTs have lower Stokes shifts, and small chiral angles ($< 2^o$) while group 2 have higher Stokes shift and span full $0^o$to $30^o$ chiral angle range with similar angles along chiral number difference $(n - m)$. Regardless of group, the in excitation and emission wavelengths increase with diameter.
+Additional parameters $A_{1m1}, A_{1m2}, A_{2m1}, A_{2m2}$, account for variations of spectrum in same diameter CNTs. Not all variation differences are yet explained but comparison of aqueous solutions\cite{turek}\cite{weisman} found spectral shifts of $\sim$2\%. \\
+Plots of the excitation-emission spectrum are using variational parameters from fitting to data of samples of individual SWNT in aqueous sodium dodecyl sulfate (SDS)\cite{weisman} are shown in Fig.\ref{fig:cnt fluorescence}. Group 1 CNTs have lower Stokes shifts, and small chiral angles ($< 2^\circ$) while group 2 have higher Stokes shift and span full $0^\circ$to $30^\circ$ chiral angle range with similar angles along chiral number difference $(n - m)$. Regardless of group, the in excitation and emission wavelengths increase with diameter.
+
 \begin{figure}[h]
 	\centering
 	\foreach \x in {degrees, diameter}
