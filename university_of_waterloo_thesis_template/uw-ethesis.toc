@@ -1,5 +1,5 @@
 \contentsline {chapter}{List of Figures}{viii}{section*.2}%
-\contentsline {chapter}{List of Tables}{xi}{section*.4}%
+\contentsline {chapter}{List of Tables}{xii}{section*.4}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Hollow-Core Photonic Crystal Fiber}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Conventional TIR Fibers}{3}{section.2.1}%
@@ -34,5 +34,5 @@
 \contentsline {subsubsection}{Sample History}{47}{section*.48}%
 \contentsline {subsubsection}{Sample Characteristics}{47}{section*.49}%
 \contentsline {chapter}{\numberline {5}Conclusion}{50}{chapter.5}%
-\contentsline {subsection}{\numberline {5.0.1}Future Work}{51}{subsection.5.0.1}%
-\contentsline {chapter}{\textbf {References}}{52}{section*.52}%
+\contentsline {subsubsection}{Future Work}{50}{section*.51}%
+\contentsline {chapter}{\textbf {References}}{52}{section*.53}%
