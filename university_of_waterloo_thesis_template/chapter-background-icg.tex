@@ -28,11 +28,11 @@ ICG absorbs wavelengths between 600-900nm. The absorption is largely bimodal, wi
 			\end{subfigure}
 			\hfil
 		}
-	\caption{ Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D${}_2$O(a) and H${}_2$O(b) .  Data from (cite) was fitted using a linear regression model. }
+	\caption{ Absorption cross-section at peak wavelengths 700nm(blue) and 780nm(green) for ICG dissolved in D${}_2$O(a) and H${}_2$O(b).  Data from (cite) was fitted using a linear regression model. }
 	\label{fig:icg abs plots}
 \end{figure}
 
-Due to the chemical formation of ICG, the absorption of the molecule when dissolved in a solvent is highly concentration-dependent. ICG is made up of monomers, which are a type of molecule that can react with other monomers to form polymer chains. In the case of ICG, its monomers react with each other to form dimers, a chain of two join monomers.
+Due to the chemical formation of ICG, the absorption of the molecule when dissolved in a solvent is highly concentration-dependent. ICG is made up of monomers, which are a type of molecule that can react with other monomers to form polymer chains. In the case of ICG, its monomers react with each other to form dimers, a chain of two joint monomers.
 With higher concentrations monomers are closer to each other, causing the molecules to have an increased likelihood to shift from monomers to dimers, which in turn are less likely to be excited and shift the center absorption wavelength. The concentration of monomers $M$ to dimers $D$ is governed by the equilibrium reaction:
 \begin{equation}
 	M+M\rightleftarrows D
@@ -41,17 +41,17 @@ and law of mass action relation concentration
 \begin{equation}
 	[D] =  K_D[M]^2
 \end{equation}
-Where $K_D$ is the dimerization constant . Written in terms of concentration $C$ and mole fractions, $[M] = x_MC= (1-x_D)C $ and $[D]=\frac{x_D}{2}C$, the  mole fraction of dimmers can be written in terms of the dimerization constant and concentration.
+where $K_D$ is the dimerization constant. Written in terms of concentration $C$ and mole fractions, $[M] = x_MC= (1-x_D)C $ and $[D]=\frac{x_D}{2}C$, the  mole fraction of dimers can be written in terms of the dimerization constant and concentration.
 \begin{equation}
 	x_D = 1 + \frac{1}{4K_DC} - \sqrt{\big( 1 + \frac{1}{4K_DC}\big)^2-1}
 	\label{xd}
 \end{equation}
-The absorption cross-section model for ICG\cite{mauerer, philip} will be an average of the effects of the of monomers and dimmers, where $\sigma_M$ and $\sigma_D$ are the monomer and dimer absorption cross-sections respectively.
+The absorption cross-section model for ICG\cite{mauerer, philip} will be an average of the effects of the of monomers and dimers, where $\sigma_M$ and $\sigma_D$ are the monomer and dimer absorption cross-sections respectively.
 \begin{equation}
 	\sigma = x_M \sigma_M + x_D \sigma_D = \sigma_M - x_D(\sigma_M - \sigma_D)
 	\label{abc}
 \end{equation}
-Plugging (\ref{xd}) into (\ref{abc}), remaining parameters could be found by doing a linear regression fit to absorption cross-section vs. concentration data from literature and the expected absorption cross-section could be calculated for any concentration. For ICG dissolved in H${}_2$O, the existing literature has some variation and so the upper/lower bounds and average were taken, while little data was available for ICG dissolved in D${}_2$O. The behavior in H${}_2$O and D${}_2$O are quite similar and are plotted in Fig. \ref{fig:icg abs plots}. At lower concentrations the absorption cross-section is slightly greater for D${}_2$O than H${}_2$O, with the reverse for high concentrations.
+Plugging (\ref{xd}) into (\ref{abc}), remaining parameters can be found by doing a linear regression fit to absorption cross-section vs. concentration data from literature. The expected absorption cross-section can be calculated for any concentration. For ICG dissolved in H${}_2$O, the existing literature presents some variation and so the upper/lower bounds and average were taken, while data for ICG dissolved in D${}_2$O was based on \cite{holzer}. The behavior in H${}_2$O and D${}_2$O are quite similar and are plotted in Fig.\ref{fig:icg abs plots}. At lower concentrations the absorption cross-section is slightly greater for D${}_2$O than H${}_2$O, with the reverse for high concentrations.
 \clearpage
 \begin{table}
 	\centering
@@ -113,7 +113,7 @@ Plugging (\ref{xd}) into (\ref{abc}), remaining parameters could be found by doi
 \clearpage
 
 \subsubsection{ Photostability}
-At high concentrations, ICG behaves as a  ``J-aggregate'', a category of dyes that shift in the absorption band to larger wavelengths in certain solvents. When mixed into water and other solvents, ICG shifts over time to a center wavelength of 893nm. This process can be accelerated under high heat. In high-concentration forms (in the range of 1000ppm solutions) \cite{rotermund},  J-aggregates can be stored at room temperature for several months. However, in such a state the dye will be too optically dense to observe any optical excitation and when diluted to perform such measurements, the J-aggregates will begin to detach into smaller molecules within 24hrs.  The effects of dye concentration of storage life in aqueous solutions becomes a tricky balance at single-digit ppm concentrations. At that concentration, the fluorescence intensity of the dye is at its greatest but it degrades to undetectable levels in just a couple of hours under optimal storage conditions\cite{landsman, saxena}. The rate of deterioration occurs linearly based on the initial concentration of ICG\cite{holzer}, but the amount of light exposure of the solution will also exasperate the degradation rate\cite{saxena}.
+At high concentrations, ICG behaves as a  ``J-aggregate'', a category of dyes that shift in the absorption band to larger wavelengths in certain solvents. When mixed into water and other solvents, ICG shifts over time to a center wavelength of 893nm. This process can be accelerated under high heat. In high-concentration forms (in the range of 1000ppm solutions) \cite{rotermund},  J-aggregates can be stored at room temperature for several months. However, in such a state the dye will be too optically dense to observe any optical excitation and when diluted to perform such measurements, the J-aggregates will begin to detach into smaller molecules within 24hrs.  The effects of dye concentration on storage life in aqueous solutions becomes a tricky balance at single-digit ppm concentrations. At that concentration, the fluorescence intensity of the dye is at its greatest but it degrades to undetectable levels in just a couple of hours under optimal storage conditions\cite{landsman, saxena}. The rate of deterioration occurs linearly based on the initial concentration of ICG\cite{holzer}, but the amount of light exposure of the solution will also exasperate the degradation rate\cite{saxena}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{./Figures/ICG/abc_time.png}
@@ -124,7 +124,7 @@ At high concentrations, ICG behaves as a  ``J-aggregate'', a category of dyes th
 
 
 \subsubsection{ Fluorescence}
-Photoluminescence in the dye is observed in the range of 750-900nm, therefore overlapping with the absorption spectrum. The peak emission wavelength for ICG varies within 800nm-820nm\cite{philip, saxena} when excited at 780nm, and decreases as solution concentration increases, The dimerization effects are attributed to (a) The formation of weakly fluorescent ICG molecular aggregates at high concentrations (b) self-quenching and (c) re-absorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra. In the J-aggregate form the excitation wavelength shifts to 834nm and the emission peaks at 890nm although low quantum yield and strong light scattering does not lend to accurate measurements\cite{rotermund}.
+Photoluminescence in the dye is observed in the range of 750-900nm, therefore overlapping with the absorption spectrum. The peak emission wavelength for ICG varies within 800nm-820nm\cite{philip, saxena} when excited at 780nm, and decreases as solution concentration increases. The dimerization effects are attributed to (a) the formation of weakly fluorescent ICG molecular aggregates at high concentrations (b) self-quenching and (c) re-absorption of the emitted fluorescence by the ICG molecules due to overlap of the absorption and emission spectra. In the J-aggregate form the excitation wavelength shifts to 834nm and the emission peaks at 890nm although low quantum yield and strong light scattering does not lend to accurate measurements\cite{rotermund}.
 \begin{figure}[!htb]
 	\centering
 	\foreach \x in {wl_fluor, wl_fluor_absp}
