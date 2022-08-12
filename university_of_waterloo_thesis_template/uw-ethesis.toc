@@ -9,30 +9,30 @@
 \contentsline {subsection}{\numberline {2.2.3}Bandgap Shift}{13}{subsection.2.2.3}%
 \contentsline {chapter}{\numberline {3}Liquid-Filled HCPCF}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Experimental Set-Up}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Selective Filling}{17}{subsection.3.1.1}%
-\contentsline {subsubsection}{Filling Method}{17}{section*.14}%
-\contentsline {subsubsection}{Transmission}{18}{section*.17}%
-\contentsline {subsection}{\numberline {3.1.2}Full-Fiber Filling}{20}{subsection.3.1.2}%
-\contentsline {subsubsection}{Filling Method}{20}{section*.20}%
-\contentsline {subsubsection}{Transmission}{20}{section*.21}%
-\contentsline {section}{\numberline {3.2}Indocyanine Green}{22}{section.3.2}%
-\contentsline {subsubsection}{ Absorption Cross-Section}{23}{section*.25}%
-\contentsline {subsubsection}{ Photostability}{26}{section*.30}%
-\contentsline {subsubsection}{ Fluorescence}{27}{section*.32}%
-\contentsline {subsection}{\numberline {3.2.1}Experiment Set-Up}{28}{subsection.3.2.1}%
-\contentsline {subsubsection}{Sample Preparation}{29}{section*.35}%
-\contentsline {subsection}{\numberline {3.2.2}ICG in HCPCF}{30}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Particle-Mode Interaction and Optical Depth}{34}{subsection.3.2.3}%
-\contentsline {subsubsection}{Optical Density Calculations for ICG}{35}{section*.39}%
-\contentsline {chapter}{\numberline {4}Carbon Nanotubes}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Characterizing Carbon Nanotubes}{37}{section.4.1}%
-\contentsline {subsubsection}{Polarization Dependence}{41}{section*.43}%
-\contentsline {section}{\numberline {4.2}Nonlinear Optical Properties of CNTs}{41}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Fluorescence of CNTs}{42}{section.4.3}%
-\contentsline {section}{\numberline {4.4}HCPCF Bandgap Overlap with CNT Excitation and Emission}{45}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Experiment Set-Up}{47}{subsection.4.4.1}%
-\contentsline {subsubsection}{Sample History}{47}{section*.48}%
-\contentsline {subsubsection}{Sample Characteristics}{47}{section*.49}%
-\contentsline {chapter}{\numberline {5}Conclusion}{50}{chapter.5}%
-\contentsline {subsubsection}{Future Work}{50}{section*.51}%
-\contentsline {chapter}{\textbf {References}}{52}{section*.53}%
+\contentsline {subsection}{\numberline {3.1.1}Selective Filling}{16}{subsection.3.1.1}%
+\contentsline {subsubsection}{Filling Method}{16}{section*.14}%
+\contentsline {subsubsection}{Transmission}{17}{section*.17}%
+\contentsline {subsection}{\numberline {3.1.2}Full-Fiber Filling}{18}{subsection.3.1.2}%
+\contentsline {subsubsection}{Filling Method}{18}{section*.20}%
+\contentsline {subsubsection}{Transmission}{18}{section*.21}%
+\contentsline {section}{\numberline {3.2}Indocyanine Green}{20}{section.3.2}%
+\contentsline {subsubsection}{ Absorption Cross-Section}{21}{section*.25}%
+\contentsline {subsubsection}{ Photostability}{24}{section*.30}%
+\contentsline {subsubsection}{ Fluorescence}{25}{section*.32}%
+\contentsline {subsection}{\numberline {3.2.1}Experiment Set-Up}{26}{subsection.3.2.1}%
+\contentsline {subsubsection}{Sample Preparation}{27}{section*.35}%
+\contentsline {subsection}{\numberline {3.2.2}ICG in HCPCF}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Particle-Mode Interaction and Optical Depth}{32}{subsection.3.2.3}%
+\contentsline {subsubsection}{Optical Density Calculations for ICG}{33}{section*.39}%
+\contentsline {chapter}{\numberline {4}Carbon Nanotubes}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Characterizing Carbon Nanotubes}{35}{section.4.1}%
+\contentsline {subsubsection}{Polarization Dependence}{39}{section*.43}%
+\contentsline {section}{\numberline {4.2}Nonlinear Optical Properties of CNTs}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fluorescence of CNTs}{40}{section.4.3}%
+\contentsline {section}{\numberline {4.4}HCPCF Bandgap Overlap with CNT Excitation and Emission}{43}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Experiment Set-Up}{45}{subsection.4.4.1}%
+\contentsline {subsubsection}{Sample History}{45}{section*.48}%
+\contentsline {subsubsection}{Sample Characteristics}{45}{section*.49}%
+\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}%
+\contentsline {subsubsection}{Future Work}{48}{section*.51}%
+\contentsline {chapter}{\textbf {References}}{50}{section*.53}%
