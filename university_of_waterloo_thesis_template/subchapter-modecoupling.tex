@@ -1,9 +1,15 @@
-\subsection{Particle-Mode Interaction and Optical Depth}
+\section{Particle-Mode Interaction and Optical Depth}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.5\textwidth]{./Figures/ICG/icgfibermode.png}
+	\caption{Diagram of a Gaussian mode traveling through a fully-filled HCPBF with normally suspended nanoparticles.}
+	\label{fig:icg_mode}
+\end{figure}
 Optical depth (OD) is a measurement of the opacity of a system, related to the transmitted intensity by $T = exp(-OD)$. With particles distributed throughout the fiber, the interaction between the beam and particles inside the fiber needs to be taken into account. When considering a single particle interacting with the mode function of a waveguide the strength of the particle interaction will depend on its position within the mode\cite{domokos, mazoni}. The effective mode area of the waveguide is then relevant only in relation to the position of the particle. 
 \begin{equation}
 	\sigma_M = \frac{\int dxdy|f_k(x, y)|^2}{|f_k(x_p, y_p)|^2}
 \end{equation}
-where $f_k(x,y)$ is the transverse mode function and $f(x_p,y_p )$ is the position of the particle. In the case of a Gaussian mode function (as would be in a HCPCF), the photon interaction with the particle will be stronger in the center of the mode and weak at the edges. The optical depth (OD) for a single particle the ratio of the scattering cross-section to that of the effective mode-area $OD =\frac{\sigma_0}{\sigma_M}$, so to find the optical depth over the entire ensemble the product of the number density of the sample and optical depth of each emitter is integrated over the volume :
+where $f_k(x,y)$ is the transverse mode function and $f(x_p,y_p )$ is the position of the particle. In the case of a Gaussian mode function (as would be in a HCPBF), the photon interaction with the particle will be stronger in the center of the mode and weak at the edges. The optical depth (OD) for a single particle the ratio of the scattering cross-section to that of the effective mode-area $OD =\frac{\sigma_0}{\sigma_M}$, so to find the optical depth over the entire ensemble the product of the number density of the sample and optical depth of each emitter is integrated over the volume :
 \begin{equation}
 	\begin{aligned}
 		OD_{fiber} &= \int^{L'}_0 \int^{r'}_0 n(r, z)OD(2\pi r) dr dz 
@@ -21,31 +27,3 @@ The integral will simplify to
 	\label{OD}
 	\end{aligned}
 \end{equation}
-
-\subsubsection{Optical Density Calculations for ICG}
-For ICG dispersed in water, molecule aggregate radii have been measured between $2nm - 200nm$ \cite{dedora}, with J-aggregates forming at radii $>50nm$\cite{weigand}. Due to the low concentration samples of dye used in out experiments, the lower range of molecule diameter is expected, meeting the Raleigh scattering approximation condition $\frac{2\pi r}{\lambda} <<1$, the scattering cross-section is
-\begin{equation}
-	\sigma_0 = \frac{2\pi^5 (2r_{particle})^6}{3\lambda^4}(\frac{N^2 -1}{N^2+2})^2
-	\label{raleigh}
-\end{equation}
-where $N=\frac{n_{particle}}{n_{solvent}}$. After applying the parameters above and (\ref{raleigh}) to (\ref{OD}), the estimated concentration of ICG molecules for optically dense medium ($OD_{fiber}=1$) has a range of $N_{particle} = 1.5\times 10^8 \sim 2.0\times 10^{14}$ molecules and $N_{particle} = 8.2\times 10^7 \sim 1.1\times 10^{14}$ molecules for 1550nm and 800nm HCPCF respectively varying the ICG aggregate radii within the approximation condition. \\
-\begin{figure}[!htb]
-	\centering
-	\foreach \x \y \z in {ICG_OD/7/5.2, OD_rate/7/5}
-	{
-		\begin{subfigure}[b]{0.47\textwidth}
-			\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
-			\caption{}
-		\end{subfigure}
-	}
-	\caption{ (a)The number of molecules to create an optically dense medium as a function of average particle radius. Inset plot shows the dye concentration as a function of particle radius.(b) The rate increase in OD as the length of the fiber increases. For $OD=1$:  a sample concentration of 3.7ppm in 80nm HCPCF, $L_{fiber} = 2.28cm$ with a rate of $0.44(\frac{OD}{cm})$. For 1550nm HCPCF with a sample concentration of 4ppm. $L_{fiber} = 0.78cm$ with a rate of $1.27(\frac{OD}{cm})$}
-	\label{fig:icg_od}
-\end{figure}
-For calculations of optical density with ICG molecules in the  1550nm HCPCF, the core radius is taken as $r_{core} = 5\pm 0.05\mu m$ with beam waist $w_0 = 4.5 \pm 0.05\mu m$. For this $L_{fiber}=1cm$  piece of fiber, the number of molecules contained in a perfectly filled core is expected to be
-\begin{equation}
-	N_{particle} = M_{ICG}*C*V_{fiber}=\frac{1 mol}{774.98g}*\frac{4mg}{1dm^3}*\pi(5\mu m)^2(1cm) = 2.441\times10^9 molecules
-\end{equation}
-Using the measured optical density in the fiber, Fig.\ref{fig:icg_fluor}b the estimated radius of the aggregate ICG molecules is $r_{particle} = 13.7 \pm 0.2$nm.
-Carrying out the same calculations for the $L_{fiber}=2cm$ 800nm HCPCF, the number of molecules contained in a perfectly filled core will be $N_{particle}=2.54\times10^9$.  The fiber has a core radius $r_{core} = 3.75 \pm0.05\mu m$ with beam waist $w_0 = 2.75 \pm 0.05$ and using the measured optical density in the fiber, Fig.\ref{fig:icg_fluor_800hc}a, the estimated radius of the aggregate ICG molecules is $r_{particle} = 11.5 \pm 0.26$nm. These molecule radii are well in agreement, but since the 800nm HCPCF ICG solution is a slightly lower concentration, the average $r_{particle}$ is expected to form slightly smaller aggregates.
-
-\clearpage

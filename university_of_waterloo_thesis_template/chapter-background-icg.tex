@@ -1,5 +1,9 @@
+%======================================================================
+\chapter{Indocyanine Green - Nanoparticles Suspended in HCPBF}
+%======================================================================
+A little explanation\\
 \section{Indocyanine Green}
-Indocyanine green (ICG) - a fluorescent dye often used in microscopy imaging\cite{farrakhova, spartalis} - was dissolved in water and put into HCPCF due to its excitation and emission wavelength overlap with the bandgap of fully-filled 1550nm and core-filled 800nm HCFCP. This particular dye is an organic semiconductor with Homo-Lumo gap calculations estimating a $~2$eV energy gap, with variations depending on the solvent\cite{Fang}. The HOMO and LUMO energy levels in organic semiconductors are parallel to the maximum valence and minimum conduction, and the aforementioned energy gap falls within the range of energy bandgaps found in inorganic semiconductors.
+Indocyanine green (ICG) - a fluorescent dye often used in microscopy imaging\cite{farrakhova, spartalis} - was dissolved in water and put into HCPBF due to its excitation and emission wavelength overlap with the bandgap of fully-filled 1550nm and core-filled 800nm HCFCP. This particular dye is an organic semiconductor with Homo-Lumo gap calculations estimating a $~2$eV energy gap, with variations depending on the solvent\cite{Fang}. The HOMO and LUMO energy levels in organic semiconductors are parallel to the maximum valence and minimum conduction, and the aforementioned energy gap falls within the range of energy bandgaps found in inorganic semiconductors.
 \begin{figure}[h]
 	\centering
 	\foreach \x in {Homo_Lumo, chemical_formula}
@@ -14,8 +18,26 @@ Indocyanine green (ICG) - a fluorescent dye often used in microscopy imaging\cit
 	\label{fig:homolumo}
 \end{figure}
 \clearpage
-The following section details the the optical properties of ICG and measurements of the optical properties when confined in HCPCF.
-
+The following section details the the optical properties of ICG and measurements of the optical properties when confined in HCPBF.
+\subsection{Experiment Set-Up}
+The experimental set-up for the dye-filled HCPBF is very similar to that of the previously introduced HCPBF set-up, but includes a few additions. A fiber beam splitter was added between the fiber patch coming from the laser couplet and the bare fiber to monitor input power and wavelength. For fluorescence detection out of the fiber, a front-face fluorescence collection scheme was used and a long pass filter was placed in the path in order to filter out the incident light from the fluorescence. 
+Additionally, a fiber clamp was placed on a translation stage to control the position and angle at which the bare fiber is positioned in the mechanical splicer chip. The prior development of these chips done by lab members of NPQO\cite{maruf} tuned the fabrication recipe for coupling between 130$\mu$m to 125$\mu$m diameter fibers, specifically measuring the coupling between 800nm HCPBF to PM780HP fibers, resulting in a production of chips highly consistent in diameter. The 1550nm HCPBF however, has a diameter of 120$\mu$m. Mechanical splicer chips of 120$\mu$m to125$\mu$m diameter fibers are fabricated along with the 130$\mu$m to 125$\mu$m, but they are not of consistent quality and the majority of chips are over-exposed leading to the fibers to be loose and not level with each other in the chip. This resulted in average coupling rates of $>10\%$ if supported by the chip structure only.
+\begin{figure}[!htb]
+	\centering
+	\foreach \x \y in {ICG_Spec_SetUp.png/0.8,ICG_Cuvette_SetUp.png/0.8, ICG_Color.jpg/0.15}
+	{ 
+		\begin{subfigure}[b]{\y\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/ICG/\x}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{ (a)Optical set-up to measuring output of the dye-filled fiber. The path to the CCD camera is used to monitor the modeshape coming out of the fiber. The path to the spectrometer (Case A) is used to measure the fluorescence spectrum and efficiency. The path to the photodiode (Case B) is used to measure the optical density of the fiber. (b)Optical set-up to measuring output of the dye in a 1cm cuvette. (c)Color and opacity difference between the stock solution (left) and diluted solution(right).}
+	\label{fig:icg_setup}
+\end{figure}
+\subsubsection{Sample Preparation}
+ICG powder was purchased from MP Biomedicals in quantities of 5mg per vial. A stock solution was made by dissolving 5mg of powder in 5mL of H${}_2$O, then a low-concentration solution is made by diluting 10$\mu$L of stock solution into 2.5mL of either D${}_2$O/H${}_2$O.  In a second approximate method for making low-concentration solutions, the tip of a syringe needle was use to scoop up a small amount of dye and then dissolve it in 5-10mL of D${}_2$O/H${}_2$O, working by eye based on the hue and opacity of the dye sample (See Fig.\ref{fig:icg_setup}(c)). The absorption of the sample was then measured in a cuvette and fitted to the concentration-based absorption cross-section data to find the concentration of the sample.
+\clearpage
 \subsubsection{ Absorption Cross-Section}
 ICG absorbs wavelengths between 600-900nm. The absorption is largely bimodal, with the greatest excitation occurring at 780nm and 700nm, but transforms into a monomeric distribution at 780nm at low concentrations and 700nm at high concentrations.
 \begin{figure}[h]
@@ -134,7 +156,7 @@ Photoluminescence in the dye is observed in the range of 750-900nm, therefore ov
 				\caption{}
 			\end{subfigure}
 		}
-	\caption{(a)Fluoresce spectrum of 4.5ppm sample (b) Maximum fluorescence and maximum absorption spectrum of 4.5ppm initial concentration sample}
+	\caption{A 4.5ppm sample of ICG dye was placed in a 1cm cuvette and characterized. (a)Fluorescence spectrum of 4.5ppm sample (b) Maximum fluorescence and maximum absorption spectrum of 4.5ppm sample with a pump power of 1mW at each wavelength.}
 	\label{fig:icg_spec}
 \end{figure}
 \clearpage

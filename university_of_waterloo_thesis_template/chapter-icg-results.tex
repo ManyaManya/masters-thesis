@@ -1,22 +1,3 @@
-\subsection{Experiment Set-Up}
-The experimental set-up for the dye-filled HCPCF is very similar to that of the previously introduced HCPCF set-up, but includes a few additions. A fiber beam splitter was added between the fiber patch coming from the laser couplet and the bare fiber to monitor input power and wavelength. For fluorescence detection out of the fiber, a front-face fluorescence collection scheme was used and a long pass filter was placed in the path in order to filter out the incident light from the fluorescence. 
-Additionally, a fiber clamp was placed on a translation stage to control the position and angle at which the bare fiber is positioned in the mechanical splicer chip. Due to tolerance issues in the mechanical splitter chips made for 1550nm HCPCF. The prior development of these chips done by lab members of NPQO\cite{maruf} tuned the fabrication recipe for coupling between 130$\mu$m to 125$\mu$m diameter fibers, specifically measuring the coupling between 800nm HCPCF to PM780HP fibers, resulting in a production of chips highly consistent in diameter. The 1550nm HCPCF however, has a diameter of 120$\mu$m. Mechanical splicer chips of 120$\mu$m to125$\mu$m diameter fibers are fabricated along with the 130$\mu$m to 125$\mu$m, but they are not of consistent quality and the majority of chips are over-exposed leading to the fibers to be loose and not level with each other in the chip. This resulteed in average coupling rates of $>10\%$ if supported by the chip structure only.
-\begin{figure}[!htb]
-	\centering
-	\foreach \x \y in {ICG_Spec_SetUp.png/0.39,ICG_Cuvette_SetUp.png/0.39, ICG_Color.jpg/0.1}
-	{ 
-		\begin{subfigure}[b]{\y\textwidth}
-			\includegraphics[width=\textwidth]{./Figures/ICG/\x}
-			\caption{}
-		\end{subfigure}
-		\hfil
-	}
-	\caption{ (a)Optical set-up to measuring output of the dye-filled fiber. The path to the CCD camera is used to monitor the modeshape coming out of the fiber. The path to the spectrometer (Case A) is used to measure the fluorescence spectrum and efficiency. The path to the photodiode (Case B) is used to measure the optical density of the fiber. (b)Optical set-up to measuring output of the dye in a 1cm cuvette. (c)Color and opacity difference between the stock solution (left) and diluted solution(right).}
-	\label{fig:icg_setup}
-\end{figure}
-\subsubsection{Sample Preparation}
-ICG powder was purchased from MP Biomedicals in quantities of 5mg per vial. A stock solution was made by dissolving 5mg of powder in 5mL of H${}_2$O, then a low-concentration solution is made by diluting 10$\mu$L of stock solution into 2.5mL of either D${}_2$O/H${}_2$O.  In a second approximate method for making low-concentration solutions, the tip of a syringe needle was use to scoop up a small amount of dye and then dissolve it in 5-10mL of D${}_2$O/H${}_2$O, working by eye based on the hue and opacity of the dye sample (See Fig.\ref{fig:icg_setup}(c)). The absorption of the sample was then measured in a cuvette and fitted to the concentration-based absorption cross-section data to find the concentration of the sample.
-\clearpage
 \subsection{ICG in HCPCF}
 Low-concentration samples of dye were prepared and used it to fill a 800nm HCPCF core and 1550nm HCPCF core and cladding. The measured absorption cross-section of the dye, shown in Fig.\ref{fig:icg_absp}, presents additional absorption effects caused by the fiber, notably the narrower bandgap of the 800nm HCPCF. Additionally, there is an observed 18nm shift in the peak absorption from 778nm to 796nm in the 1550nm bandgap-shifted liquid-filled fiber, while the 800mn liquid-core fiber has an insignificant 4nm shift in peak from 775nm to 771nm.\\
 \begin{figure}[!htb]
@@ -29,7 +10,7 @@ Low-concentration samples of dye were prepared and used it to fill a 800nm HCPCF
 			\end{subfigure}
 			\hfil
 		}
-	\caption{ Absorption spectrum of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b) 4 ppm concentration in core an
+	\caption{ Absorption cross-section of ICG samples (a) 2.5 ppm concentration in core of 800nm HCPCF and (b) 4 ppm concentration in core an
 		d cladding of 1550nm HCPCF. }
 	\label{fig:icg_absp}
 \end{figure}
@@ -41,7 +22,7 @@ For the 3.7ppm sample in core-filled 800nm HCPCF similar fraction of fluorescenc
 
 \begin{figure}[!htb]
 	\centering
-	\foreach \x \y \z in {diff_max_pl/8/6, OD/7/5.5, fluor_1550hc/7/5.5, fluor_cuvette/7.5/5.5}
+	\foreach \x \y \z in {diff_max_pl/7/5.5, OD/7/5.5, fluor_1550hc/7/5.5, fluor_cuvette/7.5/5.5}
 		{
 			\begin{subfigure}[b]{0.47\textwidth}
 				\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
@@ -53,17 +34,16 @@ For the 3.7ppm sample in core-filled 800nm HCPCF similar fraction of fluorescenc
 \end{figure}
 \clearpage
 At the maximum absorption wavelength, the fraction of fluorescence and output power at the excitation wavelength are measured as a function of the input power, shown in Fig.\ref{fig:icg_fluor_800hc}c. The fraction of fluorescence peaks at an input power of $50\mu W$, while the output power increases logarithmically and appears to approaching a limit on the transmission. Overall, the fluorescence efficiency is of $0.00051\%$ in the 800nm HCPCF $\lambda_{ex}=778$ and for 1550nm HCPCF $0.014\%$ at $\lambda_{ex}=740$nm, which is comparable to other optofluidic waveguides \cite{vezenov}.
->>>>>>> Stashed changes
 \begin{figure}[!htb]
 	\centering
-	\foreach \x \y \z in {wl_fluor_od_800hc/5.5/5, fluor_800hc/5.5/5, power_fl_absp_800hc/5.5/5.2}
+	\foreach \x \y \z in { fluor_800hc/5.5/5, wl_fluor_od_800hc/5.5/5, power_fl_absp_800hc/5.5/5.2}
 		{
 			\begin{subfigure}[b]{0.32\textwidth}
-				\includegraphics[width=\y cm,height=\z cm]{./Figures/ICG/\x.png}
+				\includegraphics[width=\textwidth, height=\z cm]{./Figures/ICG/\x.png}
 				\caption{}
 			\end{subfigure}
 		}
-	\caption{ Measurements of 3.7ppm ICG sample in a 2cm piece of core-filled 800nm HCPCF (a) The maximum fraction of fluorescence and optical density against excitation wavelength. (b) The fraction of fluorescence spectrum (c) Measured output peak power and fractional fluorescence as a function of input power. }
+	\caption{ Measurements of 3.7ppm ICG sample in a 2cm piece of core-filled 800nm HCPCF (a) The fraction of fluorescence spectrum  (b) The maximum fraction of fluorescence and optical density against excitation wavelength. (c) Measured output peak power and fractional fluorescence as a function of input power. }
 	\label{fig:icg_fluor_800hc}
 \end{figure}
 \clearpage

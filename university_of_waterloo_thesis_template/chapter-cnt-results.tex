@@ -9,15 +9,22 @@ A tunable, few nanometer linewidth light source for excitation wavelengths betwe
 		\end{subfigure}
 		\hfil
 	}
-	\caption{The experiential used set-up for measuring (a)Absorption and (c) Fluorescence of CNT samples in a cuvette. (b)The spectrum and intensity of the excitation beam at $\lambda=645$nm  picked-offed the super continuum source. The power measures $~48\mu$W and fwhm$=6$nm.}
+	\caption{The experiential used set-up for measuring (a)Absorption and (c) Fluorescence of CNT samples in a cuvette. (b)The spectrum and intensity of the excitation beam at $\lambda=645$nm  picked-offed the super continuum source. The power measures $~48\mu$W and fwhm$=1.838\pm 0.004$nm.}
 	\label{fig:cnt_setup}
 \end{figure}
-
+\clearpage
+\subsection{Sorted CNT sample}
 \subsubsection{Sample History}
 CNT samples were prepared by HeeBong Yang from the QuIN Lab at the University of Waterloo. SG65i powder was purchased from Sigma Aldrich and Dispersed in a surfactant at an initial powder concentration of 1 mg/mL. The sample then underwent a procedure of purification steps, sorting with polymers \& surfactants, and polymer exchange. The final condition of the sample was 65\% (7,5), (7,6) dominant SWCNTs in DI water with 0.04\% DOC, but at an unknown concentration.
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=1.5cm, height=2.5cm]{./Figures/CNT\_Measured/DIH2O\_CNTs.png}
+	\caption{CNT sample}
+	\label{fig:sample}
+\end{figure}
+\clearpage
 \subsubsection{Sample Characteristics}
 CNT solutions follow Beer-Lambert's Law \cite{schoppler, jeong}, $A = log(\frac{I_{in}}{I_{out}}) = \varepsilon CL$ so the concentration can be deduced from the measured absorbance. Fig.\ref{fig:cnt_abs}(a) and the average previously reported extinction coefficient\cite{blanch, anson, jeong} $\varepsilon= 30.98$ mL mg${}^{-1}$cm${}^{-1}$  estimate a sample concentration around $0.0042\pm 0.0007$ mg/mL.
-
 \begin{figure}[h]
 	\centering
 	\foreach \x in {OD, time}
@@ -31,5 +38,70 @@ CNT solutions follow Beer-Lambert's Law \cite{schoppler, jeong}, $A = log(\frac{
 	\caption{(a) Absorbance spectrum of CNT sorted CNT sample (b)Absorbance of CNT sorted sample over 60 minutes, the absorbance of the sample stabilizes after 30 minutes.}
 	\label{fig:cnt_abs}
 \end{figure}
-Unfortunately no PL was detected from the sample. Despite the high absorption loss from DI water in the excitation wavelength range, fluorescence has been detected for these chiralities of CNTs suspended in DI water before\cite{wei}, though there is 23.25\% pm 10\% decrease in PL intensity when using H${}_2$O instead of D${}_2$O for (7, 5) and 42.5\% pm 5\% for (7,6) and quantum yields are expected to be around 1.04\% and 1.40\% respectively. The next steps to preclude the source of  quenching in the CNT sample is to measure the absorption with various thicknesses of cuvette or to incrementally dilute the sample.
+Unfortunately no PL was detected from the sample. Despite the high absorption loss from DI water in the excitation wavelength range, fluorescence has been detected for these chiralities of CNTs suspended in DI water before\cite{wei}, though there is 23.25\% pm 10\% decrease in PL intensity when using H${}_2$O instead of D${}_2$O for (7, 5) and 42.5\% pm 5\% for (7,6) and quantum yields are expected to be around 1.04\% and 1.40\% respectively. The next steps to preclude the source of  quenching in the CNT sample is to measure the absorption with various thicknesses of cuvette or to incrementally dilute the sample.\\
+\begin{figure}[h]
+	\centering
+	\foreach \x in {CNT\_H2O\_dilution, DIH2O_power}
+	{ 
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/CNT_Measured/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) Serial Dilution of the original concentration "C" sample. All diluted samples have a lower difference in absorbance between the expected peak absorbance wavelength and surrounding wavelengths. (b) The power saturation of the CNT solution compared to deionized water. The output power remains linear to the input power indicating the saturation threshold has not yet been reached.}
+	\label{fig:h2o_dilution}
+\end{figure}
+\subsection{Unsorted CNT sample}
+Because of the reduction of fluorescence in H${}_2$O, a sample was prepared in D${}_2$O without sorting.  
+\subsubsection{Sample History}
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=4cm, height=3cm]{./Figures/CNT\_Measured/D2O\_CNTs.jpg}
+	\caption{CNT sample}
+	\label{fig:d2o_sample}
+\end{figure}
+\subsubsection{Sample Characteristics}
+\begin{figure}[h]
+	\centering
+	\foreach \x in {CNT\_D2O\_dilution, D2O_power}
+	{ 
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/CNT_Measured/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) Serial Dilution of the original concentration "C" sample. All diluted samples have a lower difference in absorbance between the expected peak absorbance wavelength and surrounding wavelengths. (b) The power saturation of the CNT solution compared to deionized water. The output power remains linear to the input power indicating the saturation threshold has not yet been reached.}
+	\label{fig:d2o_dilution}
+\end{figure}
 \clearpage
+\subsection{CNTs in Fiber}
+\begin{figure}[h]
+	\centering
+	\foreach \x in {CNT\_ModeShape\_SCS, CNT_ModeShape_laser}
+	{ 
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/CNT_Measured/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) (b) }
+	\label{fig:cnt_fiber_modeshape}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\foreach \x in {HC1550\_power, HC1550\_T}
+	{ 
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{./Figures/CNT_Measured/\x.png}
+			\caption{}
+		\end{subfigure}
+		\hfil
+	}
+	\caption{(a) (b) }
+	\label{fig:cnt_fiber}
+\end{figure}
+

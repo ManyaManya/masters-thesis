@@ -1,7 +1,7 @@
 %======================================================================
-\chapter{Liquid-Filled HCPCF}
+\chapter{Liquid-Filled HCBCF}
 %======================================================================
-In this chapter follows a background on different filling methods, the integrity of the scaling laws, and transmission of liquid-filled HCPCF.
+In this chapter follows a background on different filling methods, the integrity of the scaling laws, and transmission of liquid-filled HCPBF.
 \section{Experimental Set-Up}
 \begin{figure}[!htb]
 	\centering
@@ -17,10 +17,14 @@ In our experiments two different filling methods are tested: full fiber filling,
 	\caption{The transmission of heavy water(green) and regular water(blue) is shown for slabs of thickness ranging from 1cm to 8cm in increments of 1cm using absorption data by \cite{kedenburg}. }
 	\label{fig:water transmission}
 \end{figure}
-Fibers that are fully-filled with water will produce a frequency shift in the bandgap. On the other hand, when the core is selectively filled with water, the core refractive index will be greater than effective refractive index of the cladding and light will be guided via total-internal reflection. H${}_2$O, while widely available and a common solvent, has high absorption loss in the near infrared (NIR) but its most common isotope D${}_2$O has comparatively much less absorption loss in the same region (Fig.\ref{fig:water transmission}). The transmission in HCPCF are explored for H${}_2$O for its ubiquity while D${}_2$O for its suitability as a filling liquid in the NIR.
+Fibers that are fully-filled with water will produce a frequency shift in the bandgap. On the other hand, when the core is selectively filled with water, the core refractive index will be greater than effective refractive index of the cladding and light will be guided via total-internal reflection. H${}_2$O, while widely available and a common solvent, has high absorption loss in the near infrared (NIR) but its most common isotope D${}_2$O has comparatively much less absorption loss in the same region (Fig.\ref{fig:water transmission}). The transmission in HCPBF are explored for H${}_2$O for its ubiquity while D${}_2$O for its suitability as a filling liquid in the NIR.
+\subsection{HCPBF Specifications}
+Photonic bandgap fibers HC-1500 and HC-800B were purchased from Thor Labs but manufactured by NKT Photonics. HC-1500 fiber is designed with a central wavelength of 1550nm. The cladding diameter of the fiber is 120$\pm2\mu$m and has a core diameter of 10$\pm1\mu$m with a surrounding photonic crystal structure of 70$\pm5\mu$m in diameter, guiding light with a Gaussian modeshape of  9$\pm1\mu$m beam waist. Less than 5\% of optical power propagates through the silica material of the fiber and attenuation within the operating wavelengths (1490nm - 1680nm) is under 30 dB/km\cite{HC1550}. HC-800B fiber is designed with a central wavelength of 800nm. The cladding diameter of the fiber is 130$\pm5\mu$m and has a core diameter of 7.5$\pm1\mu$m with a surrounding photonic crystal structure of 45$\pm5\mu$m in diameter, guiding light with a Gaussian modeshape of  5.5$\pm1\mu$m beam waist. Attenuation within the operating wavelengths (770nm - 870nm) is under 250 dB/km\cite{HC800B}. 
+\subsection{Fiber Mechanical Splicing Chips}
+In order to align different diameter fibers...
 \subsection{Selective Filling}
 \subsubsection{Filling Method}
-To selectively fill the core of 800nm HCPCF, the photonic crystal cladding was collapsed while leaving the hollow-core open and is similarly filled with liquid using capillary action. The cladding is collapsed by placing the HCPCF opposite of a solid-core fiber in a fusion splicer \cite{xiao} and adjusting arc current duration and power to melt the cladding structure while remaining distanced enough to prevent fusion with the solid-core fiber.
+To selectively fill the core of 800nm HCPBF, the photonic crystal cladding was collapsed while leaving the hollow-core open and is similarly filled with liquid using capillary action. The cladding is collapsed by placing the HCPBF opposite of a solid-core fiber in a fusion splicer \cite{xiao} and adjusting arc current duration and power to melt the cladding structure while remaining distanced enough to prevent fusion with the solid-core fiber.
 \begin{figure}[!htb]
 	\centering
 	\foreach \x in {50ms 15mA, 70ms 20mA, 70ms 25mA, 80ms 25mA, 90ms 25mA, 100ms 25mA}
@@ -31,7 +35,7 @@ To selectively fill the core of 800nm HCPCF, the photonic crystal cladding was c
 		\end{subfigure}
 		\hfil
 	}
-	\caption{Side profile of collapsed cladding 1550HC fiber running the fiber splicer with varying current strength and duration. }
+	\caption{Side profile of collapsed cladding 1550HC fiber running the fiber splicer with varying current strength and duration. The solid-core fiber face was set at a distance of 18$\mu$m from the HCPBF face in the mechanical splicer.}
 	\label{fig:selective filling}
 \end{figure}
 In Fig.\ref{fig:selective filling} the extent of collapse of the cladding is compared to various timing and power for an ORIENTEK T40 fusion splicer. The optimal setting is around an arc power of 25mA for a 70ms duration, though due to the imprecision in the arc power discharge the cladding on occasion will be overexposed, as shown in Fig.\ref{fig:selective err}.
@@ -45,7 +49,7 @@ In Fig.\ref{fig:selective filling} the extent of collapse of the cladding is com
 		\end{subfigure}
 		\hfil
 	}
-	\caption{Variation between fibers using splicer settings 70ms 25ms  }
+	\caption{Variation between fibers using splicer settings 70ms 25mA.}
 	\label{fig:selective err}
 \end{figure}
 \subsubsection{Transmission}
@@ -59,19 +63,19 @@ In Fig.\ref{fig:selective filling} the extent of collapse of the cladding is com
 		\end{subfigure}
 		\hfil
 	}
-	\caption{Modeshape of 800 hollow-core fiber filled with (a)air (b)heavy water (c)DI water.}
+	\caption{Modeshape of HC800B hollow-core fiber filled with (a)air (b)heavy water (c)DI water.}
 	\label{fig:800 modeshape}
 \end{figure}
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{./Figures/fiberfilling/HC800/transmission.png}
-	\caption{Transmission of H${}_2$O and D${}_2$O in a selectively-filled 800nm hollow-core fiber.}
+	\caption{Transmission spectra of a $7\pm0.6$ cm long piece of HC800B selectively filled with H${}_2$O(orange) and D${}_2$O(blue). The vertical axis is normalized to the transmission of the empty HC800B fiber(green).}
 	\label{fig:trans 800hc}
 \end{figure}
-The air-filled 800nm HCPCF covers a transmission spectral range of 750nm–950nm. Light exits the fiber with a Gaussian mode shape, as shown in Fig.\ref{fig:800 modeshape}. In a H${}_2$O core, the coupling efficiency of the fiber drops to 31\%, while a heavy water filled core is less affected by absorption over this region and retains a coupling efficiency of up to 67\%.
+The air-filled 800nm HCPBF covers a transmission spectral range of 750nm–950nm. Light exits the fiber with a Gaussian mode shape, as shown in Fig.\ref{fig:800 modeshape}. In a H${}_2$O core, the coupling efficiency of the fiber drops to 31\%, while a heavy water filled core is less affected by absorption over this region and retains a coupling efficiency of up to 67\%.
 \subsection{Full-Fiber Filling}
 \subsubsection{Filling Method}
-The air in 1550nm HCPCF was replaced with deionized water and heavy water by utilizing capillary action. 
+The air in 1550nm HCPBF was replaced with deionized water and heavy water by utilizing capillary action. 
 \subsubsection{Transmission}
 \begin{figure}[!htb]
 	\centering
@@ -83,14 +87,14 @@ The air in 1550nm HCPCF was replaced with deionized water and heavy water by uti
 			\end{subfigure}
 			\hfil
 		}
-	\caption{Modeshape of 1550 hollow-core fiber filled with (a)air (b)heavy water (c)DI water. Fiber filled with heavy water maintains a Gaussian profile while the fiber with regular distilled water shows some distortion.}
+	\caption{Modeshape of HC1550 fiber filled with (a)air (b)heavy water (c)DI water. Fiber filled with heavy water maintains a Gaussian profile while the fiber with regular distilled water shows some distortion.}
 	\label{fig:1550 modeshape}
 \end{figure}
-The air-filled 1550nm HCPCF covers a transmission spectral range of 1200nm–1700nm. With a filled core and cladding, the spectral range shifts to transmitting wavelengths between 600nm–1100nm for both heavy water and water, confirming the scaling laws. Heavy water achieved a coupling efficiency of 47\%, but water only 16\%. While the D${}_2$O fiber modeshape retains a Gaussian profile, the H${}_2$O mode shape contains noise as some light also leaks from the photonic structure. The absorption effects of H${}_2$O severely reduce the transmission for wavelengths above 820nm, while compares well to the transmission of the D${}_2$O fiber below 820nm and could arguably be used as a filling liquid.
+The air-filled 1550nm HCPBF covers a transmission spectral range of 1200nm–1700nm. With a filled core and cladding, the spectral range shifts to transmitting wavelengths between 600nm–1100nm for both heavy water and water, confirming the scaling laws. Heavy water achieved a coupling efficiency of 47\%, but water only 16\%. While the D${}_2$O fiber modeshape retains a Gaussian profile, the H${}_2$O mode shape contains noise as some light also leaks from the photonic structure. The absorption effects of H${}_2$O severely reduce the transmission for wavelengths above 820nm, while compares well to the transmission of the D${}_2$O fiber below 820nm and could arguably be used as a filling liquid.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.75\textwidth]{./Figures/fiberfilling/HC1550/transmission.png}
-	\caption{Transmission of H${}_2$O and D${}_2$O in fully-filed and core-filled 1550nm hollow-core fiber.}
+	\caption{Transmission of H${}_2$O and D${}_2$O in fully-filled and core-filled HC1550 fiber 5cm in length.}
 	\label{fig: trans 1550hc}
 \end{figure}
 \clearpage
